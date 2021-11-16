@@ -5,15 +5,19 @@ background-color:  rgba(0, 0, 0, 0.45);
 margin-left: 20px;
 display: flex;
 align-items: center;
+justify-content: space-between;
+margin-right: 40px;
 }
 
 .workspaces-selector {
 	background-color: rgba(0, 0, 0, 0.45);
 	color: whitesmoke;
+	width: 150px;
+    height: 25px;
 }
 
 .logo {
-	width: 50px;
+	width: 53px;
 }
 
 .h1 {
@@ -31,6 +35,22 @@ align-items: center;
 }
 
 .search-Button {
-	width: 21px;
+	width: 22px;
     margin-left: 10px;
 }
+
+.input-search {
+	background-color: rgba(0, 0, 0, 0.45);
+	color: whitesmoke;
+	width: 150px;
+    height: 21px;
+}
+
+.header-link {
+	color: whitesmoke;
+	margin-left: 60px;
+	text-decoration: none;
+	font-size: 25px;
+}
+
+/* login */
