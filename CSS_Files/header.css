@@ -1,42 +1,36 @@
-header {
-	background-color: rgba(255,255,255,0.45);
-	text-align: center;
-	width: 100%;
-	height: 20vh;
-	background-size: cover;
-	background-attachment: fixed;
-	position: relative;
-	overflow: hidden;
-	border-radius: 0 0 85% 85% / 70%;
+.header {
+height: 44px;
+padding: 6px 4px;
+background-color:  rgba(0, 0, 0, 0.45);
+margin-left: 20px;
+display: flex;
+align-items: center;
 }
 
-h1 {
-	font-family: 'Dancing Script', cursive;
-	font-size: 50px;
-    margin: 0px;
-
-}
-
-h3, p {
-	font-family: 'Open Sans', sans-serif;
-	margin-bottom: 30px;
-}
-
-button {
-	border: none;
-	outline: none;
-	padding: 10px 20px;
-	border-radius: 50px;
-	color: rgb(34, 70, 39);
-	background: #fff;
-	margin-bottom: 50px;
-	box-shadow: 0 3px 20px 0 #0000003b;
-}
-button:hover{
-	cursor: pointer;
+.workspaces-selector {
+	background-color: rgba(0, 0, 0, 0.45);
+	color: whitesmoke;
 }
 
 .logo {
-    width: 70px;
+	width: 50px;
+}
 
+.h1 {
+	size: 28px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: whitesmoke;
+	margin-left: 8px;
+	margin-right: 50px;
+}
+
+.left-cont {
+	width: 400px;
+	display: flex;
+	align-items: center;
+}
+
+.search-Button {
+	width: 21px;
+    margin-left: 10px;
 }
