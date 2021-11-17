@@ -1,4 +1,3 @@
-
 <link rel="stylesheet" href="CSS_Files/style.css">
 <link rel="stylesheet" href="CSS_Files/header.css">
 <link rel="stylesheet" href="CSS_Files/addTask.css">
@@ -6,13 +5,38 @@
 <script src="JS_Files/script.js"></script>
 
 <body>
-    <div w3-include-html="header.html"></div> 
- <div class="main-div"></div>
- 
-  
- 
-  <script>
-     includeHTML();
-     </script>
-     <div>Icons erstellt von <a href="https://www.flaticon.com/de/autoren/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/de/" title="Flaticon">www.flaticon.com</a></div>
- </body>
+    <div w3-include-html="header.html"></div>
+    <div class="main-div">
+
+        <form class="form-cont" action="">
+            <div class="left-container">
+                <p>TITEL EINGEBEN</p>
+                <input class="input-field" type="text" placeholder="Titel eingeben...">
+              <p>BESCHREIBUNG</p>
+                <textarea class="description-field" type="text" placeholder="Optional" cols="40"></textarea>
+                <p>DRINGLICHKEIT</p>
+                <select class="selector" name="" id="">
+                    <option value="text">Normal</option>
+                    <option value="text">Sehr Dringend</option>
+                    <option value="text">Nicht Dringend</option>
+                </select>
+            </div>
+            <div class="right-container">
+                <p>AUFGABE ERLEDIGEN BIS</p>
+                <input class="input-field" type="date">
+                <p>ERSTELLER</p>
+                <select class="selector" name="" id="">
+                    <option value="text">Peter</option>
+                    <option value="text">Anja</option>
+                    <option value="text">Markus</option>
+                </select>
+                <button class="button">AUFGABE SPEICHERN</button>
+            </div>
+
+        </form>
+
+        <script>
+            includeHTML();
+        </script>
+
+</body>

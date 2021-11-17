@@ -1,0 +1,68 @@
+body p {
+    font-size: 23px;
+    color: whitesmoke;
+}
+
+.form-cont {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 35px;
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.right-container { 
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 35px;
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.input-field {
+    width: 400px;
+    height: 38px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: whitesmoke;
+    border: solid 1px rgb(31, 233, 223);
+}
+
+.description-field {
+    width: 400px;
+    min-height: 85px;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: whitesmoke;
+    border: solid 1px rgb(31, 233, 223);
+}
+
+.selector {
+    width: 400px;
+    height: 38px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: whitesmoke;
+    border: solid 1px rgb(31, 233, 223);
+}
+
+
+.button {
+    width: 400px;
+    height: 38px;
+    margin: 70px 0px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: whitesmoke;
+    border: solid 1px rgb(31, 233, 223);
+    
+}
+
+.button :hover {
+    
+}
