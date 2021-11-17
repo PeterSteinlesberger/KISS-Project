@@ -1,12 +1,14 @@
-body p {
-    font-size: 23px;
+body span {
+    font-size: 22px;
     color: whitesmoke;
+    margin-top: 35px;
+    margin-bottom: 8px;
 }
 
 .main-div {
     display: flex;
-justify-content: center;
-align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -17,7 +19,6 @@ align-items: center;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.35);
     border: solid 1px rgb(31, 233, 223);
-
 }
 
 .left-container {
@@ -28,7 +29,7 @@ align-items: center;
 
 }
 
-.right-container { 
+.right-container {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -65,13 +66,15 @@ align-items: center;
 .button {
     width: 400px;
     height: 38px;
-    margin: 70px 0px;
-    background-color: rgba(0, 0, 0, 0.75);
+    margin-top: 116px;
+    background-color: rgba(31, 233, 223, 0.55);
     color: whitesmoke;
     border: solid 1px rgb(31, 233, 223);
-    
+    transition: background-color, 225ms ease-in-out;
+    transition: color, 225ms ease-in-out;
 }
 
-.button :hover {
-    
+.button:hover {
+    background-color: rgb(1, 251, 176);
+    color: rgb(22, 22, 22);   
 }
