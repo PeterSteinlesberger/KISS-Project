@@ -72,9 +72,10 @@ body span {
     border: solid 1px rgb(31, 233, 223);
     transition: background-color, 225ms ease-in-out;
     transition: color, 225ms ease-in-out;
+    font-size: 18px;
 }
 
 .button:hover {
     background-color: rgb(1, 251, 176);
-    color: rgb(22, 22, 22);   
+    color: rgb(22, 22, 22); 
 }

@@ -11,7 +11,8 @@ justify-content: space-between;
 	background-color: rgba(0, 0, 0, 0.45);
 	color: whitesmoke;
 	width: 150px;
-    height: 25px;
+    height: 32px;
+	border: solid 1px rgb(31, 233, 223);
 }
 
 .logo {
@@ -33,15 +34,16 @@ justify-content: space-between;
 }
 
 .search-Button {
-	width: 22px;
-    margin-left: 10px;
+	width: 27px;
+    margin-left: 8px;
 }
 
 .input-search {
 	background-color: rgba(0, 0, 0, 0.45);
 	color: whitesmoke;
-	width: 150px;
-    height: 26px;
+	width: 210px;
+    height: 32px;
+	border: solid 1px rgb(31, 233, 223);
 }
 
 .search-cont {
@@ -53,10 +55,15 @@ justify-content: space-between;
 	color: whitesmoke;
 	margin-left: 60px;
 	text-decoration: none;
-	font-size: 23px;
+	font-size: 21px;
 	padding: 3px 13px;
     border: solid 1px rgb(31, 233, 223);
 	background-color: rgba(0, 0, 0, 0.45);
+}
+
+.light-modus-img {
+    width: 86px;
+    height: 35px;
 }
 
 /* login */
