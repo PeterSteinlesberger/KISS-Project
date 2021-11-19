@@ -52,13 +52,13 @@ justify-content: space-between;
 }
 
 .header-link {
-	color: whitesmoke;
 	margin-left: 60px;
 	text-decoration: none;
 	font-size: 21px;
 	padding: 3px 13px;
     border: solid 1px rgb(31, 233, 223);
-	background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(31, 233, 223, 0.55);
+    color: whitesmoke;
 }
 
 .light-modus-img {
