@@ -1,0 +1,96 @@
+.info-cont {
+    margin-top: 48px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border: solid 1px rgb(31, 233, 223);
+    padding: 12px;
+}
+
+.main-cont {
+ display: flex;
+ justify-content: center;
+ color: whitesmoke;
+ font-size: 21px;
+
+}
+
+.backlog-file {
+    height: 80px;
+    width: 1400px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border: solid 1px rgb(31, 233, 223);
+    margin: 12px;
+    display: flex;
+
+}
+
+
+
+.header-cont {
+    display: flex;
+    margin-left: 12px;
+    margin-right: 12px;
+   height: 35px;
+}
+
+.urgency-color {
+    width: 18px;
+    height: 80px;
+    margin-right: 35px;
+    background-color: aquamarine;
+}
+
+.urgency-color-invisible {
+    width: 18px;
+    height: 80px;
+    margin-right: 35px;
+  
+}
+
+.creator-img {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    margin-right: 35px; 
+margin-top: 3px; 
+}
+
+.creator-img-invisible {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    margin-right: 35px;   
+}
+
+.creator {
+    width: 280px;
+    height: 80px;
+    margin-right: 35px;
+  
+}
+
+
+.title {
+    width: 280px;
+    height: 80px;
+    margin-right: 35px;
+   
+}
+
+
+.description {
+    width: 350px;
+    height: 65px;
+    margin-right: 35px;
+    overflow: auto;
+   
+}
+
+
+.finalday {
+    width: 180px;
+    height: 80px;
+}
+
+.padding-top {
+    padding-top: 10px;
+}
