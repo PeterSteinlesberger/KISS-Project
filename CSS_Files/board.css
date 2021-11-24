@@ -1,4 +1,8 @@
-
+.main-div {
+    width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
 
 .category-cont {
 	width: 220px;
