@@ -1,6 +1,6 @@
 .info-cont {
     margin-top: 48px;
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.30);
     border: solid 1px rgb(31, 233, 223);
     padding: 12px;
 }
@@ -16,7 +16,7 @@
 .backlog-file {
     height: 80px;
     width: 1400px;
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.55);
     border: solid 1px rgb(31, 233, 223);
     margin: 12px;
     display: flex;

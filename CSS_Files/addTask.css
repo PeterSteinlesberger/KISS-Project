@@ -5,16 +5,16 @@ body span {
     margin-bottom: 8px;
 }
 
-.main-div {
+.add-task-main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 150px;
 }
 
 
 .form-cont {
     width: 950px;
-    margin-top: -80px;
     display: flex;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.35);
