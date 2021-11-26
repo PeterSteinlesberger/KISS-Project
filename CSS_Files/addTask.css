@@ -26,7 +26,6 @@ body span {
     flex-direction: column;
     align-items: start;
     padding: 35px;
-
 }
 
 .right-container {
@@ -34,7 +33,6 @@ body span {
     flex-direction: column;
     align-items: start;
     padding: 35px;
-
 }
 
 .input-field {
@@ -66,7 +64,7 @@ body span {
 .button {
     width: 400px;
     height: 38px;
-    margin-top: 116px;
+    margin-top: 72px;
     background-color: rgba(31, 233, 223, 0.55);
     color: whitesmoke;
     border: solid 1px rgb(31, 233, 223);
@@ -78,4 +76,24 @@ body span {
 .button:hover {
     background-color: rgb(1, 251, 176);
     color: rgb(22, 22, 22); 
+}
+
+.personal-img {
+    border-radius: 50%;
+    border: solid 1px rgb(31, 233, 223);
+    box-sizing: border-box;
+    object-fit: cover;
+    object-position: 50% 0%;
+    width: 80px;
+    height: 91px;
+}
+
+.creator-cont {
+    display: flex;
+    align-items: center;
+}
+
+.creator-select {
+    width: 288px;
+    margin-left: 35px;
 }

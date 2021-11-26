@@ -14,7 +14,7 @@
 }
 
 .category-cont {
-	width: 220px;
+	width: 350px;
 	height: 400px;
 	background-color: rgba(0, 0, 0, 0.55);
     border: solid 1px rgb(31, 233, 223);
@@ -24,10 +24,11 @@
 }
 
 .todo {
-width: 170px;
+width: 320px;
 height: 70px;
 padding: 3px 13px;
 border: solid 1px rgb(31, 233, 223);
 background-color: rgba(31, 233, 223, 0.55);
 color: whitesmoke;
+box-sizing: border-box;
 }

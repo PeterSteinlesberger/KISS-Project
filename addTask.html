@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
     <title>addTask</title>
-<link rel="stylesheet" href="CSS_Files/style.css">
-<link rel="stylesheet" href="CSS_Files/header.css">
-<link rel="stylesheet" href="CSS_Files/footer.css">
-<link rel="stylesheet" href="CSS_Files/addTask.css">
-<script src="http://www.w3schools.com/lib/w3data.js"></script>
-<script src="JS_Files/script.js"></script>
-<script src="JS_Files/addTask.js"></script>
+    <link rel="stylesheet" href="CSS_Files/style.css">
+    <link rel="stylesheet" href="CSS_Files/header.css">
+    <link rel="stylesheet" href="CSS_Files/footer.css">
+    <link rel="stylesheet" href="CSS_Files/addTask.css">
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script src="JS_Files/script.js"></script>
+    <script src="JS_Files/addTask.js"></script>
 </head>
+
 <body onload="includeHTML()">
     <div w3-include-html="./Templates/header.html"></div>
     <div class="add-task-main">
@@ -24,8 +28,9 @@
             <div class="left-container">
                 <span>TITEL EINGEBEN</span>
                 <input id="inputTitle" class="input-field" type="text" placeholder="Titel eingeben...">
-              <span>BESCHREIBUNG</span>
-                <textarea id="description" class="description-field" type="text" placeholder="Optional" cols="40"></textarea>
+                <span>BESCHREIBUNG</span>
+                <textarea id="description" class="description-field" type="text" placeholder="Optional"
+                    cols="40"></textarea>
                 <span>DRINGLICHKEIT</span>
                 <select id="priortity" class="selector" name="" id="">
                     <option value="text">Normal</option>
@@ -37,14 +42,17 @@
                 <span>AUFGABE ERLEDIGEN BIS</span>
                 <input id="expirationDate" class="input-field" type="date">
                 <span>ERSTELLT VON</span>
-                <select id="creator" class="selector" name="">
-                    <option value="text">Peter</option>
-                    <option value="text">Anja</option>
-                    <option value="text">Markus</option>
-                </select>
+                <div class="creator-cont">
+                    <img class="personal-img" src="img/Peter.jpg">
+                    <select id="creator" class="selector creator-select" name="">
+                        <option value="text">Peter</option>
+                        <option value="text">Anja</option>
+                        <option value="text">Markus</option>
+                    </select>
+                </div>
                 <button class="button">AUFGABE SPEICHERN</button>
             </div>
         </form>
-</div>
-<div w3-include-html="./Templates/footer.html"></div>
+    </div>
+    <div w3-include-html="./Templates/footer.html"></div>
 </body>
