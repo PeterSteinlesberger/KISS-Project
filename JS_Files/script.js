@@ -1,3 +1,6 @@
+setURL('http://peter-steinlesberger.developerakademie.com/KISS-Project/smallest_backend_ever');
+
+
 function includeHTML() {
     var z, i, elmnt, file, xhttp;
     /*loop through a collection of all HTML elements:*/
@@ -25,3 +28,34 @@ function includeHTML() {
       }
     }
   };
+
+
+  let allTasks = [];
+
+  async function init() {
+    await downloadFromServer();
+    allTasks = JSON.parse(backend.getItem('allTasks')) || [];
+}
+
+async function createTask() {
+    let title = document.getElementById('inputTitle').value;
+    let description = document.getElementById('description').value;
+    let priortity = document.getElementById('priortity').value;
+    let expirationDate = document.getElementById('expirationDate').value;
+    let creator = document.getElementById('creator').value;
+   let createdAt = new Date().getTime();
+
+    let task = {
+        'title': title,
+        'description': description,
+        'priortity': priortity,
+        'expirationDate': expirationDate,
+        'creator': creator,
+      'createdAt': createdAt
+    };
+
+    allTasks.push(task);
+
+    let allTasksAsString = JSON.stringify(allTasks);
+    await backend.setItem('allTasks', allTasksAsString);
+}
