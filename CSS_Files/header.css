@@ -7,6 +7,11 @@ align-items: center;
 justify-content: space-between;
 }
 
+
+.logo-pointer {
+	width: 32px;
+}
+
 .workspaces-selector {
 	background-color: rgba(0, 0, 0, 0.45);
 	color: whitesmoke;
@@ -66,5 +71,3 @@ justify-content: space-between;
     width: 86px;
     height: 35px;
 }
-
-/* login */
