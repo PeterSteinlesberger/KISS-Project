@@ -1,14 +1,14 @@
 function chooseCreatorImg() {
- let creatorName = document.getElementById('creator').select();
+ let creatorName = document.getElementById('creator').value;
  let creatorImg = document.getElementById('creatorImg');
-if(creatorName == Peter) {
-    creatorImg.src = "img/Peter.jpg";
+if(creatorName == 'peter') {
+    creatorImg.src = './img/Peter.jpg';
 } else 
-if (creatorName == Anja) {
-        creatorImg.src = "img/Anja.jpg";
+if (creatorName == 'anja') {
+        creatorImg.src = './img/night.png';
 } else 
-if (creatorName == Markus) {
-        creatorImg.src = "img/Markus.jpg";
+if (creatorName == 'markus') {
+        creatorImg.src = './img/pointer.png';
 }
 }
 
