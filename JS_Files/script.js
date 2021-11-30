@@ -35,6 +35,7 @@ function includeHTML() {
   async function init() {
     await downloadFromServer();
     allTasks = JSON.parse(backend.getItem('allTasks')) || [];
+    showBacklog();
 }
 
 async function createTask() {
@@ -44,6 +45,7 @@ async function createTask() {
     let expirationDate = document.getElementById('expirationDate').value;
     let creator = document.getElementById('creator').value;
    let createdAt = new Date().getTime();
+   let creatorImg = document.getElementById('creatorImg').src;
 
     let task = {
         'title': title,
@@ -51,7 +53,8 @@ async function createTask() {
         'priortity': priortity,
         'expirationDate': expirationDate,
         'creator': creator,
-      'createdAt': createdAt
+      'createdAt': createdAt,
+      'creatorImg': creatorImg
     };
 
     allTasks.push(task);
