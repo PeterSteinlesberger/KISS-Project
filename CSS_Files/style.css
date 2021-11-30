@@ -12,3 +12,11 @@ body {
 .D-none {
     display: none;
 }
+
+/*footer section*/
+
+.data-cont-style {
+    margin-top: 65px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
