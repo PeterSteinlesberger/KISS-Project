@@ -36,14 +36,6 @@
 }
 
 
-.urgency-color {
-    width: 18px;
-    height: 80px;
-    margin-right: 35px;
-    background-color: aquamarine;
-}
-
-
 .urgency-color-invisible {
     width: 18px;
     height: 80px;
@@ -106,4 +98,27 @@ margin-top: 3px;
     height: 40px;
     margin-top: 20px;
     margin-right: 12px;
+}
+
+.Normal {
+    width: 18px;
+    height: 80px;
+    margin-right: 35px;
+background-color: rgb(251, 255, 0);
+}
+
+
+.Hoch {
+    width: 18px;
+    height: 80px;
+    margin-right: 35px;
+    background-color: rgb(255, 0, 106);
+}
+
+
+.Niedrig {
+    width: 18px;
+    height: 80px;
+    margin-right: 35px;
+    background-color: rgb(107, 221, 0);
 }
