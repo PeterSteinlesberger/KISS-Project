@@ -5,6 +5,7 @@ body span {
     margin-bottom: 8px;
 }
 
+
 .add-task-main {
     display: flex;
     justify-content: center;
@@ -21,6 +22,7 @@ body span {
     border: solid 1px rgb(31, 233, 223);
 }
 
+
 .left-container {
     display: flex;
     flex-direction: column;
@@ -28,12 +30,14 @@ body span {
     padding: 35px;
 }
 
+
 .right-container {
     display: flex;
     flex-direction: column;
     align-items: start;
     padding: 35px;
 }
+
 
 .input-field {
     width: 400px;
@@ -45,6 +49,7 @@ body span {
     box-sizing: border-box;
     font-size: 16px;
 }
+
 
 .description-field {
     width: 400px;
@@ -58,6 +63,7 @@ body span {
     box-sizing: border-box;
     font-size: 16px;
 }
+
 
 .selector {
     width: 400px;
@@ -83,10 +89,12 @@ body span {
     font-size: 16px;
 }
 
+
 .button:hover {
     background-color: rgba(31, 233, 223, 0.85);
     color: rgb(22, 22, 22); 
 }
+
 
 .personal-img {
     border-radius: 50%;
@@ -98,10 +106,12 @@ body span {
     height: 91px;
 }
 
+
 .creator-cont {
     display: flex;
     align-items: center;
 }
+
 
 .creator-select {
     width: 273px;

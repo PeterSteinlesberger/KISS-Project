@@ -62,3 +62,12 @@ async function createTask() {
     let allTasksAsString = JSON.stringify(allTasks);
     await backend.setItem('allTasks', allTasksAsString);
 }
+
+
+async function deleteTask(position) {
+  allTasks.splice(position, 1);
+  
+  let allTasksAsString = JSON.stringify(allTasks);
+  await backend.setItem('allTasks', allTasksAsString);
+  showBacklog();
+}

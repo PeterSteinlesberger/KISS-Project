@@ -2,7 +2,12 @@
     margin-top: 48px;
     background-color: rgba(0, 0, 0, 0.30);
     border: solid 1px rgb(31, 233, 223);
-    padding: 12px;
+    padding: 24px;
+    box-sizing: border-box;
+    min-height: 110px;
+    max-height: 70vh;
+    overflow-wrap: break-word;
+    overflow-y: auto;
 }
 
 .main-cont {
@@ -10,7 +15,6 @@
  justify-content: center;
  color: whitesmoke;
  font-size: 21px;
-
 }
 
 .backlog-file {
@@ -20,7 +24,6 @@
     border: solid 1px rgb(31, 233, 223);
     margin: 12px;
     display: flex;
-
 }
 
 
@@ -32,6 +35,7 @@
    height: 35px;
 }
 
+
 .urgency-color {
     width: 18px;
     height: 80px;
@@ -39,12 +43,13 @@
     background-color: aquamarine;
 }
 
+
 .urgency-color-invisible {
     width: 18px;
     height: 80px;
     margin-right: 35px;
-  
 }
+
 
 .creator-img {
     width: 74px;
@@ -54,6 +59,7 @@
 margin-top: 3px; 
 }
 
+
 .creator-img-invisible {
     width: 74px;
     height: 74px;
@@ -61,11 +67,11 @@ margin-top: 3px;
     margin-right: 35px;   
 }
 
+
 .creator {
     width: 280px;
     height: 80px;
     margin-right: 35px;
-  
 }
 
 
@@ -73,7 +79,6 @@ margin-top: 3px;
     width: 280px;
     height: 80px;
     margin-right: 35px;
-   
 }
 
 
@@ -82,15 +87,23 @@ margin-top: 3px;
     height: 65px;
     margin-right: 35px;
     overflow: auto;
-   
 }
 
 
 .finalday {
-    width: 180px;
+    width: 168px;
     height: 80px;
 }
 
+
 .padding-top {
     padding-top: 10px;
+}
+
+
+.deleteImg {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    margin-right: 12px;
 }
