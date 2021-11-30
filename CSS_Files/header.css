@@ -18,6 +18,9 @@ justify-content: space-between;
 	width: 150px;
     height: 32px;
 	border: solid 1px rgb(31, 233, 223);
+	padding-left: 17px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
 .logo {
@@ -65,6 +68,12 @@ justify-content: space-between;
     border: solid 1px rgb(31, 233, 223);
     background-color: rgba(31, 233, 223, 0.55);
     color: whitesmoke;
+	transition: all 225ms ease-in-out;
+}
+
+.header-link:hover {
+    background-color: rgba(31, 233, 223, 0.85);
+    color: rgb(22, 22, 22); 
 }
 
 .light-modus-img {

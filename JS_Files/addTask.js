@@ -12,8 +12,3 @@ if (creatorName == 'markus') {
 }
 }
 
-/* keine ahnung wie man das bild aktualisiert
-function showCreatorImg() {
-    let creatorImg = document.getElementById('creatorImg');
-}
-*/

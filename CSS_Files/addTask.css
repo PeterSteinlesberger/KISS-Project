@@ -41,6 +41,9 @@ body span {
     background-color: rgba(0, 0, 0, 0.75);
     color: whitesmoke;
     border: solid 1px rgb(31, 233, 223);
+    padding-left: 17px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
 .description-field {
@@ -50,6 +53,10 @@ body span {
     background-color: rgba(0, 0, 0, 0.75);
     color: whitesmoke;
     border: solid 1px rgb(31, 233, 223);
+    padding-left: 17px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
 .selector {
@@ -58,23 +65,26 @@ body span {
     background-color: rgba(0, 0, 0, 0.75);
     color: whitesmoke;
     border: solid 1px rgb(31, 233, 223);
+    padding-left: 17px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
 
 .button {
     width: 400px;
     height: 38px;
-    margin-top: 72px;
+    margin-top: 64px;
     background-color: rgba(31, 233, 223, 0.55);
     color: whitesmoke;
     border: solid 1px rgb(31, 233, 223);
     transition: background-color, 225ms ease-in-out;
-    transition: color, 225ms ease-in-out;
-    font-size: 18px;
+    transition: all 225ms ease-in-out;
+    font-size: 16px;
 }
 
 .button:hover {
-    background-color: rgb(1, 251, 176);
+    background-color: rgba(31, 233, 223, 0.85);
     color: rgb(22, 22, 22); 
 }
 
@@ -84,7 +94,7 @@ body span {
     box-sizing: border-box;
     object-fit: cover;
     object-position: 50% 0%;
-    width: 80px;
+    width: 91px;
     height: 91px;
 }
 
@@ -94,6 +104,6 @@ body span {
 }
 
 .creator-select {
-    width: 288px;
+    width: 273px;
     margin-left: 35px;
 }
