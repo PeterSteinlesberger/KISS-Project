@@ -15,32 +15,36 @@
         <div class="main-div">
             <div class="category-cont">
                 <div class="category-header">TODOS</div>
-                <div id="todo" class="todo">
-                    <div class="urgency"></div>
-                    <div>
-                    <div class="todo-cont ">
-                        <h3 id="todoTitle" class="todo-title">12345678901234567890</h3>
-                        <span id="finalDay" class="final-day">27.03.2021</span>
-                    </div>
-                    <div class="todo-cont">
-                        <div class="descritpion-cont">
-                            <span id="todo-description" class="todo-description"></span>
+                <div id="todoContainer" class="category-container">
+                    <div id="todo" class="todo">
+                        <div class="urgency"></div>
+                        <div>
+                            <div class="todo-cont ">
+                                <h3 id="todoTitle" class="todo-title">12345678901234567890</h3>
+                                <span id="finalDay" class="final-day">27.03.2021</span>
+                            </div>
+                            <div class="todo-cont">
+                                <div class="descritpion-cont">
+                                    <span id="todo-description" class="todo-description"></span>
+                                </div>
+                                <div class="trash-img"><img src=./img/behalter.png class="deleteImg"
+                                        onclick="deleteTask(${i})"></div>
+                            </div>
                         </div>
-                        <div class="trash-img"><img src=./img/behalter.png class="deleteImg" onclick="deleteTask(${i})"></div>
                     </div>
-                </div>
                 </div>
             </div>
             <div class="category-cont">
                 <div class="category-header">IN BEARBEITUNG</div>
-                <div class="todo"></div>
+                <div id="onWorkingContainer" class="category-container"></div>
             </div>
             <div class="category-cont">
                 <div class="category-header">ERLEDIGT</div>
-                <div class="todo"></div>
+                <div id="finishedContainer" class="category-container"></div>
             </div>
             <div class="category-cont">
                 <div class="category-header">UNERLEDIGT</div>
+                <div id="notFinishedContainer" class="category-container"></div>
             </div>
         </div>
     </div>
