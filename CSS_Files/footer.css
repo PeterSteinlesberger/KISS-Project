@@ -34,7 +34,7 @@
 }
 
 .footer-links p {
-    margin-right: 50px;
+    text-decoration: underline;
 }
 
 .margin {
@@ -44,16 +44,18 @@
 .img-cont {
     width: 25px;
     height: 25px;
-    margin-right: 20px;
 }
 
+
 .cont-right {
+    width: 140px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+
 .footer-links {
-    width: 900px;
+    width: 400px;
     color: white;
 }

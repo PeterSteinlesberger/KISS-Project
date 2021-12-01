@@ -25,10 +25,49 @@
 
 .todo {
 width: 320px;
-height: 70px;
+height: 120px;
 padding: 3px 13px;
 border: solid 1px rgb(31, 233, 223);
 background-color: rgba(31, 233, 223, 0.55);
 color: whitesmoke;
+box-sizing: border-box;
+}
+
+.todo-cont {
+	display: flex;
+	justify-content: space-between;
+}
+
+.todo-title {
+font-size: 18px;
+margin: 0px;
+}
+
+.descritpion-cont {
+	width: 265px;
+	height: 88px;
+	overflow-y: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.deleteImg {
+    width: 35px;
+    height: 28px;  
+	margin-right: -13px; 
+}
+
+.trash-img {
+	display: flex;
+	justify-content: end;
+	align-items: flex-end;
+}
+
+.todo-description {
+	width: 190px;
+	min-height: 100px;
+    max-height: 20vh;
+    overflow-wrap: break-word;
+    
 box-sizing: border-box;
 }
