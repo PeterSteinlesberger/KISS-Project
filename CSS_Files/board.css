@@ -1,8 +1,8 @@
 .main-div {
-  margin: 36px;
+	margin: 36px;
 	background-color: rgba(0, 0, 0, 0.30);
-    border: solid 1px rgb(31, 233, 223);
-    padding: 22px;
+	border: solid 1px rgb(31, 233, 223);
+	padding: 22px;
 	display: flex;
 	justify-content: space-around;
 }
@@ -17,20 +17,27 @@
 	width: 350px;
 	height: 400px;
 	background-color: rgba(0, 0, 0, 0.55);
-    border: solid 1px rgb(31, 233, 223);
+	border: solid 1px rgb(31, 233, 223);
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 }
 
 .todo {
-width: 320px;
-height: 120px;
-padding: 3px 13px;
-border: solid 1px rgb(31, 233, 223);
-background-color: rgba(31, 233, 223, 0.55);
-color: whitesmoke;
-box-sizing: border-box;
+	width: 320px;
+	height: 120px;
+	padding-right: 3px;
+	border: solid 1px rgb(31, 233, 223);
+	background-color: rgba(31, 233, 223, 0.55);
+	color: whitesmoke;
+	box-sizing: border-box;
+	display: flex;
+}
+
+.urgency {
+	width: 18px;
+	height: 100%;
+	margin-right: 7px;
 }
 
 .todo-cont {
@@ -39,8 +46,9 @@ box-sizing: border-box;
 }
 
 .todo-title {
-font-size: 18px;
-margin: 0px;
+	font-size: 18px;
+	margin: 0px;
+	margin-top: 6px;
 }
 
 .descritpion-cont {
@@ -52,9 +60,10 @@ margin: 0px;
 }
 
 .deleteImg {
-    width: 35px;
-    height: 28px;  
-	margin-right: -13px; 
+	width: 35px;
+	height: 28px;
+	margin-right: -5px;
+	margin-bottom: 3px;
 }
 
 .trash-img {
@@ -64,10 +73,26 @@ margin: 0px;
 }
 
 .todo-description {
-	width: 190px;
-	min-height: 100px;
-    max-height: 20vh;
-    overflow-wrap: break-word;
-    
-box-sizing: border-box;
+	width: 265px;
+	margin-top: 10px;
+	overflow-wrap: break-word;
+}
+
+.Normal {
+	background-color: rgb(251, 255, 0);
+}
+
+
+.Hoch {
+	background-color: rgb(255, 0, 106);
+}
+
+
+.Niedrig {
+	background-color: rgb(107, 221, 0);
+}
+
+.final-day {
+margin-top: 6px;
+margin-right: 4px;
 }
