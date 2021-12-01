@@ -36,6 +36,7 @@ function includeHTML() {
     await downloadFromServer();
     allTasks = JSON.parse(backend.getItem('allTasks')) || [];
     showBacklog();
+    showTodos();
 }
 
 async function createTask() {
@@ -70,4 +71,5 @@ async function deleteTask(position) {
   let allTasksAsString = JSON.stringify(allTasks);
   await backend.setItem('allTasks', allTasksAsString);
   showBacklog();
+  showTodos();
 }
