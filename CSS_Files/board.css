@@ -5,6 +5,7 @@
 	padding: 22px;
 	display: flex;
 	justify-content: space-around;
+	max-height: 70vh;
 }
 
 .category-header {
@@ -15,7 +16,6 @@
 
 .category-cont {
 	width: 350px;
-	height: 400px;
 	background-color: rgba(0, 0, 0, 0.55);
 	border: solid 1px rgb(31, 233, 223);
 	display: flex;
@@ -32,6 +32,7 @@
 	color: whitesmoke;
 	box-sizing: border-box;
 	display: flex;
+	margin: 4px;
 }
 
 .urgency {
@@ -100,10 +101,10 @@ margin-right: 4px;
 
 .category-container {
 	width: 350px;
-	height: 400px;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	overflow: auto;
 
 }
 

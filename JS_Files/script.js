@@ -32,12 +32,7 @@ function includeHTML() {
 
   let allTasks = [];
 
-  async function init() {
-    await downloadFromServer();
-    allTasks = JSON.parse(backend.getItem('allTasks')) || [];
-    showBacklog();
-    showTodos();
-}
+
 
 async function createTask() {
     let title = document.getElementById('inputTitle').value;
@@ -64,12 +59,3 @@ async function createTask() {
     await backend.setItem('allTasks', allTasksAsString);
 }
 
-
-async function deleteTask(position) {
-  allTasks.splice(position, 1);
-  
-  let allTasksAsString = JSON.stringify(allTasks);
-  await backend.setItem('allTasks', allTasksAsString);
-  showBacklog();
-  showTodos();
-}

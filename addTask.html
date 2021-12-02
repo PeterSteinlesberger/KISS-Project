@@ -17,18 +17,19 @@
     <link rel="stylesheet" href="CSS_Files/addTask.css">
     <script src="http://www.w3schools.com/lib/w3data.js"></script>
     <script src="JS_Files/mini_backend.js"></script>
-    <script src="JS_Files/script.js"></script>
     <script src="JS_Files/addTask.js"></script>
+    <script src="JS_Files/board.js"></script> 
+    <script src="JS_Files/script.js"></script>
 </head>
 
-<body onload="includeHTML(), init()">
+<body onload="includeHTML()">
     <div w3-include-html="./Templates/header.html"></div>
     <div class="add-task-main">
 
         <form class="form-cont" onsubmit="createTask(); return false ">
             <div class="left-container">
                 <span>TITEL EINGEBEN</span>
-                <input id="inputTitle" class="input-field" type="text" placeholder="Titel eingeben...">
+                <input id="inputTitle" class="input-field" type="text" maxlength="20" placeholder="Titel eingeben...">
                 <span>BESCHREIBUNG</span>
                 <textarea id="description" class="description-field" type="text" placeholder="Optional"
                     cols="40"></textarea>

@@ -1,3 +1,10 @@
+async function init() {
+    await downloadFromServer();
+    allTasks = JSON.parse(backend.getItem('allTasks')) || []; 
+   showBacklog();
+}  
+
+
 function showBacklog() {
     let backlogFile = document.getElementById('backlogFile');
     backlogFile.innerHTML = ``;
@@ -5,7 +12,6 @@ function showBacklog() {
     for (let i = 0; i < allTasks.length; i++) {
         let task = allTasks[i];
         let urgency = allTasks[i]['priortity'];
-
         backlogFile.innerHTML += `
     <div class="backlog-file">
     <div class="${urgency}"></div>
@@ -17,4 +23,12 @@ function showBacklog() {
     <img src=./img/behalter.png class="deleteImg" onclick="deleteTask(${i})">
     </div>`;
     }
+}
+
+async function deleteTask(position) {
+    allTasks.splice(position, 1);
+    
+    let allTasksAsString = JSON.stringify(allTasks);
+    await backend.setItem('allTasks', allTasksAsString);
+    showBacklog();
 }

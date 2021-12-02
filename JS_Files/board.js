@@ -1,12 +1,20 @@
+async function init() {
+    await downloadFromServer();
+    allTasks = JSON.parse(backend.getItem('allTasks')) || []; 
+   showTodos();
+}
+
+
+
 function showTodos() {
     let todoContainer = document.getElementById('todoContainer');
     todoContainer.innerHTML = '';
-
-
+  
+  
     for (let i = 0; i < allTasks.length; i++) {
         const task = allTasks[i];
         let urgencyColor = allTasks[i]['priortity'];
-
+  
         todoContainer.innerHTML += `
       <div id="todo" class="todo">
     <div class="urgency ${urgencyColor}"></div>
@@ -23,13 +31,17 @@ function showTodos() {
                     onclick="deleteTask(${i})"></div>
         </div>
     </div>
-</div>
+  </div>
     `;
     }
+  }
 
-
-
-
-
-
-}
+  async function deleteTask(position) {
+    allTasks.splice(position, 1);
+    
+    let allTasksAsString = JSON.stringify(allTasks);
+    await backend.setItem('allTasks', allTasksAsString);
+ 
+    showTodos();
+  }
+  
