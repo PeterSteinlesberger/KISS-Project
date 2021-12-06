@@ -2,60 +2,65 @@ setURL('http://peter-steinlesberger.developerakademie.com/KISS-Project/smallest_
 
 
 function includeHTML() {
-    var z, i, elmnt, file, xhttp;
-    /*loop through a collection of all HTML elements:*/
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) {
-      elmnt = z[i];
-      /*search for elements with a certain atrribute:*/
-      file = elmnt.getAttribute("w3-include-html");
-      if (file) {
-        /*make an HTTP request using the attribute value as the file name:*/
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4) {
-            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-            /*remove the attribute, and call this function once more:*/
-            elmnt.removeAttribute("w3-include-html");
-            includeHTML();
-          }
-        }      
-        xhttp.open("GET", file, true);
-        xhttp.send();
-        /*exit the function:*/
-        return;
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4) {
+          if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+          if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
       }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
     }
-  };
+  }
+};
 
 
-  let allTasks = [];
+let allTasks = [];
 
 
 
 async function createTask() {
-    let title = document.getElementById('inputTitle').value;
-    let description = document.getElementById('description').value;
-    let priortity = document.getElementById('priortity').value;
-    let expirationDate = document.getElementById('expirationDate').value;
-    let creator = document.getElementById('creator').value;
-   let createdAt = new Date().getTime();
-   let creatorImg = document.getElementById('creatorImg').src;
+  let title = document.getElementById('inputTitle').value;
+  let description = document.getElementById('description').value;
+  let priortity = document.getElementById('priortity').value;
+  let expirationDate = document.getElementById('expirationDate').value;
+  let creator = document.getElementById('creator').value;
+  let createdAt = new Date().getTime();
+  let creatorImg = document.getElementById('creatorImg').src;
 
-    let task = {
-        'title': title,
-        'description': description,
-        'priortity': priortity,
-        'expirationDate': expirationDate,
-        'creator': creator,
-      'createdAt': createdAt,
-      'creatorImg': creatorImg
-    };
+  let task = {
+    'taskId': createdAt,
+    'list': "todo",
+    'status': "inactive",
+    'title': title,
+    'description': description,
+    'priortity': priortity,
+    'expirationDate': expirationDate,
+    'creator': creator,
+    'createdAt': createdAt,
+    'creatorImg': creatorImg
+  };
 
-    allTasks.push(task);
+  allTasks.push(task);
 
-    let allTasksAsString = JSON.stringify(allTasks);
-    await backend.setItem('allTasks', allTasksAsString);
+  let allTasksAsString = JSON.stringify(allTasks);
+  await backend.setItem('allTasks', allTasksAsString);
 }
+
+
 
