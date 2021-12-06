@@ -9,11 +9,12 @@ async function init() {
 
 
 function showBacklog() {
+    filterInactiveTasks();
     let backlogFile = document.getElementById('backlogFile');
     backlogFile.innerHTML = ``;
-    for (let i = 0; i < allTasks.length; i++) {
-        let task = allTasks[i];
-        let urgency = allTasks[i]['priortity'];
+    for (let i = 0; i < inactiveTasks.length; i++) {
+        let task = inactiveTasks[i];
+        let urgency = inactiveTasks[i]['priortity'];
         backlogFile.innerHTML += `
     <div class="backlog-file" onclick="setStatus(${task['taskId']})">
     <div class="${urgency}"></div>
@@ -40,11 +41,13 @@ async function setStatus(taskId) {
     let task = allTasks.find( task => task.taskId === taskId);
     task.status = 'active';
     await backend.setItem('allTasks', JSON.stringify(allTasks));
+    showBacklog();
 }
 
 
-async function filterInactiveTasks() {
+ async function filterInactiveTasks() {
     let inactiveTask = allTasks.filter( task => task.status === 'inactive');
-  await inactiveTasks.push(inactiveTask);
+    inactiveTasks = [];
+ await inactiveTasks.push(inactiveTask);
 }
 
