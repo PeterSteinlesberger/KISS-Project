@@ -1,5 +1,5 @@
 
-let todos = []; // -- for drag and drop
+let todos = []; 
 let currentDraggedElement;  // -- for drag and drop
 
 
@@ -53,8 +53,7 @@ async function deleteTask(position) {
 
 /* Drag and Drop */
 
-/*
-function updateHtml() {
+function updateHMTL() {
 
     let todo = todos.filter(t => !t['list'] || t['list'] == 'toDo');
 

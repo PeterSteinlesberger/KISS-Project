@@ -14,7 +14,7 @@ function showBacklog() {
     backlogFile.innerHTML = ``;
     for (let i = 0; i < inactiveTasks.length; i++) {
         let task = inactiveTasks[i];
-        let urgency = inactiveTasks[i]['priortity'];
+        let urgency = task['priortity'];
         backlogFile.innerHTML += `
     <div class="backlog-file" onclick="setStatus(${task['taskId']})">
     <div class="${urgency}"></div>
@@ -45,9 +45,11 @@ async function setStatus(taskId) {
 }
 
 
- async function filterInactiveTasks() {
-    let inactiveTask = allTasks.filter( task => task.status === 'inactive');
-    inactiveTasks = [];
- await inactiveTasks.push(inactiveTask);
+function filterInactiveTasks() {
+let inactiveTasksDoubleArray = allTasks.filter( task => task.status === 'inactive');
+for (let i = 0; i < inactiveTasksDoubleArray[0].length; i++) {
+    let task = inactiveTasksDoubleArray[0][i];
+  inactiveTasks.push(task);
+}
 }
 
