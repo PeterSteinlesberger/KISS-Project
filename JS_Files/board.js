@@ -22,7 +22,7 @@ function showTodos() {
         let urgencyColor = allTasks[i]['priortity'];
 
         todoContainer.innerHTML += `
-      <div id="todo" class="todo">
+      <div id="${task.taskId}" class="todo" draggable="true" ondragstart="drag(event)">
     <div class="urgency ${urgencyColor}"></div>
     <div>
         <div class="todo-cont ">
@@ -53,6 +53,11 @@ async function deleteTask(position) {
 
 /* Drag and Drop */
 
+function allowDrop(ev) {
+    ev.preventDefault();
+  }
+
+/*
 function updateHMTL() {
 
     let todo = todos.filter(t => !t['list'] || t['list'] == 'toDo');
@@ -105,9 +110,6 @@ function startDragging(createdAt) {
     currentDraggedElement = createdAt; //!!
 }
 
-function allowDrop(ev) { //!!!
-    ev.preventDefault();
-}
 
 async function moveto(list) {
     const task = todos.find(t => t.createdAt === currentDraggedElement);

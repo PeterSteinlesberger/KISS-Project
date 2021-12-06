@@ -17,19 +17,19 @@
         <div class="main-div">
             <div class="category-cont">
                 <div class="category-header">TODOS</div>
-                <div id="todoContainer" class="category-container"></div>
+                <div id="todo" class="category-container" ondrop="drop(event)"></div>
             </div>
             <div class="category-cont">
                 <div class="category-header">IN BEARBEITUNG</div>
-                <div id="onWorkingContainer" class="category-container"></div>
+                <div id="inProgress" class="category-container" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
             </div>
             <div class="category-cont">
                 <div class="category-header">ERLEDIGT</div>
-                <div id="finishedContainer" class="category-container"></div>
+                <div id="done" class="category-container" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
             </div>
             <div class="category-cont">
                 <div class="category-header">UNERLEDIGT</div>
-                <div id="notFinishedContainer" class="category-container"></div>
+                <div id="notDone" class="category-container" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
             </div>
         </div>
     </div>
