@@ -1,4 +1,4 @@
-
+let allTasks = [];
 let activeTasks = [];
 let currentDraggedElement = 0;  // -- for drag&drop
 
@@ -6,46 +6,16 @@ let currentDraggedElement = 0;  // -- for drag&drop
 async function init() {
     await downloadFromServer();
     allTasks = JSON.parse(backend.getItem('allTasks')) || [];
-    showTodos();
+    updateBoardHTML();
 }
 
-
-function showTodos() {
-    filterActiveTasks();
-    let todoContainer = document.getElementById('todo');
-    todoContainer.innerHTML = '';
-
-    for (let i = 0; i < activeTasks.length; i++) {
-        const task = activeTasks[i];
-        let urgencyColor = activeTasks[i]['priortity'];
-
-        todoContainer.innerHTML += `
-      <div id="${task.taskId}" class="todo" draggable="true" ondragstart="drag(${task.taskId})">
-    <div class="urgency ${urgencyColor}"></div>
-    <div>
-        <div class="todo-cont ">
-            <h3 class="todo-title">${task['title']}</h3>
-            <span class="final-day">${task['expirationDate']}</span>
-        </div>
-        <div class="todo-cont">
-            <div class="descritpion-cont">
-                <span class="todo-description">${task['description']}</span>
-            </div>
-            <div class="trash-img"><img src=./img/behalter.png class="deleteImg"
-                    onclick="deleteTask(${i})"></div>
-        </div>
-    </div>
-  </div>
-    `;
-    }
-}
 
 async function deleteTask(position) {
     allTasks.splice(position, 1);
 
     let allTasksAsString = JSON.stringify(allTasks);
     await backend.setItem('allTasks', allTasksAsString);
-    showTodos();
+    updateBoardHTML();
 }
 
 /* Drag and Drop */
@@ -72,7 +42,18 @@ async function drop(listName) {
     showTodos();
 }
 
-/* Board - updateHTML */
+
+
+/* update Board HTML */
+
+
+function updateBoardHTML() {
+    filterActiveTasks();
+    showTodoList();
+    showInProgressList();
+    showDoneList();
+    showNotDoneList();
+}
 
 
 function showTodoList() {

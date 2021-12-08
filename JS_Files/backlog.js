@@ -1,5 +1,5 @@
 let inactiveTasks = [];
-
+let allTasks = [];
 
 async function init() {
     await downloadFromServer();
