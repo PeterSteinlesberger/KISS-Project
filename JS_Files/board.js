@@ -1,13 +1,11 @@
 
-let activeTasks = []; 
+let activeTasks = [];
 let currentDraggedElement = 0;  // -- for drag&drop
 
 
 async function init() {
     await downloadFromServer();
     allTasks = JSON.parse(backend.getItem('allTasks')) || [];
-
- //   updateHtml();  -- for drag and drop
     showTodos();
 }
 
@@ -20,7 +18,7 @@ function showTodos() {
 
     for (let i = 0; i < activeTasks.length; i++) {
         const task = activeTasks[i];
-        let urgencyColor = activeTasks[i]['priortity']; 
+        let urgencyColor = activeTasks[i]['priortity'];
 
         todoContainer.innerHTML += `
       <div id="${task.taskId}" class="todo" draggable="true" ondragstart="drag(${task.taskId})">
@@ -48,7 +46,6 @@ async function deleteTask(position) {
 
     let allTasksAsString = JSON.stringify(allTasks);
     await backend.setItem('allTasks', allTasksAsString);
-
     showTodos();
 }
 
@@ -56,11 +53,11 @@ async function deleteTask(position) {
 
 function allowDrop(ev) {
     ev.preventDefault();
-  }
+}
 
 
 function filterActiveTasks() {
-    activeTasks = allTasks.filter( task => task.status === 'active');
+    activeTasks = allTasks.filter(task => task.status === 'active');
 }
 
 
@@ -69,8 +66,11 @@ function drag(taskID) {
 }
 
 
-function drop() {
-    
+async function drop(listName) {
+    let taskToMove = activeTasks.find(task => task.taskId === currentDraggedElement);
+taskToMove.list = listName;
+await backend.setItem('allTasks', JSON.stringify(allTasks));
+showTodos();
 }
 /*
 function updateHMTL() {
