@@ -46,10 +46,6 @@ async function setStatus(taskId) {
 
 
 function filterInactiveTasks() {
-let inactiveTasksDoubleArray = allTasks.filter( task => task.status === 'inactive');
-for (let i = 0; i < inactiveTasksDoubleArray[0].length; i++) {
-    let task = inactiveTasksDoubleArray[0][i];
-  inactiveTasks.push(task);
-}
+    inactiveTasks = allTasks.filter( task => task.status === 'inactive');
 }
 

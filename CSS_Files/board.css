@@ -100,6 +100,8 @@ margin-right: 4px;
 
 
 .category-container {
+	min-height: 140px;
+    max-height: 600px;
 	width: 350px;
 	display: flex;
 	align-items: center;

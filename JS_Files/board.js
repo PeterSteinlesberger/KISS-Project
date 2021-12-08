@@ -1,6 +1,6 @@
 
-let todos = []; 
-let currentDraggedElement;  // -- for drag and drop
+let activeTasks = []; 
+let currentDraggedElement = 0;  // -- for drag&drop
 
 
 async function init() {
@@ -13,16 +13,17 @@ async function init() {
 
 
 function showTodos() {
-    let todoContainer = document.getElementById('todoContainer');
+    filterActiveTasks();
+    let todoContainer = document.getElementById('todo');
     todoContainer.innerHTML = '';
 
 
-    for (let i = 0; i < allTasks.length; i++) {
-        const task = allTasks[i];
-        let urgencyColor = allTasks[i]['priortity'];
+    for (let i = 0; i < activeTasks.length; i++) {
+        const task = activeTasks[i];
+        let urgencyColor = activeTasks[i]['priortity']; 
 
         todoContainer.innerHTML += `
-      <div id="${task.taskId}" class="todo" draggable="true" ondragstart="drag(event)">
+      <div id="${task.taskId}" class="todo" draggable="true" ondragstart="drag(${task.taskId})">
     <div class="urgency ${urgencyColor}"></div>
     <div>
         <div class="todo-cont ">
@@ -57,6 +58,20 @@ function allowDrop(ev) {
     ev.preventDefault();
   }
 
+
+function filterActiveTasks() {
+    activeTasks = allTasks.filter( task => task.status === 'active');
+}
+
+
+function drag(taskID) {
+    currentDraggedElement = taskID;
+}
+
+
+function drop() {
+    
+}
 /*
 function updateHMTL() {
 
