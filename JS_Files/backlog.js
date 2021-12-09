@@ -1,9 +1,8 @@
 let inactiveTasks = [];
-let allTasks = [];
 
-async function init() {
-    await downloadFromServer();
-    allTasks = JSON.parse(backend.getItem('allTasks')) || []; 
+
+function init() {
+   downloadData();
    showBacklog();
 }  
 
@@ -23,16 +22,14 @@ function showBacklog() {
     <div class="title padding-top" id="title">${task['title']}</div>
     <span class="description padding-top" id="description">${task['description']}</span>
     <div class="finalday padding-top" id="finishDate">${task['expirationDate']}</div>
-    <img src=./img/behalter.png class="deleteImg" onclick="deleteTask(${i})">
+    <img src=./img/behalter.png class="deleteImg" onclick="deleteBacklogTask(${i})">
     </div>`;
     }
 }
 
 
-async function deleteTask(position) {
-    allTasks.splice(position, 1);
-    let allTasksAsString = JSON.stringify(allTasks);
-    await backend.setItem('allTasks', allTasksAsString);
+function deleteBacklogTask(position) {
+deleteTask(position);
     showBacklog();
 }
 

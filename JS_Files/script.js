@@ -1,5 +1,6 @@
 setURL('http://peter-steinlesberger.developerakademie.com/KISS-Project/smallest_backend_ever');
 
+ let allTasks = [];
 
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
@@ -30,7 +31,17 @@ function includeHTML() {
 };
 
 
+async function  downloadData() {
+  await downloadFromServer();
+allTasks = JSON.parse(backend.getItem('allTasks')) || []; 
+}
 
+
+async function deleteTask(position) {
+  allTasks.splice(position, 1);
+  let allTasksAsString = JSON.stringify(allTasks);
+  await backend.setItem('allTasks', allTasksAsString);
+}
 
 
 

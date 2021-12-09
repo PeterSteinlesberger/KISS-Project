@@ -1,5 +1,3 @@
-let allTasks = [];
-
 
 
 async function createTask() {
@@ -29,6 +27,7 @@ async function createTask() {
   let allTasksAsString = JSON.stringify(allTasks);
   await backend.setItem('allTasks', allTasksAsString);
 }
+
 
 function chooseCreatorImg() {
  let creatorName = document.getElementById('creator').value;

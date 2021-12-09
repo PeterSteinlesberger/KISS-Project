@@ -1,20 +1,16 @@
-let allTasks = [];
+
 let activeTasks = [];
 let currentDraggedElement = 0;  // -- for drag&drop
 
 
-async function init() {
-    await downloadFromServer();
-    allTasks = JSON.parse(backend.getItem('allTasks')) || [];
+function init() {
+  downloadData();
     updateBoardHTML();
 }
 
 
-async function deleteTask(position) {
-    allTasks.splice(position, 1);
-
-    let allTasksAsString = JSON.stringify(allTasks);
-    await backend.setItem('allTasks', allTasksAsString);
+function deleteBoardTask(position) {
+    deleteTask(position);
     updateBoardHTML();
 }
 
@@ -78,7 +74,7 @@ function showTodoList() {
                 <span class="todo-description">${task['description']}</span>
             </div>
             <div class="trash-img"><img src=./img/behalter.png class="deleteImg"
-                    onclick="deleteTask(${i})"></div>
+                    onclick="deleteBoardTask(${i})"></div>
         </div>
     </div>
   </div>
@@ -110,7 +106,7 @@ function showInProgressList() {
                 <span class="todo-description">${task['description']}</span>
             </div>
             <div class="trash-img"><img src=./img/behalter.png class="deleteImg"
-                    onclick="deleteTask(${i})"></div>
+                    onclick="deleteBoardTask(${i})"></div>
         </div>
     </div>
   </div>
@@ -141,7 +137,7 @@ function showDoneList() {
                 <span class="todo-description">${task['description']}</span>
             </div>
             <div class="trash-img"><img src=./img/behalter.png class="deleteImg"
-                    onclick="deleteTask(${i})"></div>
+                    onclick="deleteBoardTask(${i})"></div>
         </div>
     </div>
   </div>
@@ -172,7 +168,7 @@ function showNotDoneList() {
                 <span class="todo-description">${task['description']}</span>
             </div>
             <div class="trash-img"><img src=./img/behalter.png class="deleteImg"
-                    onclick="deleteTask(${i})"></div>
+                    onclick="deleteBoardTask(${i})"></div>
         </div>
     </div>
   </div>
