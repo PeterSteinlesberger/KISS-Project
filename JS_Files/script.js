@@ -32,7 +32,7 @@ function includeHTML() {
 
 
 async function  downloadData() {
-  await downloadFromServer();
+   await downloadFromServer();
 allTasks = JSON.parse(backend.getItem('allTasks')) || []; 
 }
 

@@ -2,7 +2,8 @@ let inactiveTasks = [];
 
 
 function init() {
-   downloadData();
+  downloadData();
+  filterInactiveTasks();
    showBacklog();
 }  
 
@@ -42,7 +43,7 @@ async function setStatus(taskId) {
 }
 
 
-function filterInactiveTasks() {
-    inactiveTasks = allTasks.filter( task => task.status === 'inactive');
+ function filterInactiveTasks() {
+   inactiveTasks = allTasks.filter( task => task.status === 'inactive');
 }
 
