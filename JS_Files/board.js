@@ -36,7 +36,7 @@ async function drop(listName) {
     let taskToMove = activeTasks.find(task => task.taskId === currentDraggedElement);
     taskToMove.list = listName;
     await backend.setItem('allTasks', JSON.stringify(allTasks));
-    showTodos();
+    updateBoardHTML();
 }
 
 
