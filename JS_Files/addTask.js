@@ -1,3 +1,8 @@
+ async function initAddTask() {
+  includeHTML();
+ await downloadData()
+}
+
 
 
 async function createTask() {

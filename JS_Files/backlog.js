@@ -1,11 +1,11 @@
 let inactiveTasks = [];
 
 
-function init() {
-  downloadData();
-  filterInactiveTasks();
-   showBacklog();
-}  
+async function initBacklog() {
+    includeHTML();
+    await downloadData();
+    showBacklog();
+}
 
 
 function showBacklog() {
@@ -29,21 +29,21 @@ function showBacklog() {
 }
 
 
-function deleteBacklogTask(position) {
-deleteTask(position);
+async function deleteBacklogTask(position) {
+ await deleteTask(position);
     showBacklog();
 }
 
 
 async function setStatus(taskId) {
-    let task = allTasks.find( task => task.taskId === taskId);
+    let task = allTasks.find(task => task.taskId === taskId);
     task.status = 'active';
     await backend.setItem('allTasks', JSON.stringify(allTasks));
     showBacklog();
 }
 
 
- function filterInactiveTasks() {
-   inactiveTasks = allTasks.filter( task => task.status === 'inactive');
+function filterInactiveTasks() {
+    inactiveTasks = allTasks.filter(task => task.status === 'inactive');
 }
 
