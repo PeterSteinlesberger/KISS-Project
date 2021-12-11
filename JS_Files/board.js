@@ -3,8 +3,9 @@ let activeTasks = [];
 let currentDraggedElement = 0;  // -- for drag&drop
 
 
-function init() {
-  downloadData();
+async function initBoard() {
+    includeHTML();
+  await downloadData();
     updateBoardHTML();
 }
 
