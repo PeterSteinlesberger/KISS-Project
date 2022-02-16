@@ -24,36 +24,41 @@
 <body onload="initAddTask()">
     <div w3-include-html="./Templates/header.html"></div>
     <div class="add-task-main">
-
-        <form class="form-cont" onsubmit="createTask(); return false ">
-            <div class="left-container">
-                <span>TITEL EINGEBEN</span>
-                <input id="inputTitle" class="input-field" type="text" maxlength="20" placeholder="Titel eingeben...">
-                <span>BESCHREIBUNG</span>
-                <textarea id="description" class="description-field" type="text" placeholder="Optional"
-                    cols="40"></textarea>
-                <span>DRINGLICHKEIT</span>
-                <select id="priortity" class="selector">
-                    <option>Niedrig</option>
-                    <option>Normal</option>
-                    <option>Hoch</option>
-                </select>
-            </div>
-            <div class="right-container">
-                <span>AUFGABE ERLEDIGEN BIS</span>
-                <input id="expirationDate" class="input-field" type="date">
-                <span>ERSTELLT VON</span>
-                <div class="creator-cont">
-                    <img id="creatorImg" class="personal-img" src="img/Logo/dark-removebg-preview.png">
-                    <select id="creator" class="selector creator-select" onchange="chooseCreatorImg()">
-                        <option value="peter">Peter</option>
-                        <option value="anja">Anja</option>
-                        <option value="markus">Markus</option>
+         <div id="confirmationContainer" class="confirmation-cont D-none"> 
+             <div  class="confirmation-inner-cont" onclick="visibleInfoContainer()">AUFGABE WURDE GEPEICHERT
+             <br><br><br>(für neue Aufgabe hier klicken)</div> 
+         </div>
+            <form class="form-cont" onsubmit="createTask(); return false ">
+            
+                <div class="left-container">
+                    <span>TITEL EINGEBEN</span>
+                    <input id="inputTitle" class="input-field" type="text" maxlength="20"
+                        placeholder="Titel eingeben...">
+                    <span>BESCHREIBUNG</span>
+                    <textarea id="description" class="description-field" type="text" placeholder="Optional"
+                        cols="40"></textarea>
+                    <span>DRINGLICHKEIT</span>
+                    <select id="priortity" class="selector">
+                        <option>Niedrig</option>
+                        <option>Normal</option>
+                        <option>Hoch</option>
                     </select>
                 </div>
-                <button class="button">AUFGABE SPEICHERN</button>
-            </div>
-        </form>
+                <div class="right-container">
+                    <span>AUFGABE ERLEDIGEN BIS</span>
+                    <input id="expirationDate" class="input-field" type="date">
+                    <span>ERSTELLT VON</span>
+                    <div class="creator-cont">
+                        <img id="creatorImg" class="personal-img" src="img/Logo/dark-removebg-preview.png">
+                        <select id="creator" class="selector creator-select" onchange="chooseCreatorImg()">
+                            <option value="peter">Peter</option>
+                            <option value="anja">Anja</option>
+                            <option value="markus">Markus</option>
+                        </select>
+                    </div>
+                    <button class="button" onclick="showInfoContainer()">AUFGABE SPEICHERN</button>
+                </div>
+            </form>
     </div>
     <div w3-include-html="./Templates/footer.html"></div>
 </body>
