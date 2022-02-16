@@ -1,0 +1,24 @@
+.main-div {
+	margin: 140px 260px 200px 260px;
+	background-color: rgba(0, 0, 0, 0.30);
+	border: solid 1px rgb(31, 233, 223);
+	padding: 22px;
+	display: flex; 
+    height: 30vh;   
+}
+
+.landingpage-container {
+    height: 280px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-top: -100px;
+    color: white;
+    background-color: aquamarine;
+}
+
+.img-btn {
+    margin-top: 120px;
+}
