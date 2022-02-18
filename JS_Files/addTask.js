@@ -44,7 +44,7 @@ if (creatorName == 'anja') {
         creatorImg.src = './img/creators/Anja.png';
 } else 
 if (creatorName == 'markus') {
-        creatorImg.src = './img/creators/Markus.png';
+        creatorImg.src = './img/creators/Markus.PNG';
 }
 }
 
