@@ -34,6 +34,11 @@ function includeHTML() {
 async function  downloadData() {
    await downloadFromServer();
 allTasks = JSON.parse(backend.getItem('allTasks')) || []; 
+
+ activeLink();
+
+  loadBackground();
+
 }
 
 

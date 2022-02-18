@@ -20,12 +20,12 @@
     <script src="http://www.w3schools.com/lib/w3data.js"></script>
     <script src="JS_Files/mini_backend.js"></script>
     <script src="JS_Files/script.js"></script>
+    <script src="JS_Files/chooseBackground.js"></script>
    
 </head>
 
-<body>
+<body onload="includeHTML(), showSmallPictures(), downloadData()">
     <div w3-include-html="./Templates/header.html"></div>
-  
     <div class="container-design">
         <h1>Wähle dein Hintergrundbild</h1>
         <div class="container-buttons">
@@ -33,5 +33,5 @@
         </div>
     </div>
 
-    <div w3-include-html="./Templates/footer.html"></div>
+    <div w3-include-html="./Templates/footer.html"></div> 
 </body>
