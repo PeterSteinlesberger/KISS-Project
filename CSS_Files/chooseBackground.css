@@ -1,0 +1,45 @@
+.container-design {
+    background-color: rgba(14, 14, 15, 0.35);
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 20px;
+    left: 225px;
+    bottom: 20px;
+}
+
+.container-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#small-pictures {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.small-picture {
+    height: 90px !important;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.small-picture:hover {
+    border: 5px solid white;
+}
+
+.active-picture {
+    border: 5px solid white;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.active-bg {
+    border: 5px solid white;
+}
