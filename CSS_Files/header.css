@@ -44,23 +44,13 @@ justify-content: space-between;
 	margin-right: 20px;
 }
 
+.right-cont {
+	margin-left: 160px;
+}
+
 .search-Button {
 	width: 27px;
     margin-left: 8px;
-}
-
-.input-search {
-	background-color: rgba(0, 0, 0, 0.45);
-	color: whitesmoke;
-	width: 210px;
-    height: 32px;
-	border: solid 1px rgb(31, 233, 223);
-	box-sizing: border-box;
-}
- 
-.search-cont {
-	display: flex;
-	align-items: center;
 }
 
 .header-link {
