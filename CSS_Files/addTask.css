@@ -154,5 +154,14 @@ visibility: hidden;
 
 
 .confirmation-inner-cont:hover {
-    background-color: rgba(31, 233, 223, 0.55);
+    background-color: rgba(197, 197, 197, 0.55);
 } 
+
+ option {
+    background:whitesmoke;
+    color: black;
+}
+
+select.decorated option:hover {
+    box-shadow: 0 0 10px 100px #1882A8 inset;
+}

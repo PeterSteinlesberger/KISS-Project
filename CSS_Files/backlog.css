@@ -26,6 +26,9 @@
     display: flex;
 }
 
+.backlog-file:hover {
+    cursor: pointer;
+}
 
 
 .header-cont {
@@ -122,3 +125,11 @@ background-color: rgb(251, 255, 0);
     margin-right: 35px;
     background-color: rgb(107, 221, 0);
 }
+
+.delete-info {
+    display: none;
+  }
+  
+  .deleteImg:hover .delete-info {
+    display: block;
+  }
