@@ -35,9 +35,9 @@ async function  downloadData() {
    await downloadFromServer();
 allTasks = JSON.parse(backend.getItem('allTasks')) || []; 
 
- activeLink();
+ // activeLink();
 
-  loadBackground();
+//  loadBackground();
 
 }
 
