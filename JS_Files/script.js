@@ -45,4 +45,22 @@ async function deleteTask(position) {
   await backend.setItem('allTasks', allTasksAsString);
 }
 
+function bindGoogleTranslator() {
+  let script = document.createElement('script');
+  script.setAttribute('type', 'text/javascript');
+  script.setAttribute(
+    'src',
+    '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
+  );
+  document.body.insertAdjacentElement('beforeend', script);
+}
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    { pageLanguage: 'en', includedLanguages: 'en,es,de' },
+    'google_translate_element'
+  );
+}
+
+init();
 
