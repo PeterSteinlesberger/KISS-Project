@@ -2,7 +2,7 @@ setURL('http://peter-steinlesberger.developerakademie.com/KISS-Project/smallest_
 
  let allTasks = [];
 
-function includeHTML() {
+ function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /*loop through a collection of all HTML elements:*/
   z = document.getElementsByTagName("*");
@@ -28,7 +28,7 @@ function includeHTML() {
       return;
     }
   }
-};
+ }
 
 
 async function  downloadData() {
@@ -44,6 +44,5 @@ async function deleteTask(position) {
   let allTasksAsString = JSON.stringify(allTasks);
   await backend.setItem('allTasks', allTasksAsString);
 }
-
 
 
