@@ -24,6 +24,7 @@
     background-color: rgba(31, 233, 223, 0.55);
     color: whitesmoke;
     transition: all 225ms ease-in-out;
+    text-decoration: none;
 }
 
 .btn-img:hover {
