@@ -31,6 +31,11 @@
         cursor: pointer;
 }
 
-.smilie-img {
-    height: 80px;
+.index-text {
+    font-size: 24px;
+}
+
+.margin12 {
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
