@@ -1,7 +1,7 @@
 .main-div {
     height: 50vh;
     margin: 140px 300px 200px 300px;
-     background-color: rgba(0, 0, 0, 0.30);
+    background-color: rgba(0, 0, 0, 0.30);
     border: solid 1px rgb(31, 233, 223);
     padding: 22px;
     display: flex;
@@ -12,11 +12,12 @@
 
 .h1 {
     font-size: 50px;
+    margin-bottom: 0px;
+    margin-top: 10px;
 }
 
 .btn-img {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: -3px;
     font-size: 21px;
     padding: 3px 13px;
     border: solid 1px rgb(31, 233, 223);
@@ -26,9 +27,14 @@
 }
 
 .btn-img:hover {
-        background-color: rgba(31, 233, 223, 0.85);
-        color: rgb(22, 22, 22); 
-        cursor: pointer;
+    background-color: rgba(31, 233, 223, 0.85);
+    color: rgb(22, 22, 22);
+    cursor: pointer;
+}
+
+.start-btn {
+    width: 900px;
+    height: 50px;
 }
 
 .index-text {
@@ -38,4 +44,21 @@
 .margin12 {
     margin-top: 12px;
     margin-bottom: 12px;
+}
+
+.headline-container {
+    width: 900px;
+    height: 154px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 120px 12px 120px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: whitesmoke;
+    border: solid 1px rgb(31, 233, 223);
+    box-sizing: border-box;
+}
+
+.index-container {
+    justify-content: space-around;
 }

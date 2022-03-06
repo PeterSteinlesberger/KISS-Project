@@ -15,28 +15,36 @@
     <link rel="stylesheet" href="CSS_Files/style.css">
     <link rel="stylesheet" href="CSS_Files/header.css">
     <link rel="stylesheet" href="CSS_Files/footer.css">
-    <link rel="stylesheet" href="CSS_Files/index.css"> 
+    <link rel="stylesheet" href="CSS_Files/index.css">
     <script src="JS_Files/mini_backend.js"></script>
     <script src="JS_Files/script.js"></script>
     <script src="http://www.w3schools.com/lib/w3data.js"></script>
-   
+
 
     <title>KISS-Project</title>
 </head>
 
 <body onload="includeHTML()">
     <div w3-include-html="./Templates/header.html"></div>
-    <div class="main-div">
-        <h1 class="h1">Welcome to KISS-Project</h1>
-        <h2>Manage your daily live quick and simple...</h2>
-        <div>
-            <span class="index-text">You wanna choose another</span><button class="btn-img margin12" onclick="openBackgroundMenu()">BACKGROUNDIMAGE</button> <span class="index-text"> ?</span>
+    <div class="main-div index-container">
+        <div class="headline-container">
+            <h1 class="h1">Welcome to KISS-Project</h1>
+            <h2>Manage your daily live simple and quick!</h2>
         </div>
-       <div>
-        <span class="index-text">First time here? Do you need </span><button class="btn-img margin12" onclick="openHelpSection()">HELP</button> <span class="index-text"> ?</span>
-       </div>
-        <button class="btn-img margin12" onclick="start()">START</button>
+        <div class="headline-container">
+            <div>
+                <span class="index-text">You wanna choose another </span><button class="btn-img margin12"
+                    onclick="openBackgroundMenu()">BACKGROUNDIMAGE</button> <span class="index-text"> ?</span>
+            </div>
+            <div>
+                <span class="index-text">First time here? Do you need </span><button class="btn-img margin12"
+                    onclick="openHelpSection()">HELP</button> <span class="index-text"> ?</span>
+            </div>
+           
+        </div> 
+        <button class="btn-img start-btn" onclick="start()">START</button>
     </div>
     <div w3-include-html="./Templates/footer.html"></div>
 </body>
+
 </html>

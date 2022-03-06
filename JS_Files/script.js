@@ -107,5 +107,9 @@ function openBackgroundMenu() {
 }
 
 function openHelpSection() {
+
+}
+
+function start() {
   
 }
