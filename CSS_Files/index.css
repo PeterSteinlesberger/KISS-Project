@@ -36,6 +36,7 @@
 }
 
 .btn-img a:hover {
+
     color: rgb(22, 22, 22);
     cursor: pointer;
 }
@@ -74,9 +75,4 @@
 
 .index-container {
     justify-content: space-around;
-}
-
-.text-container {
-    display: flex;
-    align-items: center;
 }
