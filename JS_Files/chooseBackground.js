@@ -1,9 +1,6 @@
 let backgrounds = ['./img/backgrounds/abstract_plants.png', './img/backgrounds/cartoon_house.jpg',
-    './img/backgrounds/family_clouds.jpg', './img/backgrounds/family_sunset.jpg', 
-    './img/backgrounds/flowers.png', './img/backgrounds/green_leaves.png', 
-    './img/backgrounds/hands_on.jpg', './img/backgrounds/team-spirit.jpg', 
-    './img/backgrounds/together.jpg', './img/backgrounds/tropic_leaves.png', 
-    './img/backgrounds/wall.jpg'
+    './img/backgrounds/family_clouds.jpg', './img/backgrounds/flowers.png', './img/backgrounds/green_leaves.png', 
+    './img/backgrounds/hands_on.jpg', './img/backgrounds/team-spirit.jpg', './img/backgrounds/tropic_leaves.png', './img/backgrounds/wall.jpg'
 ];
 let currentBg = '';
 

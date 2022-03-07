@@ -16,34 +16,6 @@
     margin-top: 10px;
 }
 
-.btn-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: -3px;
-    font-size: 21px;
-    padding: 3px 13px;
-    border: solid 1px rgb(31, 233, 223);
-    background-color: rgba(31, 233, 223, 0.55);
-    transition: all 225ms ease-in-out;
-}
-
-.btn-img:hover {
-    background-color: rgba(31, 233, 223, 0.85);
-    color: rgb(22, 22, 22);
-    cursor: pointer;
-}
-
-.btn-img a:hover {
-    color: rgb(22, 22, 22);
-    cursor: pointer;
-}
-
-.btn-img a {
-    text-decoration: none;
-    color: whitesmoke;
-}
-
 .index-text {
     font-size: 20px;
 }
@@ -92,13 +64,17 @@
 }
 
 .index-btn:hover {
-    background-color: rgba(31, 233, 223, 0.85);
-    color: rgb(22, 22, 22);
+    background-color: rgba(0, 0, 0, 0.15);
+    color: rgb(31, 233, 223);
     cursor: pointer;
 }
 
 .start-btn {
     width: 900px;
     height: 50px;
-    font-size: 24px;
+    font-size: 28px;
+}
+
+.start-btn:hover {
+    background-color: rgba(0, 0, 0, 0.75);
 }
