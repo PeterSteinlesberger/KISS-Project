@@ -48,27 +48,6 @@
     align-items: center;
 }
 
-.index-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 24px;
-    font-size: 21px;
-    padding: 3px 13px;
-    border: solid 1px rgb(31, 233, 223);
-    background-color: rgba(31, 233, 223, 0.55);
-    box-sizing: border-box;
-    transition: all 225ms ease-in-out;
-}
-
-.index-btn:hover {
-    background-color: rgba(0, 0, 0, 0.15);
-    color: rgb(31, 233, 223);
-    cursor: pointer;
-}
-
 .start-btn {
     width: 900px;
     height: 50px;

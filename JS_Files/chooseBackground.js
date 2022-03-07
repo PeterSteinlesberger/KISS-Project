@@ -1,6 +1,8 @@
-let backgrounds = ['./img/backgrounds/abstract_plants.png', './img/backgrounds/cartoon_house.jpg',
-    './img/backgrounds/family_clouds.jpg', './img/backgrounds/flowers.png', './img/backgrounds/green_leaves.png', 
-    './img/backgrounds/hands_on.jpg', './img/backgrounds/team-spirit.jpg', './img/backgrounds/tropic_leaves.png', './img/backgrounds/wall.jpg'
+let backgrounds = ['./img/backgrounds/abstract_plants.png', './img/backgrounds/cartoon_house.jpg', './img/backgrounds/guitar.jpg',
+    './img/backgrounds/family_clouds.jpg', './img/backgrounds/flowers.png', './img/backgrounds/green_leaves.png', './img/backgrounds/mountain.jpg',
+    './img/backgrounds/hands_on.jpg', './img/backgrounds/team-spirit.jpg', './img/backgrounds/tropic_leaves.png', './img/backgrounds/wall.jpg',
+    './img/backgrounds/ozean.jpg', './img/backgrounds/snow.jpg', './img/backgrounds/winter_forest.jpg', './img/backgrounds/mountains.jpg',
+    './img/backgrounds/futuristic.jpg', './img/backgrounds/budapest.jpg'
 ];
 let currentBg = '';
 

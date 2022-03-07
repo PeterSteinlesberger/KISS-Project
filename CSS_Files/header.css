@@ -1,10 +1,13 @@
 .header {
-height: 60px;
-padding: 8px 30px;
-background-color:  rgba(0, 0, 0, 0.45);
-display: flex;
+	display: flex;
 align-items: center;
 justify-content: space-between;
+height: 76px;
+width: 100vw;
+padding-left: 180px;
+padding-right: 180px;
+background-color:  rgba(0, 0, 0, 0.45);
+box-sizing: border-box;
 }
 
 
