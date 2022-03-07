@@ -97,7 +97,7 @@ body span {
 
 .button:hover {
     background-color: rgba(31, 233, 223, 0.85);
-    color: rgb(22, 22, 22); 
+    color: rgb(22, 22, 22);
     font-weight: 600;
 }
 
@@ -126,42 +126,53 @@ body span {
 }
 
 .confirmation-cont {
-position: absolute;
+    position: absolute;
     width: 950px;
     height: 442px;
     background-color: rgba(0, 0, 0, 0.7);
     border: solid 1px rgb(31, 233, 223);
-  color: whitesmoke;
-display: flex;
-justify-content: center;
-align-items: center;
-visibility: hidden;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
 }
 
 .confirmation-inner-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 500px;
     height: 200px;
     background-color: rgba(31, 233, 223, 0.35);
     color: whitesmoke;
     border: solid 1px rgb(31, 233, 223);
-    transition: background-color, 225ms ease-in-out;
-    transition: all 225ms ease-in-out;
     font-size: 26px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    transition: all 225ms ease-in-out;
+    cursor: pointer;
 }
 
-
-.confirmation-inner-cont:hover {
-    background-color: rgba(197, 197, 197, 0.55);
-} 
-
- option {
-    background:whitesmoke;
+option {
+    background: whitesmoke;
     color: black;
 }
 
 select.decorated option:hover {
     box-shadow: 0 0 10px 100px #1882A8 inset;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.m4 {
+    margin: 4px;
+}
+
+.info-headline {
+    margin-top: 0;
+    margin-bottom: 50px;
 }

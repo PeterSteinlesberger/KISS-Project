@@ -21,7 +21,6 @@ body {
     align-items: center;
     color: whitesmoke;
     text-decoration: none;
-    width: 400px;
     height: 38px;
     margin-top: 64px;
     font-size: 20px;
@@ -29,13 +28,17 @@ body {
     border: solid 1px rgb(31, 233, 223);
     background-color: rgba(31, 233, 223, 0.55);
     box-sizing: border-box;
-    transition: all 225ms ease-in-out;
+    transition: all 125ms ease-in-out;
 }
 
 .index-btn:hover {
     background-color: rgba(0, 0, 0, 0.65);
     color: rgb(31, 233, 223);
     cursor: pointer;
+}
+
+.m6 {
+margin: 6px;
 }
 
 /*dataProtection and impressum section*/
