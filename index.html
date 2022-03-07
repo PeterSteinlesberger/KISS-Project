@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap"
         rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="img/Logo/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/Logo/favicon.ico">
 
     <link rel="stylesheet" href="CSS_Files/style.css">
     <link rel="stylesheet" href="CSS_Files/header.css">
@@ -22,6 +22,7 @@
 
     <title>KISS-Project</title>
 </head>
+
 <body onload="includeHTML()">
     <div w3-include-html="./Templates/header.html"></div>
     <div class="main-div index-container">
@@ -31,15 +32,19 @@
         </div>
         <div class="headline-container">
             <div class="text-container">
-                <span class="index-text">You wanna choose another &nbsp;</span><div class="btn-img margin12"><a 
-                href="chooseBackground.html">BACKGROUNDIMAGE</a></div> <span class="index-text">&nbsp; ?</span>
-            </div>
-            <div class="text-container">
-                <span class="index-text">First time here? Do you need &nbsp;</span><div class="btn-img margin12"><a href="help.html" >HELP</a></div> <span class="index-text">&nbsp; ?</span>
-            </div> 
-        </div> 
-       <a class="btn-img start-btn" href="addTask.html">START</a>
+                <span class="index-text">You wanna choose another &nbsp;</span>
+                <a class="index-btn margin12" href="chooseBackground.html">BACKGROUNDIMAGE</a>
+                <span class="index-text">&nbsp; ?</span>
+        </div>
+        <div class="text-container">
+            <span class="index-text">First time here? Do you need &nbsp;</span>
+            <a class="index-btn margin12" href="help.html">HELP</a>
+            <span class="index-text">&nbsp; ?</span>
+        </div>
+    </div>
+    <a class="index-btn start-btn" href="addTask.html">START</a>
     </div>
     <div w3-include-html="./Templates/footer.html"></div>
 </body>
+
 </html>
