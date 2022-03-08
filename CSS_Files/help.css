@@ -1,0 +1,13 @@
+.main-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 21px;
+    margin: 34px 180px 34px 180px;
+    padding: 24px;
+    background-color: rgba(0, 0, 0, 0.45);
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+}
