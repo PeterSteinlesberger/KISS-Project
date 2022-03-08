@@ -1,5 +1,4 @@
 .info-cont {
-    position: relative;
     margin-top: 48px;
     background-color: rgba(0, 0, 0, 0.30);
     border: solid 1px rgb(31, 233, 223);
@@ -18,19 +17,25 @@
     font-size: 21px;
 }
 
+.backlog-file-container {
+    display: flex;
+}
+
 .backlog-file {
+    position: relative;
     height: 80px;
-    width: 1400px;
+    width: 1340px;
     background-color: rgba(0, 0, 0, 0.55);
     border: solid 1px rgb(31, 233, 223);
+    border-right: none;
     margin: 12px;
+    margin-right: 0;
     display: flex;
 }
 
 .backlog-file:hover {
     cursor: pointer;
 }
-
 
 .header-cont {
     display: flex;
@@ -39,13 +44,11 @@
     height: 35px;
 }
 
-
 .urgency-color-invisible {
     width: 18px;
     height: 80px;
     margin-right: 35px;
 }
-
 
 .creator-img {
     width: 66px;
@@ -56,7 +59,6 @@
     border: solid 1px rgb(31, 233, 223);
 }
 
-
 .creator-img-invisible {
     width: 74px;
     height: 74px;
@@ -64,20 +66,15 @@
     margin-right: 35px;
 }
 
-
 .creator {
     width: 280px;
-    height: 80px;
     margin-right: 35px;
 }
-
 
 .title {
     width: 280px;
-    height: 80px;
     margin-right: 35px;
 }
-
 
 .description {
     width: 350px;
@@ -86,23 +83,33 @@
     overflow: auto;
 }
 
-
 .finalday {
     width: 168px;
-    height: 80px;
 }
-
 
 .padding-top {
     padding-top: 10px;
 }
 
-
 .deleteImg {
-    width: 40px;
-    height: 40px;
-    margin-top: 20px;
-    margin-right: 12px;
+    height: 50px;
+    width: 38px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.deleteImg:hover {
+    cursor: pointer;
+}
+
+.deleteImg-container {
+    width: 60px;
+    height: 80px;
+    margin: 12px;
+    margin-left: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    border: solid 1px rgb(31, 233, 223);
+    border-left: none;
 }
 
 .Normal {
@@ -112,14 +119,12 @@
     background-color: rgb(251, 255, 0);
 }
 
-
 .Hoch {
     width: 18px;
     height: 80px;
     margin-right: 35px;
     background-color: rgb(255, 0, 106);
 }
-
 
 .Niedrig {
     width: 18px;
@@ -128,22 +133,43 @@
     background-color: rgb(107, 221, 0);
 }
 
-.delete-info {
+.info-box {
+    position: absolute;
     display: none;
-  }
-      
-  .deleteImg:hover + .delete-info {
-      position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(31, 233, 223, 0.55);
+    color: whitesmoke;
+    border: solid 1px rgb(31, 233, 223);
+    font-size: 22px;
+    box-sizing: border-box;
+}
+
+.deleteImg-container:hover+.info-box {
     display: flex;
+}
+
+.add-info {
+    position: absolute;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 120px;
-    height: 40px;
-    top: 40px;
-    left: 1340px;
-    background-color: rgba(31, 233, 223, 0.35);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(31, 233, 223, 0.55);
     color: whitesmoke;
     border: solid 1px rgb(31, 233, 223);
-    font-size: 18px;
-  }
+    font-size: 22px;
+    box-sizing: border-box;
+}
+
+.backlog-file:hover>.add-info {
+    display: flex;
+}

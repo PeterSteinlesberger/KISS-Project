@@ -16,22 +16,27 @@ function showBacklog() {
         let task = inactiveTasks[i];
         let urgency = task['priortity'];
         backlogFile.innerHTML += `
-    <div class="backlog-file" onclick="setStatus(${task['taskId']})">
-    <div class="${urgency}"></div>
-    <img class="creator-img" src="${task['creatorImg']}" id="creatorImg">
-    <div class="creator padding-top" id="creator">${task['creator']}</div>
-    <div class="title padding-top" id="title">${task['title']}</div>
-    <span class="description padding-top" id="description">${task['description']}</span>
-    <div class="finalday padding-top" id="finishDate">${task['expirationDate']}</div>
-    <div> <img src=./img/behalter.png class="deleteImg" onclick="deleteBacklogTask(${i})">
-    <div class="delete-info">Delete Task</div></div>
-    </div>`;
+        <div class="backlog-file-container">
+        <div class="backlog-file" onclick="setStatus(${task['taskId']})">
+        <div class="${urgency}"></div>
+        <img class="creator-img" src="${task['creatorImg']}" id="creatorImg">
+        <div class="creator padding-top" id="creator">${task['creator']}</div>
+        <div class="title padding-top" id="title">${task['title']}</div>
+        <span class="description padding-top" id="description">${task['description']}</span>
+        <div class="finalday padding-top" id="finishDate">${task['expirationDate']}</div>
+        <div class="info-box">DELETE TASK</div>
+        <div class="add-info">ADD TASK TO BOARD</div>
+        </div> 
+        <div class="deleteImg-container">
+        <img src=./img/behalter.png class="deleteImg" onclick="deleteBacklogTask(${i})">
+        </div>
+        </div>`;
     }
 }
 
 
 async function deleteBacklogTask(position) {
- await deleteTask(position);
+    await deleteTask(position);
     showBacklog();
 }
 
@@ -48,3 +53,11 @@ function filterInactiveTasks() {
     inactiveTasks = allTasks.filter(task => task.status === 'inactive');
 }
 
+
+
+
+    // function hideAddTaskInfo() {
+    //     let deleteImg = document.getElementById('deleteImg');
+    
+    // }
+   
