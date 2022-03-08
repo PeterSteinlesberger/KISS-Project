@@ -1,24 +1,42 @@
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
 .header {
 	display: flex;
-align-items: center;
-justify-content: space-between;
-height: 76px;
-width: 100vw;
-padding-left: 180px;
-padding-right: 180px;
-background-color:  rgba(0, 0, 0, 0.45);
-box-sizing: border-box;
+	align-items: center;
+	justify-content: space-between;
+	height: 76px;
+	width: 100vw;
+	padding-left: 180px;
+	padding-right: 180px;
+	background-color: rgba(0, 0, 0, 0.45);
+	box-sizing: border-box;
 }
+
+.header-menu-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 50px;
+	width: 520px;
+	background-color: rgba(0, 0, 0, 0.45);
+}
+
 
 .workspaces-selector {
 	background-color: rgba(0, 0, 0, 0.45);
 	color: whitesmoke;
+	font-size: 16px;
 	width: 150px;
-    height: 32px;
+	height: 32px;
 	border: solid 1px rgb(31, 233, 223);
 	padding-left: 17px;
-    box-sizing: border-box;
-    font-size: 16px;
+	box-sizing: border-box;
+
 }
 
 .logo {
@@ -29,11 +47,7 @@ box-sizing: border-box;
 	font-size: 35px;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	color: whitesmoke;
-	/*  margin: 0px, 18px, 0px, 13px;  */
-	margin-top: 6px;
-	margin-right: 18px;
-	margin-bottom: 0;
-	margin-left: 0px;
+	margin: 6px 18px 0 0;
 }
 
 .left-cont {
@@ -42,38 +56,29 @@ box-sizing: border-box;
 	align-items: center;
 }
 
-.middle-cont {
-	margin-right: 20px;
-}
-
-.right-cont {
-	margin-left: 160px;
-}
-
 .search-Button {
 	width: 27px;
-    margin-left: 8px;
+	margin-left: 8px;
 }
 
 .header-link {
-	margin-left: 30px;
 	text-decoration: none;
 	font-size: 21px;
 	padding: 3px 13px;
-    /* border: solid 1px rgb(31, 233, 223); */
-    background-color: rgba(31, 233, 223, 0.55);
-    color: whitesmoke;
-	transition: all 225ms ease-in-out;
+	background-color: rgba(0, 0, 0, 0.25);
+	color: whitesmoke;
+	color: rgb(31, 233, 223);
+	transition: all 125ms ease-in-out;
 }
 
 .header-link:hover {
-    background-color: rgba(0, 0, 0, 0.35);
-    color: rgb(31, 233, 223);
+	background-color: rgba(31, 233, 223, 0.55);
+	color: whitesmoke;
 }
 
 .light-modus-img {
-    width: 86px;
-    height: 35px;
+	width: 86px;
+	height: 35px;
 }
 
 .high-letter {
@@ -95,6 +100,33 @@ box-sizing: border-box;
 .logo-name {
 	font-size: 14px;
 	color: rgb(31, 233, 223);
-margin-top: -15px;
-margin-left: 2px;
+	margin-top: -15px;
+	margin-left: 2px;
+}
+
+.triangle-top-right {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 200px 50px 0;
+	border-color: transparent rgba(0, 0, 0, 0.45);
+}
+
+.triangle-top-left {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 50px 200px;
+	border-color: transparent rgba(0, 0, 0, 0.45);
+}
+
+.menu-container {
+	display: flex;
+	justify-content: center;
+}
+
+.color {
+	color: whitesmoke;
 }
