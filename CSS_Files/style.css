@@ -21,18 +21,17 @@ body {
     align-items: center;
     color: whitesmoke;
     text-decoration: none;
-    height: 38px;
+    height: 28px;
     margin-top: 64px;
     font-size: 20px;
     padding: 3px 13px;
-   /* border: solid 1px rgb(31, 233, 223); */
     background-color: rgba(31, 233, 223, 0.55);
     box-sizing: border-box;
     transition: all 125ms ease-in-out;
 }
 
 .index-btn:hover {
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.45);
     color: rgb(31, 233, 223);
     cursor: pointer;
 }
