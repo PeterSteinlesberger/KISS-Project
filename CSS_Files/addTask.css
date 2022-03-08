@@ -25,6 +25,7 @@ body span {
     display: flex;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.35);
+    border: solid 1px rgb(31, 233, 223);
 }
 
 
