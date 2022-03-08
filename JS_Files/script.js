@@ -64,11 +64,11 @@ setURL('http://peter-steinlesberger.developerakademie.com/KISS-Project/smallest_
  }
 
 
-async function  downloadData() {
+async function downloadData() {
    await downloadFromServer();
 allTasks = JSON.parse(backend.getItem('allTasks')) || []; 
- activeLink();
- loadBackground();
+ // activeLink();
+// loadBackground();
 }
 
 
@@ -100,16 +100,3 @@ async function deleteTask(position) {
 // }
 
 init();
-
-
-function openBackgroundMenu() {
-    
-}
-
-function openHelpSection() {
-
-}
-
-function start() {
-  
-}

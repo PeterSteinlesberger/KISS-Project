@@ -23,7 +23,8 @@ function showBacklog() {
     <div class="title padding-top" id="title">${task['title']}</div>
     <span class="description padding-top" id="description">${task['description']}</span>
     <div class="finalday padding-top" id="finishDate">${task['expirationDate']}</div>
-    <img src=./img/behalter.png class="deleteImg" onclick="deleteBacklogTask(${i})">
+    <div> <img src=./img/behalter.png class="deleteImg" onclick="deleteBacklogTask(${i})">
+    <div class="delete-info">Delete Task</div></div>
     </div>`;
     }
 }

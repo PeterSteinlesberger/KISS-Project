@@ -1,6 +1,6 @@
  async function initAddTask() {
   includeHTML();
- await downloadData()
+ await downloadData();
 }
 
 
