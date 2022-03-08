@@ -25,7 +25,7 @@
     position: relative;
     height: 80px;
     width: 1340px;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0.35);
     border: solid 1px rgb(31, 233, 223);
     border-right: none;
     margin: 12px;
@@ -56,7 +56,6 @@
     border-radius: 50%;
     margin-right: 42px;
     margin-top: 7px;
-    border: solid 1px rgb(31, 233, 223);
 }
 
 .creator-img-invisible {
@@ -92,10 +91,8 @@
 }
 
 .deleteImg {
-    height: 50px;
-    width: 38px;
-    margin-top: 15px;
-    margin-left: 10px;
+    height: 40px;
+    width: 32px;
 }
 
 .deleteImg:hover {
@@ -103,11 +100,14 @@
 }
 
 .deleteImg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 60px;
     height: 80px;
     margin: 12px;
     margin-left: 0;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0.35);
     border: solid 1px rgb(31, 233, 223);
     border-left: none;
 }
@@ -133,7 +133,7 @@
     background-color: rgb(107, 221, 0);
 }
 
-.info-box {
+.delete-info {
     position: absolute;
     display: none;
     justify-content: center;
@@ -144,13 +144,9 @@
     left: 0;
     background-color: rgba(31, 233, 223, 0.55);
     color: whitesmoke;
-    border: solid 1px rgb(31, 233, 223);
+    border-right: solid 1px rgb(31, 233, 223);
     font-size: 22px;
     box-sizing: border-box;
-}
-
-.deleteImg-container:hover+.info-box {
-    display: flex;
 }
 
 .add-info {
@@ -159,17 +155,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: calc(100% - 18px) ;
     height: 100%;
     top: 0px;
-    left: 0px;
+    left: 18px;
     background-color: rgba(31, 233, 223, 0.55);
     color: whitesmoke;
-    border: solid 1px rgb(31, 233, 223);
+    border-right: solid 1px rgb(31, 233, 223);
     font-size: 22px;
     box-sizing: border-box;
 }
 
-.backlog-file:hover>.add-info {
-    display: flex;
+.deleteImg:hover>.delete-info {
+    display: flex !important;
 }
+
+.backlog-file:hover>.add-info {
+    display: flex !important;
+}
+
+/* .deleteImg:hover>.add-info {
+    display: flex !important;
+} */
+
+/* .backlog-file:hover>.delete-info {
+    display: flex !important;
+}    */

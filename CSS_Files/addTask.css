@@ -23,7 +23,6 @@ body span {
     display: flex;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.35);
-    border: solid 1px rgb(31, 233, 223);
 }
 
 
@@ -46,11 +45,9 @@ body span {
 .input-field {
     width: 400px;
     height: 38px;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.55);
     color: whitesmoke;
-    border: solid 1px rgb(31, 233, 223);
     padding-left: 17px;
-    box-sizing: border-box;
     font-size: 16px;
 
 }
@@ -60,12 +57,10 @@ body span {
     width: 400px;
     min-height: 85px;
     flex-wrap: wrap;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.55);
     color: whitesmoke;
-    border: solid 1px rgb(31, 233, 223);
     padding-left: 17px;
     padding-top: 5px;
-    box-sizing: border-box;
     font-size: 16px;
 }
 
@@ -73,11 +68,9 @@ body span {
 .selector {
     width: 400px;
     height: 38px;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.55);
     color: whitesmoke;
-    border: solid 1px rgb(31, 233, 223);
     padding-left: 17px;
-    box-sizing: border-box;
     font-size: 16px;
 }
 
@@ -85,19 +78,18 @@ body span {
 .button {
     width: 400px;
     height: 38px;
-    margin-top: 64px;
-    background-color: rgba(31, 233, 223, 0.55);
-    color: whitesmoke;
-    border: solid 1px rgb(31, 233, 223);
-    transition: background-color, 225ms ease-in-out;
-    transition: all 225ms ease-in-out;
+    margin-top: 64px; 
     font-size: 16px;
+    background-color: rgba(22, 22, 22, 0.55),;
+    color: whitesmoke;
+    transition: all 125ms ease-in-out;
+   
 }
 
 
 .button:hover {
     background-color: rgba(31, 233, 223, 0.85);
-    color: rgb(22, 22, 22);
+    color: whitesmoke;
     font-weight: 600;
 }
 
@@ -105,7 +97,6 @@ body span {
 
 .personal-img {
     border-radius: 50%;
-    border: solid 1px rgb(31, 233, 223);
     box-sizing: border-box;
     object-fit: cover;
     object-position: 50% 0%;
@@ -147,9 +138,8 @@ body span {
     height: 200px;
     background-color: rgba(31, 233, 223, 0.35);
     color: whitesmoke;
-    border: solid 1px rgb(31, 233, 223);
     font-size: 26px;
-    transition: all 225ms ease-in-out;
+    transition: all 125ms ease-in-out;
     cursor: pointer;
 }
 
@@ -158,9 +148,9 @@ option {
     color: black;
 }
 
-select.decorated option:hover {
+/* select.decorated option:hover {
     box-shadow: 0 0 10px 100px #1882A8 inset;
-}
+} */
 
 .info-container {
     display: flex;

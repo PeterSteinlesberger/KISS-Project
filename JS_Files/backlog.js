@@ -24,7 +24,7 @@ function showBacklog() {
         <div class="title padding-top" id="title">${task['title']}</div>
         <span class="description padding-top" id="description">${task['description']}</span>
         <div class="finalday padding-top" id="finishDate">${task['expirationDate']}</div>
-        <div class="info-box">DELETE TASK</div>
+        <div class="delete-info">DELETE TASK</div>
         <div class="add-info">ADD TASK TO BOARD</div>
         </div> 
         <div class="deleteImg-container">
@@ -53,11 +53,4 @@ function filterInactiveTasks() {
     inactiveTasks = allTasks.filter(task => task.status === 'inactive');
 }
 
-
-
-
-    // function hideAddTaskInfo() {
-    //     let deleteImg = document.getElementById('deleteImg');
-    
-    // }
    
