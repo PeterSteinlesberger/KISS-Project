@@ -43,7 +43,7 @@ header {
 
 .logo {
 	width: 39px;
-    margin-top: 14px;
+    margin-top: 12px;
     margin-right: 1px;
 }
 
@@ -51,13 +51,22 @@ header {
 	font-size: 35px;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	color: white;
-	margin: 6px 18px 0 0;
+	margin-right: 18px;
+}
+
+.logo-cont {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	height: 54px;
 }
 
 .left-cont {
-	width: 530px;
 	display: flex;
 	align-items: center;
+	width: 530px;
+	margin-top: -11px;
+	
 }
 
 .right-cont {
@@ -88,7 +97,7 @@ header {
 
 .high-letter {
 	color: white;
-	font-size: 36px;
+	font-size: 30px;
 	border-bottom: solid 2px rgba( 0, 114, 255, 1);
 }
 
