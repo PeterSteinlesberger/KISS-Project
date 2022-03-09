@@ -24,7 +24,7 @@
     position: relative;
     height: 80px;
     width: 1340px;
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.60);
     border: solid 1px rgb(0, 114, 255);
     border-right: none;
     margin: 12px;
@@ -122,32 +122,17 @@
     width: 18px;
     height: 80px;
     margin-right: 35px;
-    background-color: rgb(255, 0, 106);
+    background-color: rgb(255, 0, 64);
 }
 
 .Niedrig {
     width: 18px;
     height: 80px;
     margin-right: 35px;
-    background-color: rgb(107, 221, 0);
+    background-color: rgb(115, 238, 0);
 }
 
-.delete-info {
-    position: absolute;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.45);
-    color: rgb(0, 114, 255);
-    font-size: 22px;
-    box-sizing: border-box;
-}
-
-.add-info {
+.info-box {
     position: absolute;
     display: none;
     flex-direction: column;
@@ -162,19 +147,3 @@
     font-size: 22px;
     box-sizing: border-box;
 }
-
-.deleteImg:hover>.delete-info {
-    display: flex !important;
-}
-
-.backlog-file:hover>.add-info {
-    display: flex !important;
-}
-
-/* .deleteImg:hover>.add-info {
-    display: flex !important;
-} */
-
-/* .backlog-file:hover>.delete-info {
-    display: flex !important;
-}    */

@@ -6,7 +6,7 @@
     bottom: 0;
     width: 100vw;
     height: 76px;
-    color: whitesmoke;
+    color: white;
     padding-left: 180px;
     padding-right: 180px; 
     background-color: rgba(0, 0, 0, 0.25);
@@ -18,7 +18,7 @@ p {
 }
 
 .footer-cont a {
-    color: whitesmoke;
+    color: white;
     font-size: 18px;
   text-decoration: none; 
 }
