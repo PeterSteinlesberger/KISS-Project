@@ -1,7 +1,7 @@
 
 body {
     margin: 0px;
-    background-image: url('../img/backgrounds/tropic_leaves.png');
+    background-image: url('../img/backgrounds/cloud.jpg') !important ;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,20 +17,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: whitesmoke;
+    color: rgb(0, 114, 255);
     text-decoration: none;
     height: 28px;
     margin-top: 64px;
     font-size: 20px;
     padding: 3px 13px;
-    background-color: rgba(31, 233, 223, 0.55);
+    background-color: rgba(0, 0, 0, 0.55);
     box-sizing: border-box;
     transition: all 125ms ease-in-out;
 }
 
 .index-btn:hover {
     background-color: rgba(0, 0, 0, 0.45);
-    color: rgb(31, 233, 223);
+    color: white;
     cursor: pointer;
 }
 
