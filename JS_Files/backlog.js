@@ -28,7 +28,7 @@ function showBacklog() {
         <div class="add-info">ADD TASK TO BOARD</div>
         </div> 
         <div class="deleteImg-container">
-        <img src=./img/behalter.png class="deleteImg" onclick="deleteBacklogTask(${i})">
+        <img src=./img/trash_icon.png class="deleteImg" onclick="deleteBacklogTask(${i})">
         </div>
         </div>`;
     }

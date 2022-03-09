@@ -7,7 +7,7 @@
 }
 
 .category-header {
-	color: whitesmoke;
+	color: white;
 	font-size: 21px;
 	margin: 15px;
 }
@@ -26,9 +26,9 @@
 	height: 120px;
 	padding-right: 3px;
 	margin: 4px;
-	border: solid 1px rgb(31, 233, 223);
-	background-color: rgba(31, 233, 223, 0.55);
-	color: whitesmoke;
+	border: solid 1px rgb(0, 114, 255);
+	background-color: rgba(0, 114, 255, 0.55);
+	color: white;
 	box-sizing: border-box;
 	cursor: pointer;
 
@@ -60,8 +60,8 @@
 }
 
 .deleteImg {
-	width: 35px;
-	height: 28px;
+	width: 36px;
+	height: 36px;
 	margin-right: -5px;
 	margin-bottom: 3px;
 }

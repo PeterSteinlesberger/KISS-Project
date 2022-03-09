@@ -12,7 +12,7 @@
 .main-cont {
     display: flex;
     justify-content: center;
-    color: whitesmoke;
+    color: white;
     font-size: 21px;
 }
 
@@ -25,7 +25,7 @@
     height: 80px;
     width: 1340px;
     background-color: rgba(0, 0, 0, 0.35);
-    border: solid 1px rgb(31, 233, 223);
+    border: solid 1px rgb(0, 114, 255);
     border-right: none;
     margin: 12px;
     margin-right: 0;
@@ -90,8 +90,8 @@
 }
 
 .deleteImg {
-    height: 40px;
-    width: 32px;
+    height: 42px;
+    width: 42px;
 }
 
 .deleteImg:hover {
@@ -107,7 +107,7 @@
     margin: 12px;
     margin-left: 0;
     background-color: rgba(0, 0, 0, 0.35);
-    border: solid 1px rgb(31, 233, 223);
+    border: solid 1px rgb(0, 114, 255);
     border-left: none;
 }
 
@@ -141,9 +141,8 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(31, 233, 223, 0.55);
-    color: whitesmoke;
-    border-right: solid 1px rgb(31, 233, 223);
+    background-color: rgba(0, 0, 0, 0.45);
+    color: rgb(0, 114, 255);
     font-size: 22px;
     box-sizing: border-box;
 }
@@ -158,9 +157,8 @@
     height: 100%;
     top: 0px;
     left: 18px;
-    background-color: rgba(31, 233, 223, 0.55);
-    color: whitesmoke;
-    border-right: solid 1px rgb(31, 233, 223);
+    background-color: rgba(0, 0, 0, 0.45);
+    color: rgb(0, 114, 255);
     font-size: 22px;
     box-sizing: border-box;
 }

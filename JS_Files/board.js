@@ -74,7 +74,7 @@ function showTodoList() {
             <div class="descritpion-cont">
                 <span class="todo-description">${task['description']}</span>
             </div>
-            <div class="trash-img"><img src=./img/behalter.png class="deleteImg"
+            <div class="trash-img"><img src=./img/trash_icon.png class="deleteImg"
                     onclick="deleteBoardTask(${i})"></div>
         </div>
     </div>
