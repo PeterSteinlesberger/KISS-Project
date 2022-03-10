@@ -13,6 +13,10 @@ body {
     display: none;
 }
 
+a {
+color: white;
+}
+
 .index-btn {
     display: flex;
     justify-content: center;

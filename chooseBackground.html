@@ -10,29 +10,28 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap"
         rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="img/Logo/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/Logo/favicon.ico">
 
     <title>addTask</title>
     <link rel="stylesheet" href="CSS_Files/style.css">
     <link rel="stylesheet" href="CSS_Files/header.css">
     <link rel="stylesheet" href="CSS_Files/footer.css">
     <link rel="stylesheet" href="CSS_Files/chooseBackground.css">
-    <script src="http://www.w3schools.com/lib/w3data.js"></script>
     <script src="JS_Files/mini_backend.js"></script>
-    <script src="JS_Files/script.js"></script>
     <script src="JS_Files/chooseBackground.js"></script>
-   
+    <script defer src="JS_Files/script.js"></script>
+
 </head>
 
-<body onload="includeHTML(), showSmallPictures(), downloadData()">
-    <div w3-include-html="./Templates/header.html"></div>
+<body onload="showSmallPictures(), downloadData()">
+    <div data-template="templates/header.html"></div>
     <div class="main-cont">
-    <div class="img-container">
-        <h1>Hintergrund auswählen</h1>
-        <div class="container-buttons">
-            <div id="small-pictures"></div>
+        <div class="img-container">
+            <h1>Hintergrund auswählen</h1>
+            <div class="container-buttons">
+                <div id="small-pictures"></div>
+            </div>
         </div>
     </div>
-</div>
-    <div w3-include-html="./Templates/footer.html"></div> 
+    <div data-template="templates/footer.html"></div>
 </body>

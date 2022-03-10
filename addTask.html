@@ -18,15 +18,14 @@
     <link rel="stylesheet" href="CSS_Files/header.css">
     <link rel="stylesheet" href="CSS_Files/footer.css">
     <link rel="stylesheet" href="CSS_Files/addTask.css">
-    <script src="http://www.w3schools.com/lib/w3data.js"></script>
     <script src="JS_Files/mini_backend.js"></script>
-    <script src="JS_Files/script.js"></script>
     <script src="JS_Files/addTask.js"></script>
-    <script src="JS_Files/chooseBackground.js"></script>
+    <script src="JS_Files/chooseBackground.js"></script> 
+    <script defer src="JS_Files/script.js"></script>
 </head>
 
 <body onload="initAddTask(), saveBackground()">
-    <div w3-include-html="./Templates/header.html"></div>
+    <div data-template="templates/header.html"></div>
     <div class="add-task-main">
         <!-- Task created info-container -->
         <div id="confirmationContainer" class="confirmation-cont D-none">
@@ -72,5 +71,5 @@
             </div>
         </form>
     </div>
-    <div w3-include-html="./Templates/footer.html"></div>
+    <div data-template="templates/footer.html"></div>
 </body>

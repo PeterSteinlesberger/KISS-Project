@@ -8,16 +8,14 @@
 <link rel="stylesheet" href="CSS_Files/style.css">
 <link rel="stylesheet" href="CSS_Files/header.css">
 <link rel="stylesheet" href="CSS_Files/footer.css">
-<script src="http://www.w3schools.com/lib/w3data.js"></script>
 <script src="JS_Files/mini_backend.js"></script>
 <script src="JS_Files/script.js"></script>
-<script src="JS_Files/board.js"></script>
-    <title>Board</title>
-</head>
+<script defer src="JS_Files/board.js"></script>
     
-
+<title>Board</title>
+</head>
 <body onload="initBoard()">
-    <div w3-include-html="Templates/header.html"></div>
+    <div data-template="templates/header.html"></div>
     <div class="main-cont">
         <div class="main-div">
             <div class="category-cont">
@@ -38,7 +36,7 @@
             </div>
         </div>
     </div>
-    <div w3-include-html="./Templates/footer.html"></div>
+    <div data-template="templates/footer.html"></div>
 
     <!--
 <div>Icons erstellt von <a href="https://www.flaticon.com/de/autoren/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/de/" title="Flaticon">www.flaticon.com</a></div>

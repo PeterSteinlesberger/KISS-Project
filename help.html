@@ -17,15 +17,14 @@
 <link rel="stylesheet" href="CSS_Files/style.css">
 <link rel="stylesheet" href="CSS_Files/header.css">
 <link rel="stylesheet" href="CSS_Files/footer.css">
-<script src="http://www.w3schools.com/lib/w3data.js"></script>
 <script src="JS_Files/mini_backend.js"></script>
-<script src="JS_Files/script.js"></script>
 <script src="JS_Files/chooseBackground.js"></script>
+<script defer src="JS_Files/script.js"></script>
 </head>
     
 
-<body onload="init(), saveBackground()">
-    <div w3-include-html="Templates/header.html"></div>
+<body onload="saveBackground()">
+    <div data-template="templates/header.html"></div>
     <div class="main-cont">
                 <div>
                     <h2>How does KISS work?</h2><br>
@@ -41,6 +40,6 @@
                 </div>
             </div>
             </div>
-    <div w3-include-html="./Templates/footer.html"></div>
+    <div data-template="templates/footer.html"></div>
 </body>
 </html>
