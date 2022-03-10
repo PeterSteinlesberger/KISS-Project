@@ -17,14 +17,13 @@
     <link rel="stylesheet" href="CSS_Files/footer.css">
     <link rel="stylesheet" href="CSS_Files/index.css">
     <script src="JS_Files/mini_backend.js"></script>
-    <script src="JS_Files/script.js"></script>
-    <!-- <script src="http://www.w3schools.com/lib/w3data.js"></script> -->
+    <script defer src="JS_Files/script.js"></script>
 
     <title>KISS-Project</title>
 </head>
 
-<body onload="includeHTML()">
-    <div w3-include-html="./Templates/header.html"></div>
+<body onload="init()">
+    <div data-template="templates/header.html"></div>
     <div class="main-div index-container">
         <div class="headline-container">
             <h1 class="h1">Welcome to KISS-Project</h1>
@@ -44,6 +43,6 @@
         </div>
         <a class="index-btn start-btn" href="addTask.html">START</a>
     </div>
-    <div w3-include-html="./Templates/footer.html"></div>
+    <div data-template="templates/footer.html"></div>
 </body>
 </html>
