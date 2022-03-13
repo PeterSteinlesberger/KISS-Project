@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS_Files/board.css">
-<link rel="stylesheet" href="CSS_Files/style.css">
-<link rel="stylesheet" href="CSS_Files/header.css">
-<link rel="stylesheet" href="CSS_Files/footer.css">
-<script src="JS_Files/mini_backend.js"></script>
-<script src="JS_Files/script.js"></script>
-<script defer src="JS_Files/board.js"></script>
-    
-<title>Board</title>
+    <link rel="stylesheet" href="CSS_Files/style.css">
+    <link rel="stylesheet" href="CSS_Files/header.css">
+    <link rel="stylesheet" href="CSS_Files/footer.css">
+    <script src="JS_Files/mini_backend.js"></script>
+    <script src="JS_Files/chooseBackground.js"></script> 
+    <script src="JS_Files/board.js"></script>
+    <script defer src="JS_Files/script.js"></script>
+
+    <title>Board</title>
 </head>
 <body onload="initBoard()">
     <div data-template="templates/header.html"></div>
@@ -24,15 +26,17 @@
             </div>
             <div class="category-cont">
                 <div class="category-header">IN BEARBEITUNG</div>
-                <div id="inProgress" class="category-container" ondrop="drop('inProgress')" ondragover="allowDrop(event)" ></div>
+                <div id="inProgress" class="category-container" ondrop="drop('inProgress')"
+                    ondragover="allowDrop(event)"></div>
             </div>
             <div class="category-cont">
                 <div class="category-header">ERLEDIGT</div>
-                <div id="done" class="category-container" ondrop="drop('done')" ondragover="allowDrop(event)" ></div>
+                <div id="done" class="category-container" ondrop="drop('done')" ondragover="allowDrop(event)"></div>
             </div>
             <div class="category-cont">
                 <div class="category-header">UNERLEDIGT</div>
-                <div id="notDone" class="category-container" ondrop="drop('notDone')" ondragover="allowDrop(event)" ></div>
+                <div id="notDone" class="category-container" ondrop="drop('notDone')" ondragover="allowDrop(event)">
+                </div>
             </div>
         </div>
     </div>
@@ -42,4 +46,5 @@
 <div>Icons erstellt von <a href="https://www.flaticon.com/de/autoren/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/de/" title="Flaticon">www.flaticon.com</a></div>
 -->
 </body>
+
 </html>

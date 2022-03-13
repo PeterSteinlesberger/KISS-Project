@@ -1,5 +1,6 @@
  async function initAddTask() {
   includeHTML();
+  saveBackground();
  await downloadData();
 }
 
