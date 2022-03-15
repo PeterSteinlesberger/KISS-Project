@@ -14,15 +14,15 @@ header {
 	padding-left: 180px;
 	padding-right: 180px;
 	background-color: rgba(0, 0, 0, 0.25);
-	backdrop-filter: blur(2px);
+	/* backdrop-filter: blur(2px); */
 	box-sizing: border-box;
-		color: #fff;
-		
-		/* background-color: rgba(255,255,255,0.06);
+	color: #fff;
+
+	/* background-color: rgba(255,255,255,0.06);
 		 border: 1px solid rgba(255,255,255,0.1); 
 		width: 100%;
 		backdrop-filter: blur(2px); */
-	  }
+}
 
 
 .header-menu-container {
@@ -30,10 +30,9 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	height: 56px;
-	width: 540px;
-	padding: 0 18px 12px 18px;
+	padding-bottom: 12px;
 	background-color: rgba(0, 0, 0, 0.25);
-	backdrop-filter: blur(2px);
+	/* backdrop-filter: blur(2px); */
 	box-sizing: border-box;
 
 	/* background-color: rgba(255,255,255,0.06);
@@ -101,8 +100,7 @@ header {
 
 .right-cont {
 	display: flex;
-	justify-content: space-between;
-	width: 460px;
+
 }
 
 .header-link {
@@ -110,11 +108,12 @@ header {
 	align-items: center;
 	height: 28px;
 	padding: 8px 18px 8px 18px;
+	margin: 0 12px;
 	font-size: 16px;
 	text-decoration: none;
 	background-color: rgba(0, 0, 0, 0.55);
-    color: rgb(0, 114, 255);
-    transition: all 85ms ease-in-out;
+	color: rgb(0, 114, 255);
+	transition: all 85ms ease-in-out;
 }
 
 .header-link:hover {
@@ -122,6 +121,13 @@ header {
 	color: white;
 }
 
+.color-white {
+	color: white;
+}
+
+.color-white:hover {
+	color: rgb(0, 114, 255);
+}
 
 .light-modus-img {
 	width: 86px;
@@ -159,46 +165,54 @@ header {
 
 
 /*google translate Dropdown */
- 
-#google_translate_element select{
+
+#google_translate_element select {
 	background-color: rgba(0, 0, 0, 0.55);
-	color: rgba(0, 114, 255, 1);
+	color: white;
 	border: none;
 	font-family: 'Roboto', sans-serif;
-	font-size: 16px;  
-	border-radius:3px;
-	padding:6px 8px;
+	font-size: 16px;
+	padding: 8px 0 8px 18px;
 	height: 44px;
-	width: 120px;
-	margin: 0;
+	width: 130px;
+	margin: 0 -64px 0 12px;
 	border-radius: 0;
 	text-transform: uppercase;
-	}
+}
 
-	#google_translate_element select:hover {
-		background-color: rgba(0, 0, 0, 0.30);
-		color: white;
-	}
-	
-	/*google translate link | logo */
-	  .goog-logo-link{
-	  display:none !important;
-	  }
-	.goog-te-gadget{
-	color:transparent !important;
-	}
-	
-	/* google translate banner-frame */
-	
-	.goog-te-banner-frame{
-	display:none !important;
-	}
-	
-	#goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
-   .goog-text-highlight { background: none !important; box-shadow: none !important;}
-	
-	body {
-		top:0 !important;
-	}
-	 
-	
+#google_translate_element select:hover {
+	background-color: rgba(0, 0, 0, 0.30);
+	color: rgb(0, 114, 255);
+}
+
+/*google translate link | logo */
+.goog-logo-link {
+	display: none !important;
+}
+
+.goog-te-gadget {
+	color: transparent !important;
+}
+
+/* google translate banner-frame */
+
+.goog-te-banner-frame {
+	display: none !important;
+}
+
+#goog-gt-tt, .goog-te-balloon-frame {
+	display: none !important;
+}
+
+.goog-text-highlight {
+	background: none !important;
+	box-shadow: none !important;
+}
+
+body {
+	top: 0 !important;
+}
+
+/* 
+<a href="https://www.flaticon.com/free-icons/translate" title="translate icons">Translate icons created by Freepik - Flaticon</a>
+<div> undefined <a href="https://www.flaticon.com/authors/freepik" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div> */
