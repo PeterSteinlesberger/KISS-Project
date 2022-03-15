@@ -17,8 +17,8 @@ function showBacklog() {
         let urgency = task['priortity'];
         backlogFile.innerHTML += `
         <div class="backlog-file-container">
-        <div id="tooltip1" onmouseover="showTooltip('tooltip1')" onmouseleave="hideTooltip('tooltip1')" class="backlog-file-container"> 
-        <div class="backlog-file" onclick="setStatus(${task['taskId']})">
+        <div id="tooltip1" onmouseover="showTooltip('tooltip1')" onmouseleave="hideTooltip('tooltip1')" > 
+        <div id="backlogFile" class="backlog-file" onclick="setStatus(${task['taskId']})">
         <div class="${urgency}"></div>
         <img class="creator-img" src="${task['creatorImg']}" id="creatorImg">
         <div class="creator padding-top" id="creator">${task['creator']}</div>
@@ -28,7 +28,7 @@ function showBacklog() {
         <div id="deleteInfo" class="info-box">DELETE TASK</div>
         <div id="addInfo" class="info-box">ADD TASK TO BOARD</div>
         </div> </div> 
-        <div class="deleteImg-container">
+        <div id="deleteImgContainer" class="delete-img-container">
         <img id="tooltip2" onmouseover="showTooltip('tooltip2')" onmouseleave="hideTooltip('tooltip2')" src=./img/trash_icon.png class="deleteImg" onclick="deleteBacklogTask(${i})">
         </div></div>`;
     }
@@ -38,12 +38,20 @@ function showTooltip(id) {
     console.log(id);
     let addInfo = document.getElementById('addInfo');
     let deleteInfo = document.getElementById('deleteInfo');
+    let deleteImgContainer = document.getElementById('deleteImgContainer');
+    let trashImg = document.getElementById('tooltip2');
+    let toolTip1 = document.getElementById('tooltip1');
     if(id == 'tooltip1') {
       addInfo.style.display ="flex";
+
     } else 
     if(id == 'tooltip2') {
         deleteInfo.style.display ="flex";
+        deleteImgContainer.classList.add('delete-red');
+        toolTip1.classList.add('backlog-file-red');
+        trashImg.src ="./img/trash_icon_red .png";
       }
+ 
 }
 
 function hideTooltip(id) {
@@ -54,7 +62,10 @@ function hideTooltip(id) {
      } else 
      if(id == 'tooltip2') {
         deleteInfo.style.display ="none";
-     }
+      
+        
+     } 
+      
 }
 
 

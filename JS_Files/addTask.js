@@ -1,6 +1,7 @@
  async function initAddTask() {
   includeHTML();
-  saveBackground('5');
+  saveBackground(currentBg);
+  console.log('test currentBg:',currentBg);
  await downloadData();
 }
 

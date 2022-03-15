@@ -30,6 +30,7 @@
     margin: 12px;
     margin-right: 0;
     display: flex;
+    box-sizing: border-box;
 }
 
 .backlog-file:hover {
@@ -98,7 +99,7 @@
     cursor: pointer;
 }
 
-.deleteImg-container {
+.delete-img-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,6 +111,21 @@
     border: solid 1px rgb(0, 114, 255);
     border-left: none;
 }
+
+.delete-red {
+    background-color: rgba(0, 0, 0, 0.55);
+    border: solid 1px rgb(255, 0, 64);
+    border-left: none;
+}
+
+.backlog-file-red {
+    border: solid 1px rgb(255, 0, 64);
+    border-right: none;
+}
+
+
+
+
 
 .Normal {
     width: 18px;

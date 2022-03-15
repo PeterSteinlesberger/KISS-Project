@@ -1,10 +1,12 @@
 setURL('http://peter-steinlesberger.developerakademie.com/KISS-Project/smallest_backend_ever');
 
  let allTasks = [];
- 
+  
+
  async function init() {
   await includeHTML();
   bindGoogleTranslator();
+  console.log('currentBg:', currentBg);
 }
 
 
