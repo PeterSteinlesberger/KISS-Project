@@ -18,6 +18,7 @@
 
 .backlog-file-container {
     display: flex;
+ 
 }
 
 .backlog-file {
@@ -27,10 +28,8 @@
     background-color: rgba(0, 0, 0, 0.60);
     border: solid 1px rgb(0, 114, 255);
     border-right: none;
-    margin: 12px;
-    margin-right: 0;
     display: flex;
-    box-sizing: border-box;
+
 }
 
 .backlog-file:hover {
@@ -39,15 +38,12 @@
 
 .header-cont {
     display: flex;
-    margin-left: 12px;
-    margin-right: 12px;
     height: 35px;
 }
 
 .urgency-color-invisible {
     width: 18px;
-    height: 80px;
-    margin-right: 35px;
+    margin-right: 47px;
 }
 
 .creator-img {
@@ -60,7 +56,6 @@
 
 .creator-img-invisible {
     width: 74px;
-    height: 74px;
     border-radius: 50%;
     margin-right: 35px;
 }
@@ -80,6 +75,11 @@
     height: 65px;
     margin-right: 35px;
     overflow: auto;
+}
+
+.description-invisible {
+    width: 350px;
+    margin-right: 35px;
 }
 
 .finalday {
@@ -105,27 +105,23 @@
     align-items: center;
     width: 60px;
     height: 80px;
-    margin: 12px;
-    margin-left: 0;
     background-color: rgba(0, 0, 0, 0.35);
     border: solid 1px rgb(0, 114, 255);
     border-left: none;
 }
 
-.delete-red {
-    background-color: rgba(0, 0, 0, 0.55);
+/* .delete-red {
+
     border: solid 1px rgb(255, 0, 64);
     border-left: none;
-}
+    height: 80px;
+} */
 
-.backlog-file-red {
+/* .backlog-file-red {
     border: solid 1px rgb(255, 0, 64);
     border-right: none;
-}
-
-
-
-
+    height: 80px;
+} */
 
 .Normal {
     width: 18px;
@@ -161,5 +157,4 @@
     background-color: rgba(0, 0, 0, 0.45);
     color: rgb(0, 114, 255);
     font-size: 22px;
-    box-sizing: border-box;
 }

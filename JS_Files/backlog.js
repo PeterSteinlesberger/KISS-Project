@@ -15,7 +15,7 @@ function showBacklog() {
     for (let i = 0; i < inactiveTasks.length; i++) {
         let task = inactiveTasks[i];
         let urgency = task['priortity'];
-        backlogFile.innerHTML += `
+        backlogFile.innerHTML += `<div style="padding: 12px"> 
         <div class="backlog-file-container">
         <div id="tooltip1" onmouseover="showTooltip('tooltip1')" onmouseleave="hideTooltip('tooltip1')" > 
         <div id="backlogFile" class="backlog-file" onclick="setStatus(${task['taskId']})">
@@ -30,7 +30,7 @@ function showBacklog() {
         </div> </div> 
         <div id="deleteImgContainer" class="delete-img-container">
         <img id="tooltip2" onmouseover="showTooltip('tooltip2')" onmouseleave="hideTooltip('tooltip2')" src=./img/trash_icon.png class="deleteImg" onclick="deleteBacklogTask(${i})">
-        </div></div>`;
+        </div></div></div>`;
     }
 }
 
@@ -47,9 +47,11 @@ function showTooltip(id) {
     } else 
     if(id == 'tooltip2') {
         deleteInfo.style.display ="flex";
-        deleteImgContainer.classList.add('delete-red');
-        toolTip1.classList.add('backlog-file-red');
-        trashImg.src ="./img/trash_icon_red .png";
+        deleteImgContainer.style.border ="1px solid red";
+        deleteImgContainer.style.borderLeft ="none";
+        // deleteImgContainer.classList.add('delete-red');
+        // toolTip1.classList.add('backlog-file-red');
+        trashImg.src ="./img/trash_icon_red.png";
       }
  
 }
@@ -57,13 +59,16 @@ function showTooltip(id) {
 function hideTooltip(id) {
     let addInfo = document.getElementById('addInfo');
     let deleteInfo = document.getElementById('deleteInfo');
+    let deleteImgContainer = document.getElementById('deleteImgContainer');
     if(id == 'tooltip1') {
       addInfo.style.display ="none";
      } else 
      if(id == 'tooltip2') {
         deleteInfo.style.display ="none";
-      
+        deleteImgContainer.style.border ="1px solid blue"; 
         
+        let trashImg = document.getElementById('tooltip2');
+        trashImg.src ="./img/trash_icon.png";
      } 
       
 }

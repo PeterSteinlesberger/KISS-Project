@@ -1,7 +1,7 @@
 
 body {
     margin: 0px;
-    background-image: url('../img/backgrounds/background.jpg');
+    background-image: url('../img/backgrounds/background.jpg') !important;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
