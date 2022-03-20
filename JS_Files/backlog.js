@@ -15,7 +15,7 @@ function showBacklog() {
     for (let i = 0; i < inactiveTasks.length; i++) {
         let task = inactiveTasks[i];
         let urgency = task['priortity'];
-        backlogFile.innerHTML += `<div style="padding: 12px"> 
+        backlogFile.innerHTML += ` 
         <div class="backlog-file-container">
         <div id="addTask" onmouseover="showTooltip('addTask')" onmouseleave="hideTooltip('addTask')" > 
         <div id="task" class="backlog-file" onclick="setStatus(${task['taskId']})">
@@ -30,7 +30,7 @@ function showBacklog() {
         </div> </div> 
         <div id="deleteImgContainer" class="delete-img-container">
         <img id="deleteTask" onmouseover="showTooltip('deleteTask')" onmouseleave="hideTooltip('deleteTask')" src=./img/trash_icon.png class="deleteImg" onclick="deleteBacklogTask(${i})">
-        </div></div></div>`;
+        </div></div>`;
     }
 }
 
@@ -42,7 +42,6 @@ function showTooltip(id) {
     let task = document.getElementById('task');
     let deleteImgContainer = document.getElementById('deleteImgContainer');
     let trashImg = document.getElementById('deleteTask');
-    let addTask = document.getElementById('addTask');
     if (id == 'addTask') {
         addInfo.style.display = "flex";
         deleteImgContainer.style.borderLeft = "none";
@@ -64,6 +63,7 @@ function hideTooltip(id) {
     let deleteInfo = document.getElementById('deleteInfo');
     let deleteImgContainer = document.getElementById('deleteImgContainer');
     let task = document.getElementById('task');
+    let trashImg = document.getElementById('deleteTask');
     if (id == 'addTask') {
         addInfo.style.display = "none";
     } else
@@ -73,7 +73,6 @@ function hideTooltip(id) {
             deleteImgContainer.style.borderLeft = "none";
             task.style.border = "1px solid rgb(0, 114, 255)";
             task.style.borderRight = "none";
-            let trashImg = document.getElementById('deleteTask');
             trashImg.src = "./img/trash_icon.png";
         }
 
