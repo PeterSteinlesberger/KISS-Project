@@ -30,17 +30,12 @@ function changeBg(j) {
 }
 
 
-async function loadBackground(currentBg) {
+async function loadBackground(currentBg) { 
+    let pos = currentBg;
     await downloadFromServer();
     currentBg = backend.getItem('background');
-    // let pos = backgrounds.indexOf(currentBg);
-     let pos = currentBg;
     console.log('pos:', pos);
-    if (window.location.href.endsWith('design.html')) {
-        document.getElementById('currentpic' + pos).classList.add('active-picture');
-    }
     document.body.style.backgroundImage = `url(${currentBg})`;
-    console.log('backgrundimage:', document.body.style.backgroundImage);
 }
 
 

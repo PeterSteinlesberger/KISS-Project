@@ -5,7 +5,7 @@ let currentDraggedElement = 0;  // -- for drag&drop
 
 async function initBoard() {
     includeHTML();
-  await downloadData();
+    await downloadData();
     updateBoardHTML();
 }
 
@@ -57,11 +57,9 @@ function showTodoList() {
     let list = activeTasks.filter(task => task.list === 'todo');
     let listContainer = document.getElementById('todo');
     listContainer.innerHTML = '';
-
     for (let i = 0; i < list.length; i++) {
         const task = list[i];
         let urgencyColor = list[i]['priortity'];
-
         listContainer.innerHTML += `
       <div id="${task.taskId}" class="todo" draggable="true" ondragstart="drag(${task.taskId})">
     <div class="urgency ${urgencyColor}"></div>

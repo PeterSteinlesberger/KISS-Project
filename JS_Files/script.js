@@ -1,12 +1,11 @@
 setURL('http://peter-steinlesberger.developerakademie.com/KISS-Project/smallest_backend_ever');
 
- let allTasks = [];
-  
+let allTasks = [];
 
- async function init() {
+
+async function init() {
   await includeHTML();
   bindGoogleTranslator();
-  console.log('currentBg:', currentBg);
 }
 
 
@@ -39,9 +38,9 @@ async function includeHTML() {
 
 
 async function downloadData() {
-   await downloadFromServer();
-allTasks = JSON.parse(backend.getItem('allTasks')) || []; 
- loadBackground(currentBg);
+  await downloadFromServer();
+  allTasks = JSON.parse(backend.getItem('allTasks')) || [];
+  loadBackground(currentBg);
 }
 
 
@@ -65,14 +64,14 @@ function bindGoogleTranslator() {
 
 
 function googleTranslateElementInit() {
-	new google.translate.TranslateElement({
-  defaultLanguage: 'en', 
-	pageLanguage: 'en',
-  includedLanguages: 'de,en,ru,es',
-	autoDisplay: 'true',
-	layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
-	}, 'google_translate_element');
-	}
+  new google.translate.TranslateElement({
+    defaultLanguage: 'en',
+    pageLanguage: 'en',
+    includedLanguages: 'de,en,ru,es',
+    autoDisplay: 'true',
+    layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+  }, 'google_translate_element');
+}
 
 
 init();
