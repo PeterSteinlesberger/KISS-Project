@@ -43,19 +43,11 @@ function showTooltip(id) {
     let deleteImgContainer = document.getElementById('deleteImgContainer');
     let trashImg = document.getElementById('deleteTask');
     if (id == 'addTask') {
-        addInfo.style.display = "flex";
-        deleteImgContainer.style.borderLeft = "none";
+        onHoverStyleAddInfo(addInfo, deleteImgContainer);
     } else
         if (id == 'deleteTask') {
-            deleteInfo.style.display = "flex";
-            deleteInfo.style.color = "red";
-            deleteImgContainer.style.border = "1px solid red";
-            deleteImgContainer.style.borderLeft = "none";
-            task.style.border = "1px solid red";
-            task.style.borderRight = "none";
-            trashImg.src = "./img/trash_icon_red.png";
+            onHoverStyleDeleteInfo(deleteInfo, task, deleteImgContainer, trashImg);
         }
-
 }
 
 function hideTooltip(id) {
@@ -65,19 +57,45 @@ function hideTooltip(id) {
     let task = document.getElementById('task');
     let trashImg = document.getElementById('deleteTask');
     if (id == 'addTask') {
-        addInfo.style.display = "none";
+        onMouseLeaveStyleAddInfo(addInfo, deleteImgContainer);
     } else
         if (id == 'deleteTask') {
-            deleteInfo.style.display = "none";
-            deleteImgContainer.style.border = "solid 1px rgb(0, 114, 255)";
-            deleteImgContainer.style.borderLeft = "none";
-            task.style.border = "1px solid rgb(0, 114, 255)";
-            task.style.borderRight = "none";
-            trashImg.src = "./img/trash_icon.png";
+            onMouseLeaveStyleDeleteInfo(deleteInfo, task, deleteImgContainer, trashImg);
         }
 
 }
 
+function onHoverStyleAddInfo(addInfo, deleteImgContainer) {
+    addInfo.style.display = "flex";
+    deleteImgContainer.style.borderLeft = "none";
+    deleteImgContainer.style.backgroundColor = "rgba(0, 0, 0, 1.1)";
+}
+
+function onHoverStyleDeleteInfo(deleteInfo, task, deleteImgContainer, trashImg) {
+    deleteInfo.style.display = "flex";
+    deleteInfo.style.color = "red";
+    deleteImgContainer.style.border = "1px solid red";
+    deleteImgContainer.style.borderLeft = "none";
+    deleteImgContainer.style.backgroundColor = "rgba(0, 0, 0, 1.1)";
+    task.style.border = "1px solid red";
+    task.style.borderRight = "none";
+    trashImg.src = "./img/trash_icon_red.png";
+}
+
+function  onMouseLeaveStyleAddInfo(addInfo, deleteImgContainer) {
+    addInfo.style.display = "none";
+    deleteImgContainer.style.backgroundColor = "rgba(0, 0, 0, 0.65)";
+}
+
+function  onMouseLeaveStyleDeleteInfo(deleteInfo, task, deleteImgContainer, trashImg) {
+    deleteInfo.style.display = "none";
+    deleteImgContainer.style.border = "solid 1px rgb(0, 114, 255)";
+    deleteImgContainer.style.borderLeft = "none";
+    task.style.border = "1px solid rgb(0, 114, 255)";
+    task.style.borderRight = "none";
+    trashImg.src = "./img/trash_icon.png";
+    deleteImgContainer.style.backgroundColor = "rgba(0, 0, 0, 0.65)";
+}
 
 async function deleteBacklogTask(position) {
     await deleteTask(position);
