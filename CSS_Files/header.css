@@ -234,22 +234,42 @@ body {
 *    They are all optional. However, if you use not or only, you must also specify a media type.
 */
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1600px) {}
 
+@media only screen and (max-width: 1240px) {
+	.header {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 126px;
+		padding-top: 32px;
+	}
+
+	.left-cont {
+		width: unset;
+		margin-bottom: 24px;
+	
+	}
+
+	.right-cont {
+		width: 400px;
+	
+	}
+
+	.header-menu-container {
+		width: 400px;	
+		justify-content: space-between;
+	}
+
+	#google_translate_element select {
+		margin: 0 -64px 0 44px;
+	}
 }
 
-@media only screen and (max-width: 1024px) {
-  
-}
+@media only screen and (max-width: 1024px) {}
 
-@media only screen and (max-width: 768px) {
-  
-}
+@media only screen and (max-width: 768px) {}
 
-@media only screen and (max-width: 480px) {
-   
-}
+@media only screen and (max-width: 480px) {}
 
-@media only screen and (max-width: 360px) {
-   
-}
+@media only screen and (max-width: 360px) {}
