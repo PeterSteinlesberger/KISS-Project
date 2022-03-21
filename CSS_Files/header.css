@@ -40,6 +40,7 @@ header {
 	backdrop-filter: blur(2px); */
 }
 
+
 .triangle-top-right {
 	display: inline-block;
 	width: 0;
@@ -120,6 +121,11 @@ header {
 	background-color: rgba(0, 0, 0, 0.30);
 	color: white;
 }
+
+/* .header-link:focus {
+	background-color: rgba(0, 0, 0, 0.30);
+	color: rgb(200, 17, 17);
+} */
 
 .color-white {
 	color: white;
@@ -215,4 +221,35 @@ body {
 
 /* 
 <a href="https://www.flaticon.com/free-icons/translate" title="translate icons">Translate icons created by Freepik - Flaticon</a>
+
 <div> undefined <a href="https://www.flaticon.com/authors/freepik" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div> */
+
+
+
+/*
+*Meaning of the "only" and "and" keywords:
+*only: The only keyword prevents older browsers that do not support media queries with 
+*    media features from applying the specified styles. It has no effect on modern browsers.
+*and: The and keyword combines a media feature with a media type or other media features.
+*    They are all optional. However, if you use not or only, you must also specify a media type.
+*/
+
+@media only screen and (max-width: 1600px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+  
+}
+
+@media only screen and (max-width: 768px) {
+  
+}
+
+@media only screen and (max-width: 480px) {
+   
+}
+
+@media only screen and (max-width: 360px) {
+   
+}

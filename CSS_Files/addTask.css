@@ -174,3 +174,32 @@ option {
     color: rgb(0, 114, 255);
     background-color: white;
 }
+
+
+/*
+*Meaning of the "only" and "and" keywords:
+*only: The only keyword prevents older browsers that do not support media queries with 
+*    media features from applying the specified styles. It has no effect on modern browsers.
+*and: The and keyword combines a media feature with a media type or other media features.
+*    They are all optional. However, if you use not or only, you must also specify a media type.
+*/
+
+@media only screen and (max-width: 1600px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+  
+}
+
+@media only screen and (max-width: 768px) {
+  
+}
+
+@media only screen and (max-width: 480px) {
+   
+}
+
+@media only screen and (max-width: 360px) {
+   
+}

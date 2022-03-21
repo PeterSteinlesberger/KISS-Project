@@ -46,9 +46,11 @@ if (creatorName == 'markus') {
 }
 }
 
+
 function showInfoContainer() {
   document.getElementById('confirmationContainer').style.visibility ="visible";
 }
+
 
 function visibleInfoContainer() {
   document.getElementById('confirmationContainer').style.visibility ="hidden";

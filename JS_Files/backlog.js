@@ -75,7 +75,7 @@ function hideTooltip(id, index) {
 function onHoverStyleAddInfo(addInfo, deleteImgContainer) {
     addInfo.style.display = "flex";
     deleteImgContainer.style.borderLeft = "none";
-    deleteImgContainer.style.backgroundColor = "rgba(0, 0, 0, 0.95)";
+    deleteImgContainer.style.backgroundColor = "rgba(0, 0, 0, 0.85)";
 }
 
 
@@ -86,7 +86,7 @@ function onHoverStyleDeleteInfo(deleteInfo, task, deleteImgContainer, trashImg) 
     deleteInfo.style.left = "0";
     deleteImgContainer.style.border = "1px solid red";
     deleteImgContainer.style.borderLeft = "none";
-    deleteImgContainer.style.backgroundColor = "rgba(0, 0, 0, 0.95)";
+    deleteImgContainer.style.backgroundColor = "rgba(0, 0, 0, 0.85)";
     task.style.border = "1px solid red";
     task.style.borderRight = "none";
     trashImg.src = "./img/trash_icon_red.png";
