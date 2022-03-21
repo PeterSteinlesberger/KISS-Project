@@ -138,7 +138,7 @@ body span {
     align-items: center;
     width: 500px;
     height: 200px;
-    background-color: rgba(0, 114, 255, 0.45);
+    background-color: rgba(0, 114, 255, 0.85);
     color: white;
     font-size: 26px;
     transition: all 125ms ease-in-out;
@@ -164,4 +164,13 @@ option {
     margin-top: 0;
     margin-bottom: 50px;
     font-size: 26px;
+}
+
+.index-btn {
+    color: white;
+}
+
+.index-btn:hover {
+    color: rgb(0, 114, 255);
+    background-color: white;
 }

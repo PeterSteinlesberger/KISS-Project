@@ -49,8 +49,6 @@ function showTooltip(id, index) {
     let deleteImgContainer = document.getElementById('deleteImgContainer' + index);
     let trashImg = document.getElementById('deleteTask' + index);
     if (id == 'addTask' + index) {
-       
-       
         onHoverStyleAddInfo(addInfo, deleteImgContainer);
     } else
         if (id == 'deleteTask' + index) {
@@ -84,6 +82,8 @@ function onHoverStyleAddInfo(addInfo, deleteImgContainer) {
 function onHoverStyleDeleteInfo(deleteInfo, task, deleteImgContainer, trashImg) {
     deleteInfo.style.display = "flex";
     deleteInfo.style.color = "red";
+    deleteInfo.style.width = "100%";
+    deleteInfo.style.left = "0";
     deleteImgContainer.style.border = "1px solid red";
     deleteImgContainer.style.borderLeft = "none";
     deleteImgContainer.style.backgroundColor = "rgba(0, 0, 0, 0.95)";
