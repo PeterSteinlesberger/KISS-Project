@@ -43,6 +43,7 @@ async function downloadData() {
   loadBackground(currentBg);
 }
 
+
 /**
 * @param { number } - position created task time in milliseconds alias taskId
 */
@@ -55,11 +56,6 @@ async function deleteTask(position) {
 
 
 
-// async function deleteTask(position) {
-//   allTasks.splice(position, 1);
-//   let allTasksAsString = JSON.stringify(allTasks);
-//   await backend.setItem('allTasks', allTasksAsString);
-// }
 
 
 // ---------------------- google translate functions ----------------------//
