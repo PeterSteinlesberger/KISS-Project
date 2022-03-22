@@ -169,7 +169,7 @@ option {
     width: 400px;
     height: 38px;
     margin-top: 61px;
-    color: #0047ff;
+    color: rgb(0, 114, 255);
     background-color: rgba(0, 0, 0, 0.85);
 }
 
@@ -179,7 +179,7 @@ option {
     align-items: center;
     height: 18px;
     font-size: 18px;
-    color: #0047ff;
+    color: rgb(0, 114, 255);
     background-color: rgba(0, 0, 0, 0.85);
 }
 

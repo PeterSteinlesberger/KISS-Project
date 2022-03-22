@@ -44,7 +44,7 @@ p {
 }
 
 .footer-links a:hover {
-    color: rgb(0, 114, 255);
+    text-decoration: underline;
 }
 
 .margin {
