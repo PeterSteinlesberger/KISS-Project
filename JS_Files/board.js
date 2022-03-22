@@ -175,3 +175,20 @@ function showNotDoneList() {
     `;
     }
 }
+
+/**
+ * function that highlight the board field when you move the task over it
+ * @param {HTMLElement} id 
+ */
+ function highlight(id) {
+    document.getElementById(id).classList.add('highlight-container');
+  }
+  
+
+  /**
+   * function that remove the highlight from the board field when you take the mouse from the board
+   * @param {HTMLElement} id 
+   */
+  function removeHighlight(id) {
+    document.getElementById(id).classList.remove('highlight-container');
+  }

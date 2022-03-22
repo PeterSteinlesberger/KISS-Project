@@ -111,6 +111,13 @@
 	overflow: auto;
 }
 
+.highlight-container {
+	border: solid 1px rgb(0, 114, 255);
+	background-color: rgba(0, 114, 255, 0.15);
+	box-sizing: border-box;
+	transition: all 125ms ease-in-out;
+}
+
 
 /*
 *Meaning of the "only" and "and" keywords:

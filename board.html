@@ -20,22 +20,25 @@
     <div data-template="templates/header.html"></div>
     <div class="main-cont">
         <div class="main-div">
-            <div class="category-cont">
+            <div id="todoContainer" class="category-cont">
                 <div class="category-header">TODOS</div>
-                <div id="todo" class="category-container" ondrop="drop('todo')" ondragover="allowDrop(event)"></div>
+                <div id="todo" class="category-container" ondrop="drop('todo')" 
+                ondragover="allowDrop(event); highlight('todoContainer')" ondragleave="removeHighlight('todoContainer')"></div>
             </div>
-            <div class="category-cont">
+            <div id="inProgressContainer" class="category-cont">
                 <div class="category-header">IN BEARBEITUNG</div>
                 <div id="inProgress" class="category-container" ondrop="drop('inProgress')"
-                    ondragover="allowDrop(event)"></div>
+                    ondragover="allowDrop(event); highlight('inProgressContainer')" ondragleave="removeHighlight('inProgressContainer')"></div>
             </div>
-            <div class="category-cont">
+            <div id="doneContainer" class="category-cont">
                 <div class="category-header">ERLEDIGT</div>
-                <div id="done" class="category-container" ondrop="drop('done')" ondragover="allowDrop(event)"></div>
+                <div id="done" class="category-container" ondrop="drop('done')" 
+                ondragover="allowDrop(event); highlight('doneContainer')" ondragleave="removeHighlight('doneContainer')"></div>
             </div>
-            <div class="category-cont">
+            <div id="notDoneContainer" class="category-cont">
                 <div class="category-header">UNERLEDIGT</div>
-                <div id="notDone" class="category-container" ondrop="drop('notDone')" ondragover="allowDrop(event)">
+                <div id="notDone" class="category-container" ondrop="drop('notDone')"
+                 ondragover="allowDrop(event); highlight('notDoneContainer')" ondragleave="removeHighlight('notDoneContainer')">
                 </div>
             </div>
         </div>
