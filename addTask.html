@@ -13,14 +13,14 @@
     <link rel="icon" type="image/x-icon" href="img/Logo/favicon.ico">
 
     <title>addTask</title>
-    
+
     <link rel="stylesheet" href="CSS_Files/style.css">
     <link rel="stylesheet" href="CSS_Files/header.css">
     <link rel="stylesheet" href="CSS_Files/footer.css">
     <link rel="stylesheet" href="CSS_Files/addTask.css">
     <script src="JS_Files/mini_backend.js"></script>
     <script src="JS_Files/addTask.js"></script>
-    <script src="JS_Files/chooseBackground.js"></script> 
+    <script src="JS_Files/chooseBackground.js"></script>
     <script defer src="JS_Files/script.js"></script>
 </head>
 
@@ -33,9 +33,9 @@
                 <h3 class="info-headline">TASK CREATED</h3>
                 <div class="info-container">
                     <span class="m4">ADD</span>
-                    <a class="index-btn m4" href="addTask.html">NEW TASK</a>
+                    <a class="btn-style m4" href="addTask.html">NEW TASK</a>
                     <span class="m4">OR</span>
-                    <a class="index-btn m4" href="backlog.html">MANAGE TASKS</a>
+                    <a class="btn-style m4" href="backlog.html">MANAGE TASKS</a>
                     <span class="m4">?</span>
                 </div>
             </div>
@@ -46,7 +46,7 @@
                 <input id="inputTitle" class="input-field" type="text" maxlength="20" placeholder="Titel eingeben...">
                 <span>BESCHREIBUNG</span>
                 <textarea id="description" class="description-field" type="text" placeholder="Optional"
-                cols="46"></textarea>
+                    cols="46"></textarea>
                 <span>DRINGLICHKEIT</span>
                 <select id="priortity" class="selector">
                     <option>Low</option>
@@ -66,8 +66,11 @@
                         <option translate="no" value="markus">Markus</option>
                     </select>
                 </div>
-                <button class="task-button" style="width: 400px; " onclick="showInfoContainer()">AUFGABE
-                    SPEICHERN</button>
+                <button class="btn-style task-button" onclick="showInfoContainer()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>AUFGABE SPEICHERN</button>
             </div>
         </form>
     </div>

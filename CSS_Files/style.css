@@ -51,4 +51,137 @@ margin: 6px;
     min-width: 1100px;
 }
 
+/*btn-design*/
+
+.btn-style {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 28px;
+	margin: 0 12px;
+	font-size: 19px;
+	padding: 4px 12px;
+	text-decoration: none;
+	color: #0047ff;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	overflow: hidden;
+	border: 1px solid transparent;
+	background-color: rgba(0, 0, 0, 0.75);
+	transition: all 285ms ease-in-out;
+	box-shadow: 0 3px 3px rgba(0,0,0.1);
+}
+
+.btn-style:hover {
+	background-color: rgba(255, 255, 255, 0.15);
+	border: 1px solid white;
+	color: white;
+}
+
+
+.btn-style {
+	position: relative;
+	padding: 4px 12px;
+	text-decoration: none;
+	color: rgb(0, 114, 255);
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	overflow: hidden;
+	background: rgba(0, 0, 0, 0.4);
+	/* box-shadow: 0 5px 5px rgba(0,0,0.2); */
+}
+
+.btn-style:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: rgba(255,255,255,.1);
+}
+
+.btn-style:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);
+	transition: 0.5s;
+	transition-delay: 0.5s;
+}
+
+.btn-style:hover:after{
+	left: 100%;
+}
+
+.btn-style span{
+	position: absolute;
+	display: block;
+	transition: 0.5s ease;
+}
+
+.btn-style span:nth-child(1)
+{
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background: #fff;
+}
+
+.btn-style:hover span:nth-child(1)
+{
+	width: 100%;
+	transform: translateX(100%);
+}
+
+.btn-style span:nth-child(3)
+{
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 1px;
+	background: #fff;
+}
+
+.btn-style:hover span:nth-child(3)
+{
+	width: 100%;
+	transform: translateX(-100%);
+}
+
+.btn-style span:nth-child(2)
+{
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 0;
+	background: #fff;
+}
+
+.btn-style:hover span:nth-child(2)
+{
+	height: 100%;
+	transform: translateY(100%);
+}
+
+.btn-style span:nth-child(4)
+{
+	bottom: 0;
+	right: 0;
+	width: 1px;
+	height: 0;
+	background: #fff;
+}
+
+.btn-style:hover span:nth-child(4)
+{
+	height: 100%;
+	transform: translateY(-100%);
+}
+
 

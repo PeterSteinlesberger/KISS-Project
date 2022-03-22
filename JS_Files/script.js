@@ -55,7 +55,11 @@ async function deleteTask(position) {
 }
 
 
+// function highlightActiveBtn() {
+//   let windowLocation = window.location.pathname.split('/')[window.location.pathname.split('/').length -1];
+//   console.log('windowLocation:', windowLocation);
 
+// }
 
 
 // ---------------------- google translate functions ----------------------//
