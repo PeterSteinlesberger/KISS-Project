@@ -59,6 +59,7 @@ header {
 	box-sizing: border-box;
 }
 
+/* Logo design */
 .logo {
 	width: 39px;
 	margin-top: 12px;
@@ -72,6 +73,13 @@ header {
 	margin-right: 18px;
 }
 
+.logo-name {
+	font-size: 14px;
+	color: rgba(0, 114, 255, 1);
+	margin-top: -15px;
+	margin-left: 2px;
+}
+
 .logo-cont {
 	display: flex;
 	justify-content: center;
@@ -79,6 +87,8 @@ header {
 	height: 54px;
 	text-decoration: none;
 }
+
+/**/
 
 .left-cont {
 	display: flex;
@@ -120,13 +130,6 @@ header {
 .motto-cont {
 	display: flex;
 	align-items: baseline;
-}
-
-.logo-name {
-	font-size: 14px;
-	color: rgba(0, 114, 255, 1);
-	margin-top: -15px;
-	margin-left: 2px;
 }
 
 .menu-container {

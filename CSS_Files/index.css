@@ -11,8 +11,7 @@
 
 .h1 {
     font-size: 50px;
-    margin-bottom: 0px;
-    margin-top: 10px;
+    margin: 10px 0 0 18px;
 }
 
 .index-text {
@@ -30,6 +29,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     padding: 12px 120px 12px 120px;
     background-color: rgba(0, 0, 0, 0.35);
     color: whitesmoke;
@@ -58,6 +58,58 @@
     background-color: rgba(0, 0, 0, 0.85);
 }
 
+.index-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 114, 255);
+    text-decoration: none;
+    height: 28px;
+    font-size: 18px;
+    padding: 3px 13px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    box-sizing: border-box;
+    transition: all 125ms ease-in-out;
+}
+
+.index-btn:hover {
+    background-color: rgba(0, 0, 0, 0.45);
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Logo design */
+.logo {
+	width: 46px;
+	margin-top: 12px;
+	margin-right: 3px;
+}
+
+.project-name {
+	font-size: 39px;
+    margin-top: -2px;
+    letter-spacing: 4px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: white;
+}
+
+.logo-cont {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	height: 54px;
+	text-decoration: none;
+}
+
+.logo-name {
+	font-size: 14px;
+	color: rgba(0, 114, 255, 1);
+	margin-top: -15px;
+	margin-left: 2px;
+    letter-spacing: 2px;
+}
 
 /*
 *Meaning of the "only" and "and" keywords:
