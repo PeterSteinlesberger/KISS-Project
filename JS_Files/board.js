@@ -190,5 +190,5 @@ function showNotDoneList() {
    * @param {HTMLElement} id 
    */
   function removeHighlight(id) {
-    document.getElementById(id).classList.remove('highlight-container');
+   document.getElementById(id).classList.remove('highlight-container');
   }
