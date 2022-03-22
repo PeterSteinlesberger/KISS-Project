@@ -8,7 +8,7 @@
     height: 76px;
     color: white;
     padding-left: 180px;
-    padding-right: 180px; 
+    padding-right: 180px;
     background-color: rgba(0, 0, 0, 0.25);
     box-sizing: border-box;
 }
@@ -19,8 +19,7 @@ p {
 
 .footer-cont a {
     color: white;
-    font-size: 18px;
-  text-decoration: none; 
+    text-decoration: none;
 }
 
 .copyright {
@@ -39,14 +38,13 @@ p {
 }
 
 .footer-links a {
-    text-decoration: underline;
-    margin-left: 18px;
-    margin-right: 18px;
+    margin: 0 18px;
+    font-size: 18px;
     animation: all 80ms ease-in-out;
 }
 
 .footer-links a:hover {
-color: rgb(0, 114, 255);
+    color: rgb(0, 114, 255);
 }
 
 .margin {
@@ -79,22 +77,12 @@ color: rgb(0, 114, 255);
 *    They are all optional. However, if you use not or only, you must also specify a media type.
 */
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1600px) {}
 
-}
+@media only screen and (max-width: 1024px) {}
 
-@media only screen and (max-width: 1024px) {
-  
-}
+@media only screen and (max-width: 768px) {}
 
-@media only screen and (max-width: 768px) {
-  
-}
+@media only screen and (max-width: 480px) {}
 
-@media only screen and (max-width: 480px) {
-   
-}
-
-@media only screen and (max-width: 360px) {
-   
-}
+@media only screen and (max-width: 360px) {}
