@@ -43,12 +43,23 @@ async function downloadData() {
   loadBackground(currentBg);
 }
 
-
+/**
+* @param { number } - position created task time in milliseconds alias taskId
+*/
 async function deleteTask(position) {
-  allTasks.splice(position, 1);
+  const index = allTasks.findIndex( t => t.taskId == position );
+  allTasks.splice(index, 1);
   let allTasksAsString = JSON.stringify(allTasks);
   await backend.setItem('allTasks', allTasksAsString);
 }
+
+
+
+// async function deleteTask(position) {
+//   allTasks.splice(position, 1);
+//   let allTasksAsString = JSON.stringify(allTasks);
+//   await backend.setItem('allTasks', allTasksAsString);
+// }
 
 
 // ---------------------- google translate functions ----------------------//
@@ -67,7 +78,7 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement({
     defaultLanguage: 'en',
     pageLanguage: 'en',
-    includedLanguages: 'de,en,ru,es',
+    includedLanguages: 'de,en,es',
     autoDisplay: 'true',
     layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
   }, 'google_translate_element');

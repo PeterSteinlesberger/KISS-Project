@@ -136,8 +136,8 @@ body span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px;
     height: 200px;
+    padding: 0 32px;
     background-color: rgba(0, 114, 255, 0.85);
     color: white;
     font-size: 26px;

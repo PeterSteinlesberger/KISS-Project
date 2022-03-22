@@ -10,8 +10,11 @@ async function initBoard() {
 }
 
 
-function deleteBoardTask(position) {
-    deleteTask(position);
+/**
+* @param { number } - position created task time in milliseconds alias taskId
+*/
+async function deleteBoardTask(position) {
+    await deleteTask(position);
     updateBoardHTML();
 }
 
@@ -73,7 +76,7 @@ function showTodoList() {
                 <span class="todo-description">${task['description']}</span>
             </div>
             <div class="trash-img"><img src=./img/trash_icon_white.png class="deleteImg"
-                    onclick="deleteBoardTask(${i})"></div>
+                    onclick="deleteBoardTask(${list[i]['taskId']})"></div>
         </div>
     </div>
   </div> `;
@@ -102,8 +105,8 @@ function showInProgressList() {
             <div class="descritpion-cont">
                 <span class="todo-description">${task['description']}</span>
             </div>
-            <div class="trash-img"><img src=./img/behalter.png class="deleteImg"
-                    onclick="deleteBoardTask(${i})"></div>
+            <div class="trash-img"><img src=./img/trash_icon_white.png class="deleteImg"
+                    onclick="deleteBoardTask(${list[i]['taskId']})"></div>
         </div>
     </div>
   </div>
@@ -133,8 +136,8 @@ function showDoneList() {
             <div class="descritpion-cont">
                 <span class="todo-description">${task['description']}</span>
             </div>
-            <div class="trash-img"><img src=./img/behalter.png class="deleteImg"
-                    onclick="deleteBoardTask(${i})"></div>
+            <div class="trash-img"><img src=./img/trash_icon_white.png class="deleteImg"
+                    onclick="deleteBoardTask(${list[i]['taskId']})"></div>
         </div>
     </div>
   </div>
@@ -164,8 +167,8 @@ function showNotDoneList() {
             <div class="descritpion-cont">
                 <span class="todo-description">${task['description']}</span>
             </div>
-            <div class="trash-img"><img src=./img/behalter.png class="deleteImg"
-                    onclick="deleteBoardTask(${i})"></div>
+            <div class="trash-img"><img src=./img/trash_icon_white.png class="deleteImg"
+                    onclick="deleteBoardTask(${list[i]['taskId']})"></div>
         </div>
     </div>
   </div>

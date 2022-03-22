@@ -34,7 +34,7 @@ function renderBacklog() {
         <div id="addInfo${i}" class="info-box">ADD TASK TO BOARD</div>
         </div> </div> 
         <div id="deleteImgContainer${i}" class="delete-img-container">
-        <img id="deleteTask${i}" onmouseover="showTooltip('deleteTask${i}', ${i})" onmouseleave="hideTooltip('deleteTask${i}', ${i})" src=./img/trash_icon.png class="deleteImg" onclick="deleteBacklogTask(${i})">
+        <img id="deleteTask${i}" onmouseover="showTooltip('deleteTask${i}', ${i})" onmouseleave="hideTooltip('deleteTask${i}', ${i})" src=./img/trash_icon.png class="deleteImg" onclick="deleteBacklogTask(${task['taskId']})">
         </div></div>`;
     }
 }
