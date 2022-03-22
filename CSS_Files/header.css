@@ -102,10 +102,10 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-    width: 380px;
+    width: 480px;
 }
 
-.header-link {
+/* .header-link {
 	font-size: 16px;
 	text-decoration: none;
 	color: white;
@@ -114,6 +114,25 @@ header {
 
 .header-link:hover {
 	color: rgb(0, 114, 255);
+} */
+
+.header-link {
+	font-size: 16px;
+	color: white;
+	letter-spacing: 0;
+	border: none;
+	background-color: transparent;
+	transition: all 285ms ease-in-out;
+	box-shadow: none;
+	border: none;
+}
+
+.btn-style:before{
+	background: transparent;
+}
+
+.btn-style:hover {
+	border: none;
 }
 
 .high-letter {
@@ -152,10 +171,6 @@ header {
 	text-transform: uppercase;
 }
 
-#google_translate_element select:hover {
-	color: rgb(0, 114, 255);
-}
-
 /*google translate link | logo */
 .goog-logo-link {
 	display: none !important;
@@ -181,9 +196,9 @@ width: 200px;
 	box-shadow: none !important;
 }
 
-body {
+/* body {
 	top: 0 !important;
-}
+} */
 
 /* 
 <a href="https://www.flaticon.com/free-icons/translate" title="translate icons">Translate icons created by Freepik - Flaticon</a>

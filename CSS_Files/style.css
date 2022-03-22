@@ -57,20 +57,6 @@ margin: 6px;
 	color: white;
 }
 
-
-.btn-style {
-	position: relative;
-	padding: 4px 12px;
-	text-decoration: none;
-	color: rgb(0, 114, 255);
-	font-size: 20px;
-	text-transform: uppercase;
-	letter-spacing: 4px;
-	overflow: hidden;
-	background: rgba(0, 0, 0, 0.4);
-	/* box-shadow: 0 5px 5px rgba(0,0,0.2); */
-}
-
 .btn-style:before{
 	content: '';
 	position: absolute;
