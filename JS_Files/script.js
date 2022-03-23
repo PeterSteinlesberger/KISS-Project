@@ -48,19 +48,23 @@ async function downloadData() {
 * @param { number } - position created task time in milliseconds alias taskId
 */
 async function deleteTask(position) {
-  const index = allTasks.findIndex( t => t.taskId == position );
+  const index = allTasks.findIndex(t => t.taskId == position);
   allTasks.splice(index, 1);
   let allTasksAsString = JSON.stringify(allTasks);
   await backend.setItem('allTasks', allTasksAsString);
 }
 
-
 // function highlightActiveBtn() {
-//   let windowLocation = window.location.pathname.split('/')[window.location.pathname.split('/').length -1];
-//   console.log('windowLocation:', windowLocation);
-
+//   setTimeout(() => { 
+//     let windowLocation = window.location.pathname.split('/')[window.location.pathname.split('/').length - 1];
+//     console.log('windowLocation:', windowLocation);
+//   }, 1000);
 // }
 
+// async function highlightActiveBtn() {
+//   await let windowLocation = window.location.pathname.split('/')[window.location.pathname.split('/').length - 1];
+//     console.log('windowLocation:', windowLocation);
+// }
 
 // ---------------------- google translate functions ----------------------//
 function bindGoogleTranslator() {

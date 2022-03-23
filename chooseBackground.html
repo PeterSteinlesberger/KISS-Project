@@ -12,7 +12,6 @@
         rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/Logo/favicon.ico">
 
-    <title>addTask</title>
     <link rel="stylesheet" href="CSS_Files/style.css">
     <link rel="stylesheet" href="CSS_Files/header.css">
     <link rel="stylesheet" href="CSS_Files/footer.css">
@@ -20,17 +19,24 @@
     <script src="JS_Files/mini_backend.js"></script>
     <script src="JS_Files/chooseBackground.js"></script>
     <script defer src="JS_Files/script.js"></script>
-
+    <title>addTask</title>
 </head>
-
 <body onload="initDesign()">
     <div data-template="templates/header.html"></div>
     <div class="main-cont">
         <div class="img-container">
             <h1>Hintergrund auswählen</h1>
-            <div class="container-buttons">
-                <div id="small-pictures"></div>
+               <!-- CLOSE - btn -->
+    <a class="btn-style close-btn" href="index.html">
+        <span></span><span></span><span></span><span></span>
+        X</a>
+            <div id="smallImages" class="container-buttons">
+              
             </div>
+               <!-- OK - btn -->
+    <a class="btn-style ok-btn" href="addTask.html">
+        <span></span><span></span><span></span><span></span>
+        OK</a>
         </div>
     </div>
     <div data-template="templates/footer.html"></div>

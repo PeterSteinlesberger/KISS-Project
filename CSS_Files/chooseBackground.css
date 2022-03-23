@@ -5,29 +5,53 @@
     color: white;
     font-size: 16px;
     margin-top: 40px;
-   }
+    padding: 0 180px;
+}
 
 .img-container {
-    width: 950px;
-    height: 600px;
+    position: relative;
+    width: 100%;
+    max-height: 600px;
+    padding: 0 32px 32px 32px;
     background-color: rgba(0, 0, 0, 0.35);
-    border: solid 1px rgba(0, 0, 0, 0.15); 
+    border: solid 1px rgba(0, 0, 0, 0.15);
 }
 
 .container-buttons {
-    height: 480px;
-    margin: 30px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 32px;
+    max-height: 420px;
     background-color: rgba(0, 0, 0, 0.85);
     border: solid 1px rgba(0, 0, 0, 0.75);
+    overflow-y: auto;
 }
 
-#small-pictures {
+.ok-btn {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    margin: 18px 0 0 0;
+    width: 100%;
+    height: 36px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 32px;
+    height: 32px;
+    padding: 7px 5px 5px 10px;
+    box-sizing: border-box;
 }
 
 .small-picture {
@@ -39,8 +63,8 @@
     border: 1px solid transparent;
 }
 
-.small-picture:hover {  
-     border: solid 1px  rgb(0, 114, 255);
+.small-picture:hover {
+    border: solid 1px rgb(0, 114, 255);
 }
 
 .active-picture {
@@ -65,22 +89,12 @@ h1 {
 *    They are all optional. However, if you use not or only, you must also specify a media type.
 */
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1600px) {}
 
-}
+@media only screen and (max-width: 1024px) {}
 
-@media only screen and (max-width: 1024px) {
-  
-}
+@media only screen and (max-width: 768px) {}
 
-@media only screen and (max-width: 768px) {
-  
-}
+@media only screen and (max-width: 480px) {}
 
-@media only screen and (max-width: 480px) {
-   
-}
-
-@media only screen and (max-width: 360px) {
-   
-}
+@media only screen and (max-width: 360px) {}

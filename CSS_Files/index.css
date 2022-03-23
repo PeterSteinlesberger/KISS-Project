@@ -55,8 +55,8 @@
     align-items: center;
     width: 900px;
     height: 50px;
-    font-size: 28px;
-    letter-spacing: 28px;
+    font-size: 21px;
+    letter-spacing: 16px;
     margin: 0;
     padding: 0;
     background-color: rgba(0, 0, 0, 0.85);
@@ -69,19 +69,19 @@
     color: rgb(0, 114, 255);
     text-decoration: none;
     height: 28px;
-    font-size: 18px;
+    font-size: 16px;
     padding: 3px 13px;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.55);
     box-sizing: border-box;
-    transition: all 125ms ease-in-out;
+    transition: all 425ms ease-in-out;
 }
 
-.index-btn:hover {
+/* .index-btn:hover {
     background-color: rgba(0, 0, 0, 0.45);
     color: white;
     cursor: pointer;
-}
+} */
 
 
 /* Logo design */
