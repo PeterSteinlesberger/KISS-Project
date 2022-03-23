@@ -1,4 +1,3 @@
-
 /* Invert the color of the calendar-icon from the inputfield */
 ::-webkit-calendar-picker-indicator {
     filter: invert(1);
@@ -61,7 +60,7 @@ body span {
     resize: none;
     max-width: 400px;
     height: 85px;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
     flex-wrap: wrap;
     background-color: rgba(0, 0, 0, 0.80);
     color: white;
@@ -123,7 +122,6 @@ body span {
     align-items: center;
     height: 200px;
     padding: 0 32px;
-    /* background-color: rgba(0, 114, 255, 0.85); */
     background-color: rgba(0, 114, 255, 0.75);
     border: solid 1px rgb(0, 114, 255);
     color: white;
@@ -151,16 +149,8 @@ option {
     margin-top: 0;
     margin-bottom: 50px;
     font-size: 26px;
+    letter-spacing: 12px;
 }
-
-/* .index-btn {
-    color: white;
-}
-
-.index-btn:hover {
-    color: rgb(0, 114, 255);
-    background-color: white;
-} */
 
 .task-button {
     display: flex;
@@ -192,22 +182,12 @@ option {
 *    They are all optional. However, if you use not or only, you must also specify a media type.
 */
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1600px) {}
 
-}
+@media only screen and (max-width: 1024px) {}
 
-@media only screen and (max-width: 1024px) {
-  
-}
+@media only screen and (max-width: 768px) {}
 
-@media only screen and (max-width: 768px) {
-  
-}
+@media only screen and (max-width: 480px) {}
 
-@media only screen and (max-width: 480px) {
-   
-}
-
-@media only screen and (max-width: 360px) {
-   
-}
+@media only screen and (max-width: 360px) {}

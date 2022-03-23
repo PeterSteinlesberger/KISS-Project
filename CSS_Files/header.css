@@ -2,7 +2,6 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 }
 
 .header {
@@ -17,7 +16,6 @@ header {
 	box-sizing: border-box;
 	color: #fff;
 }
-
 
 .header-menu-container {
 	display: flex;
@@ -105,35 +103,11 @@ header {
     width: 480px;
 }
 
-/* .header-link {
-	font-size: 16px;
-	text-decoration: none;
-	color: white;
-	transition: all 85ms ease-in-out;
-}
 
-.header-link:hover {
-	color: rgb(0, 114, 255);
-} */
 
-.header-link {
-	font-size: 16px;
-	color: white;
-	letter-spacing: 0;
-	border: none;
-	background-color: transparent;
-	transition: all 285ms ease-in-out;
-	box-shadow: none;
-	border: none;
-}
 
-.btn-style:before{
-	background: transparent;
-}
+/**/
 
-.btn-style:hover {
-	border: none;
-}
 
 .high-letter {
 	color: white;
@@ -167,8 +141,14 @@ header {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	border-radius: none;
-	width: 200px;
+	width: 100px;
+	overflow-x: hidden;
 	text-transform: uppercase;
+}
+
+#google_translate_element select option {
+	background-color: #0F1318;
+	color: rgba(0, 114, 255, 1);
 }
 
 /*google translate link | logo */
@@ -178,7 +158,7 @@ header {
 
 .goog-te-gadget {
 	color: transparent !important;
-width: 200px;
+width: 100px;
 }
 
 /* google translate banner-frame */
@@ -196,17 +176,42 @@ width: 200px;
 	box-shadow: none !important;
 }
 
-/* body {
+body {
 	top: 0 !important;
-} */
+}
 
-/* 
+.googletranslate-logo {
+	width: 19px; 
+	margin-right: 6px;
+}
+
+	/* 
 <a href="https://www.flaticon.com/free-icons/translate" title="translate icons">Translate icons created by Freepik - Flaticon</a>
 
 <div> undefined <a href="https://www.flaticon.com/authors/freepik" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div> */
 
+/* right-btn design */
 
+.header-link {
+	font-size: 16px;
+	color: white;
+	letter-spacing: 0;
+	border: none;
+	background-color: transparent;
+	transition: all 285ms ease-in-out;
+	box-shadow: none;
+	border: none;
+}
 
+.header-link:before{
+	background: transparent;
+}
+
+.header-link:hover {
+	border: none;
+}
+
+/* main menu btn */
 
 .header-btn {
 	position: relative;
