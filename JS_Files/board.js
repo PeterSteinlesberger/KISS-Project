@@ -64,8 +64,7 @@ function showTodoList() {
         const task = list[i];
         let urgencyColor = list[i]['priortity'];
         listContainer.innerHTML += `
-      <div id="${task.taskId}" class="todo" draggable="true" ondragstart="drag(${task.taskId})">
-    <div class="urgency ${urgencyColor}"></div>
+      <div id="${task.taskId}" class="todo ${urgencyColor}" draggable="true" ondragstart="drag(${task.taskId})">
     <div>
         <div class="todo-cont ">
             <h3 class="todo-title">${task['title']}</h3>
@@ -94,8 +93,7 @@ function showInProgressList() {
         let urgencyColor = list[i]['priortity'];
 
         listContainer.innerHTML += `
-      <div id="${task.taskId}" class="todo" draggable="true" ondragstart="drag(${task.taskId})">
-    <div class="urgency ${urgencyColor}"></div>
+      <div id="${task.taskId}" class="todo ${urgencyColor}" draggable="true" ondragstart="drag(${task.taskId})">
     <div>
         <div class="todo-cont ">
             <h3 class="todo-title">${task['title']}</h3>
@@ -125,8 +123,7 @@ function showDoneList() {
         let urgencyColor = list[i]['priortity'];
 
         listContainer.innerHTML += `
-      <div id="${task.taskId}" class="todo" draggable="true" ondragstart="drag(${task.taskId})">
-    <div class="urgency ${urgencyColor}"></div>
+      <div id="${task.taskId}" class="todo ${urgencyColor}" draggable="true" ondragstart="drag(${task.taskId})">
     <div>
         <div class="todo-cont ">
             <h3 class="todo-title">${task['title']}</h3>
@@ -156,8 +153,7 @@ function showNotDoneList() {
         let urgencyColor = list[i]['priortity'];
 
         listContainer.innerHTML += `
-      <div id="${task.taskId}" class="todo" draggable="true" ondragstart="drag(${task.taskId})">
-    <div class="urgency ${urgencyColor}"></div>
+      <div id="${task.taskId}" class="todo ${urgencyColor}" draggable="true" ondragstart="drag(${task.taskId})">
     <div>
         <div class="todo-cont ">
             <h3 class="todo-title">${task['title']}</h3>
