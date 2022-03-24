@@ -34,6 +34,7 @@
     border: solid 1px rgb(0, 114, 255);
     border-right: none;
     font-size: 17px;
+    transition: all 85ms ease-out;
 }
 
 .backlog-file:hover {
@@ -41,7 +42,9 @@
 }
 
 .backlog-file:active {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid white;
+    color: white;
 }   
 
 .header-cont {
@@ -95,7 +98,7 @@
 
 .deleteImg:hover {
     cursor: pointer;
-}
+} 
 
 .delete-img-container {
     display: flex;
