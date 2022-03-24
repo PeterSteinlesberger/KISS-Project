@@ -3,15 +3,28 @@
     flex-direction: column;
     justify-content: center;
     color: whitesmoke;
-    font-size: 21px;
-    margin: 34px 180px 34px 180px;
-    padding: 24px;
+    max-height: 550px;
+    margin: 40px 180px;
+    padding: 24px;  
+    font-size: 20px;
     background-color: rgba(0, 0, 0, 0.85);
     border: solid 1px rgba(0, 0, 0, 0.75); 
     box-sizing: border-box;
     overflow-wrap: break-word;
     overflow-y: auto;
 }
+
+ /* change scrollbar attributes  */
+ .main-cont::-webkit-scrollbar {
+    width: 8px;
+	background-color: white;
+}
+
+.main-cont::-webkit-scrollbar-thumb {
+	background-color: rgb(0, 110, 255);
+}
+
+/* ---------- */
 
 
 /*

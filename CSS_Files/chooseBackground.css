@@ -29,6 +29,18 @@
     overflow-y: auto;
 }
 
+ /* change scrollbar attributes  */
+ .container-buttons::-webkit-scrollbar {
+    width: 8px;
+	background-color: white;
+}
+
+.container-buttons::-webkit-scrollbar-thumb {
+	background-color: rgb(0, 110, 255);
+}
+
+/* ---------- */
+
 .ok-btn {
     display: flex;
     justify-content: center;
