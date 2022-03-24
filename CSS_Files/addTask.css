@@ -51,14 +51,14 @@ body span {
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 14px 35px 35px 35px;
+    padding: 14px 35px 0 35px;
 }
 
 .right-container {
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 14px 35px 35px 35px;
+    padding: 14px 35px 0 35px;
 }
 
 .input-field {

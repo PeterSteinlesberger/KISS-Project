@@ -159,12 +159,3 @@
 *    They are all optional. However, if you use not or only, you must also specify a media type.
 */
 
-@media only screen and (max-width: 1600px) {}
-
-@media only screen and (max-width: 1024px) {}
-
-@media only screen and (max-width: 768px) {}
-
-@media only screen and (max-width: 480px) {}
-
-@media only screen and (max-width: 360px) {}

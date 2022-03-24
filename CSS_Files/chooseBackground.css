@@ -101,12 +101,55 @@ h1 {
 *    They are all optional. However, if you use not or only, you must also specify a media type.
 */
 
-@media only screen and (max-width: 1600px) {}
+@media only screen and (max-width: 1240px) {
+    .container-buttons {
+        padding: 24px 12px;
+        max-height: 366px;
+    }
+}
 
-@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 1100px) {
+    .main-cont {
+        padding: 0 80px;
+    }
+}
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    .main-cont {
+        padding: 0 40px;
+    }
+}
 
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 630px) {
+    .main-cont {
+        padding: 0 16px;
+    }
+
+    .container-buttons {
+        padding: 24px 12px;
+    }
+
+    .close-btn {
+        top: 8px;
+        right: 8px;
+    
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    h1 {
+        margin-top: 16px;
+      font-size: 24px;
+    } 
+}
+
+@media only screen and (max-width: 460px) {
+    .main-cont {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 20px;
+      } 
 
 @media only screen and (max-width: 360px) {}
