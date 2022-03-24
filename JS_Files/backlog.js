@@ -26,10 +26,10 @@ function renderBacklog() {
         <div id="task${i}" class="backlog-file" onclick="setStatus(${task['taskId']})">
         <div class="urgency-container ${urgency}"></div>
         <img id="creatorImg" class="creator-img" src="${task['creatorImg']}" >
-        <div id="creator" class="creator padding-top" >${task['creator']}</div>
-        <div id="title" class="title padding-top" >${task['title']}</div>
-        <span id="description" class="description padding-top" >${task['description']}</span>
-        <div id="finishDate" class="finalday padding-top" >${task['expirationDate']}</div>
+        <div id="creator" class="creator" >${task['creator']}</div>
+        <div id="title" class="title" >${task['title']}</div>
+        <span id="description" class="description" >${task['description']}</span>
+        <div id="finishDate">${task['expirationDate']}</div>
         <div id="deleteInfo${i}" class="info-box">DELETE TASK</div>
         <div id="addInfo${i}" class="info-box">ADD TASK TO BOARD</div>
         </div> </div> 

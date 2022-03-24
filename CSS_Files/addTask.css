@@ -54,7 +54,8 @@ body span {
     background-color: rgba(0, 0, 0, 0.80);
     color: white;
     padding-left: 17px;
-    font-size: 14px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     border-style: unset;
     border-image: unset;
@@ -62,7 +63,7 @@ body span {
 
 
 .input-field::-webkit-input-placeholder {
-    font-size: 16px;
+    font-size: 17px;
     color: white;
 }
 
@@ -76,7 +77,7 @@ body span {
     color: white;
     padding-left: 17px;
     padding-top: 5px;
-    font-size: 16px;
+    font-size: 17px;
     border: none;
     box-sizing: border-box;
 }
