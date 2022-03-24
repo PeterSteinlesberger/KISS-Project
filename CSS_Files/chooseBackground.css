@@ -79,18 +79,18 @@
     border: solid 1px rgb(0, 114, 255);
 }
 
-.active-picture {
+/* .active-picture {
     border: 5px solid white;
-}
+} */
 
 h1 {
     text-align: center;
     color: white;
 }
 
-.active-bg {
+/* .active-bg {
     border: 5px solid white;
-}
+} */
 
 
 /*
@@ -151,5 +151,3 @@ h1 {
     h1 {
         font-size: 20px;
       } 
-
-@media only screen and (max-width: 360px) {}

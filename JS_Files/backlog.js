@@ -22,14 +22,16 @@ function renderBacklog() {
         let urgency = task['priortity'];
         backlogFile.innerHTML += ` 
         <div id="addTask${i}" class="backlog-file-container">
-        <div  onmouseover="showTooltip('addTask${i}',  ${i})" onmouseleave="hideTooltip('addTask${i}', ${i})" > 
+        <div style="width: 100%;" onmouseover="showTooltip('addTask${i}',  ${i})" onmouseleave="hideTooltip('addTask${i}', ${i})" > 
         <div id="task${i}" class="backlog-file" onclick="setStatus(${task['taskId']})">
         <div class="urgency-container ${urgency}"></div>
-        <img id="creatorImg" class="creator-img" src="${task['creatorImg']}" >
+        <img id="creatorImg" class="creator-img" src="${task['creatorImg']}" > 
+        <div class="content-container">
         <div id="creator" class="creator" >${task['creator']}</div>
         <div id="title" class="title" >${task['title']}</div>
         <span id="description" class="description" >${task['description']}</span>
         <div id="finishDate">${task['expirationDate']}</div>
+        </div>
         <div id="deleteInfo${i}" class="info-box">DELETE TASK</div>
         <div id="addInfo${i}" class="info-box">ADD TASK TO BOARD</div>
         </div> </div> 
