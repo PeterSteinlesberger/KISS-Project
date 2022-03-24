@@ -24,7 +24,7 @@ function renderBacklog() {
         <div id="addTask${i}" class="backlog-file-container">
         <div  onmouseover="showTooltip('addTask${i}',  ${i})" onmouseleave="hideTooltip('addTask${i}', ${i})" > 
         <div id="task${i}" class="backlog-file" onclick="setStatus(${task['taskId']})">
-        <div class="${urgency}"></div>
+        <div class="urgency-container ${urgency}"></div>
         <img id="creatorImg" class="creator-img" src="${task['creatorImg']}" >
         <div id="creator" class="creator padding-top" >${task['creator']}</div>
         <div id="title" class="title padding-top" >${task['title']}</div>

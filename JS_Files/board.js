@@ -66,7 +66,7 @@ function showTodoList() {
         listContainer.innerHTML += `
       <div id="${task.taskId}" class="todo ${urgencyColor}" draggable="true" ondragstart="drag(${task.taskId})">
     <div>
-        <div class="todo-cont ">
+        <div class="todo-headline">
             <h3 class="todo-title">${task['title']}</h3>
             <span class="final-day">${task['expirationDate']}</span>
         </div>

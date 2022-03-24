@@ -18,13 +18,13 @@
 	flex-direction: column;
 	width: 350px;
 	background-color: rgba(0, 0, 0, 0.35);
-    border: solid 1px rgba(0, 0, 0, 0.15);   
+	border: solid 1px rgba(0, 0, 0, 0.15);
 }
 
 .todo {
 	display: flex;
 	width: 320px;
-	height: 120px;
+	height: 126px;
 	padding: 4px 4px 0 12px;
 	margin: 4px;
 	border: solid 1px rgb(0, 0, 0, 0.25);
@@ -40,25 +40,51 @@
 	justify-content: space-between;
 }
 
+.todo-description {
+	width: 276px;
+	overflow-wrap: break-word;
+}
+
+.todo-headline {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 6px;
+}
+
 .todo-title {
-	font-size: 18px;
+	font-size: 17px;
 	margin: 0px;
-	margin-top: 6px;
+	margin-top: 4px;
 }
 
 .descritpion-cont {
-	width: 265px;
-	height: 88px;
-	overflow-y: auto;
 	display: flex;
 	justify-content: space-between;
+	width: 276px;
+	height: 82px;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
+ /* change scrollbar attributes  */
+ .descritpion-cont::-webkit-scrollbar {
+    width: 8px;
+	
+	background-color: white;
+}
+
+.descritpion-cont::-webkit-scrollbar-thumb {
+	background-color: rgb(0, 110, 255);
+}
+
+/* ---------- */
+
 .deleteImg {
-	width: 36px;
-	height: 36px;
-	margin-right: -5px;
-	margin-bottom: 3px;
+	width: 28px;
+	height: 31px;
+	margin-bottom: -4px;
+	margin-left: 2px;
 }
 
 .trash-img {
@@ -71,34 +97,29 @@
 	cursor: pointer;
 }
 
-.todo-description {
-	width: 265px;
-	margin-top: 10px;
-	overflow-wrap: break-word;
+.Low {
+	border: solid 1px rgb(0, 114, 255);
+	box-sizing: border-box;
+}
+
+.Normal {
+	border: 1px solid rgb(107, 221, 0);
+	box-sizing: border-box;
 }
 
 .Medium {
 	border: 1px solid rgb(251, 255, 0);
-	/* background-color: rgb(251, 255, 0); */
+	box-sizing: border-box;
 }
-
 
 .High {
 	border: 1px solid rgb(255, 0, 106);
-	/* background-color: rgb(255, 0, 106); */
-}
-
-
-.Low {
-	border: 1px solid rgb(107, 221, 0);
-	/* background-color: rgb(107, 221, 0); */
+	box-sizing: border-box;
 }
 
 .final-day {
-	margin-top: 6px;
-	margin-right: 4px;
+	margin-right: 6px;
 }
-
 
 .category-container {
 	height: 600px;
@@ -127,22 +148,12 @@
 *    They are all optional. However, if you use not or only, you must also specify a media type.
 */
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1600px) {}
 
-}
+@media only screen and (max-width: 1024px) {}
 
-@media only screen and (max-width: 1024px) {
-  
-}
+@media only screen and (max-width: 768px) {}
 
-@media only screen and (max-width: 768px) {
-  
-}
+@media only screen and (max-width: 480px) {}
 
-@media only screen and (max-width: 480px) {
-   
-}
-
-@media only screen and (max-width: 360px) {
-   
-}
+@media only screen and (max-width: 360px) {}
