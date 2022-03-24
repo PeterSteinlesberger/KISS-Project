@@ -23,25 +23,29 @@ body span {
 }
 
 .form-cont {
-    width: 950px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+    width: 950px;
     background-color: rgba(0, 0, 0, 0.35);
     border: solid 1px rgba(0, 0, 0, 0.15);
+}
+
+.form-cont span {
+   letter-spacing: 2px;
 }
 
 .left-container {
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 35px;
+    padding: 14px 35px 35px 35px;
 }
 
 .right-container {
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 35px;
+    padding: 14px 35px 35px 35px;
 }
 
 .input-field {
@@ -50,10 +54,16 @@ body span {
     background-color: rgba(0, 0, 0, 0.80);
     color: white;
     padding-left: 17px;
-    font-size: 16px;
+    font-size: 14px;
     box-sizing: border-box;
     border-style: unset;
     border-image: unset;
+}
+
+
+.input-field::-webkit-input-placeholder {
+    font-size: 16px;
+    color: white;
 }
 
 .description-field {
@@ -67,10 +77,13 @@ body span {
     padding-left: 17px;
     padding-top: 5px;
     font-size: 16px;
+    border: none;
     box-sizing: border-box;
-    /* border-width: 2px;
-    border-style: inset;
-    border-image: initial; */
+}
+
+.description-field::-webkit-input-placeholder {
+    font-size: 16px;
+    color: white;
 }
 
 .selector {
@@ -80,9 +93,7 @@ body span {
     color: white;
     padding-left: 17px;
     font-size: 16px;
-    /* border-width: 2px; */
-    /* border-style: inset;
-    border-image: initial; */
+    border-width: 0;
 }
 
 .personal-img {
@@ -158,7 +169,7 @@ option {
     align-items: center;
     width: 400px;
     height: 38px;
-    margin-top: 61px;
+    margin: 58px 0;
     color: rgb(0, 114, 255);
     background-color: rgba(0, 0, 0, 0.85);
 }
