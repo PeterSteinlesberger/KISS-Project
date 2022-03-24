@@ -9,7 +9,7 @@ let backgrounds = [
     // './img/backgrounds/pexels-visit-greenland-360912.jpg','./img/backgrounds/raisting-satellite-gd13375a08_1920.jpg','./img/backgrounds/sea-ge7ea75908_1920.jpg',
     // './img/backgrounds/dial-g165225af7_1920.jpg'
 ];
-let currentBg = '';
+let currentBg = '0';
 
 
 async function initDesign() {
@@ -38,7 +38,6 @@ async function loadBackground(currentBg) {
     let pos = currentBg;
     await downloadFromServer();
     currentBg = backend.getItem('background');
-    console.log('pos:', pos);
     document.body.style.backgroundImage = `url(${currentBg})`;
 }
 
