@@ -27,19 +27,21 @@
 <body onload="initAddTask()">
     <div data-template="templates/header.html"></div>
     <div class="add-task-main">
-        <!-- Task created info-container -->
+      
+        <form class="form-cont" onsubmit="createTask(); return false ">
+              <!-- Task created info-container -->
         <div id="confirmationContainer" class="confirmation-cont D-none">
             <div class="confirmation-inner-cont" onclick="visibleInfoContainer()">
                 <h3 class="info-headline">TASK CREATED</h3>
                 <div class="info-container">
                     <span class="m4">ADD</span>
-                    <a class="btn-style info-button m4" href="addTask.html">
+                    <a class="btn-style info-button" href="addTask.html">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>NEW TASK</a>
                     <span class="m4">OR</span>
-                    <a class="btn-style info-button m4" href="backlog.html">
+                    <a class="btn-style info-button" href="backlog.html">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -48,7 +50,6 @@
                 </div>
             </div>
         </div>
-        <form class="form-cont" onsubmit="createTask(); return false ">
             <div class="left-container">
                 <span>TITEL</span>
                 <input id="inputTitle" class="input-field" type="text" maxlength="22" placeholder="Titel eingeben...">
