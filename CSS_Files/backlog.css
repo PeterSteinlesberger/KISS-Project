@@ -2,7 +2,7 @@
     margin-top: 48px;
     padding: 24px;
     min-height: 110px;
-    height: 630px;
+    max-height: 630px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.35);
     border: solid 1px rgba(0, 0, 0, 0.15);
@@ -10,6 +10,18 @@
     overflow-wrap: break-word;
     overflow-y: auto;
 }
+
+/* change scrollbar attributes  */
+.info-cont::-webkit-scrollbar {
+    width: 8px;
+    background-color: white;
+}
+
+.info-cont::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 110, 255);
+}
+
+/* ---------- */
 
 .backlog-cont {
     display: flex;
@@ -22,9 +34,7 @@
 
 .backlog-file-container {
     display: flex;
-    width: 100%;
     padding: 12px;
-
 }
 
 .backlog-file {
@@ -50,7 +60,7 @@
     background-color: rgb(255, 255, 255);
     border: 1px solid white;
     color: white;
-}   
+}
 
 .header-cont {
     display: flex;
@@ -63,25 +73,20 @@
     height: 100%;
 }
 
-.urgency-color-invisible {
-    width: 18px;
-    margin-right: 47px;
-}
-
 .creator-img {
     width: 58px;
     height: 58px;
     margin-left: 4px;
 }
 
-.creator-img-invisible {
-    width: 74px;
-    border-radius: 50%;
-    margin-right: 35px;
-}
-
 .creator {
     width: 80px;
+    margin-left: 12px;
+}
+
+.creator-headline {
+    width: 172px;
+    margin-left: 12px;
 }
 
 .title {
@@ -98,9 +103,8 @@
     text-overflow: ellipsis;
 }
 
-.description-invisible {
-    width: 350px;
-    margin-right: 35px;
+.description-headline {
+    width: 220px;
 }
 
 .deleteImg {
@@ -110,7 +114,7 @@
 
 .deleteImg:hover {
     cursor: pointer;
-} 
+}
 
 .delete-img-container {
     display: flex;
@@ -154,18 +158,19 @@
 .info-box {
     position: absolute;
     display: none;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     width: calc(100% - 8px);
     height: 100%;
+    width: 100%;
     top: 0px;
-    left: 8px;
+    right: 8px;
     background-color: rgba(0, 0, 0, 0.60);
     color: rgb(0, 114, 255);
     font-size: 19px;
-    letter-spacing: 4px;
-    font-weight: 800;
+    letter-spacing: 8px;
+    font-weight: 600;
 }
 
 
@@ -178,27 +183,157 @@
 *    They are all optional. However, if you use not or only, you must also specify a media type.
 */
 
-@media only screen and (max-width: 1600px) {}
+@media only screen and (max-width: 1240px) {
+    .info-cont {
+        max-height: 540px;
+    }
+}
 
-@media only screen and (max-width: 1100px) {
-    .main-cont {
+@media only screen and (max-width: 1140px) {
+    .backlog-cont {
         padding: 0 80px;
     }
-} 
+
+    .backlog-file-container {
+        position: relative;
+        display: flex;
+        padding: 12px;
+        height: 180px;
+        width: 310px;
+    }
+
+    .title {
+        position: absolute;
+        top: 8px;
+        left: 10px;
+        width: 190px;
+    }
+
+    #finishDate {
+        position: absolute;
+        top: 8px;
+        right: 14px;
+    }
+
+    .finalday {
+        width: 90px;
+    }
+
+    .urgency-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 6px;
+    }
+
+    .creator-img {
+        position: absolute;
+        top: 42px;
+        right: 22px;
+        width: 58px;
+        height: 58px;
+        margin: 0;
+    }
+
+    .creator {
+        position: absolute;
+        width: 80px;
+        right: 0px;
+        bottom: 52px;
+    }
+
+    .description {
+        position: absolute;
+        top: 41px;
+        left: 10px;
+        width: 200px;
+        height: 122px;
+        -webkit-line-clamp: 6;
+    }
+
+    .delete-img-container {
+        position: absolute;
+        bottom: 14px;
+        right: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        background-color: rgba(0, 0, 0, 0) !important;
+        border: none !important;
+        border-left: none;
+        box-sizing: border-box;
+    }
+
+    .header-cont {
+        display: none;
+    }
+
+    .info-cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: unset;
+        width: unset;
+        min-height: 268px;
+        min-width: 400px;
+    }
+
+    .backlog-file {
+        /* position: relative;
+        display: flex;
+        align-items: center; */
+        height: 180px;
+    }
+
+    .info-cont {
+        min-height: 250px;
+        max-height: 560px;
+        align-items: unset;
+    }
+}
+
+@media only screen and (max-width: 950px) {}
 
 @media only screen and (max-width: 768px) {}
 
 @media only screen and (max-width: 480px) {}
 
 @media only screen and (max-width: 580px) {
-    .main-cont {
+    .backlog-cont {
         padding: 0 40px;
     }
 }
 
+@media only screen and (max-width: 580px) {
+    .info-cont::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
 @media only screen and (max-width: 460px) {
-    .main-cont {
+    .backlog-cont {
         padding: 0;
     }
 
-@media only screen and (max-width: 360px) {}
+    .info-cont {
+        width: 100%;
+        min-height: 250px;
+    }
+
+    @media only screen and (max-width: 380px) {
+        .backlog-file-container {
+            margin-top: 24px;
+            padding: 0;
+        }
+
+        .delete-img-container {
+            bottom: 5px;
+            right: 5px;
+        }
+
+        .info-cont {
+            padding: 0;
+        }
+    }
