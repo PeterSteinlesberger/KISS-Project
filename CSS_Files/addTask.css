@@ -3,11 +3,6 @@
     filter: invert(1);
 }
 
-/* ::selection {
-    color: rgb(0, 114, 255);
-    background: rgba(0, 0, 0, 0.35);
-  } */
-
 body span {
     font-size: 18px;
     color: white;
@@ -40,7 +35,6 @@ body span {
 .form-cont::-webkit-scrollbar-thumb {
     background-color: rgb(0, 110, 255);
 }
-
 /* ---------- */
 
 .form-cont span {
@@ -100,6 +94,18 @@ body span {
     color: white;
 }
 
+ /* change scrollbar attributes  */
+ .description-field::-webkit-scrollbar {
+    width: 8px;
+	background-color: white;
+}
+
+.description-field::-webkit-scrollbar-thumb {
+	background-color: rgb(0, 110, 255);
+}
+
+/* ---------- */
+
 .selector {
     width: 400px;
     height: 38px;
@@ -110,13 +116,38 @@ body span {
     border-width: 0;
 }
 
+select option {
+    background: rgba(250, 250, 250, 0.3);
+    color: #fff;
+  }
+  
+  select option[value="1"] {
+    background: rgba(200, 200, 200, 0.3);
+    color: rgb(0, 114, 255);
+  }
+  
+  select option[value="2"] {
+    background: rgba(150, 150, 150, 0.3);
+    color: rgb(107, 221, 0);
+  }
+  
+  select option[value="3"] {
+    background: rgba(100, 100, 100, 0.3);
+    color: rgb(251, 255, 0);
+  }
+  
+  select option[value="4"] {
+    background: rgba(50, 50, 50, 0.3);
+    color: rgb(255, 0, 106);
+  }
+
 .personal-img {
     border-radius: 50%;
     box-sizing: border-box;
     object-fit: cover;
     object-position: 50% 0%;
-    width: 91px;
-    height: 91px;
+    width: 86px;
+    height: 86px;
 }
 
 .creator-cont {
@@ -198,7 +229,6 @@ option {
     background-color: rgba(0, 0, 0, 0.85);
 }
 
-
 /*
 *Meaning of the "only" and "and" keywords:
 *only: The only keyword prevents older browsers that do not support media queries with 
@@ -206,8 +236,6 @@ option {
 *and: The and keyword combines a media feature with a media type or other media features.
 *    They are all optional. However, if you use not or only, you must also specify a media type.
 */
-
-@media only screen and (max-width: 1600px) {}
 
 @media only screen and (max-width: 1314px) {
     .input-field {
