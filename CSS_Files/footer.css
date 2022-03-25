@@ -84,7 +84,8 @@ p {
     .footer-cont {
         flex-direction: column-reverse;
         justify-content: space-around;
-        height: 140px;
+        height: 144px;
         padding: 18px;
+        bottom: 0;
     }
 }

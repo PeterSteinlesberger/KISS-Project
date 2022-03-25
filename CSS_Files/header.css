@@ -100,7 +100,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-    width: 360px;
+	width: 360px;
 }
 
 
@@ -158,7 +158,7 @@ header {
 
 .goog-te-gadget {
 	color: transparent !important;
-width: 100px;
+	width: 100px;
 }
 
 /* google translate banner-frame */
@@ -181,11 +181,11 @@ body {
 }
 
 .googletranslate-logo {
-	width: 19px; 
+	width: 19px;
 	margin-right: 6px;
 }
 
-	/* 
+/* 
 <a href="https://www.flaticon.com/free-icons/translate" title="translate icons">Translate icons created by Freepik - Flaticon</a>
 
 <div> undefined <a href="https://www.flaticon.com/authors/freepik" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div> */
@@ -203,7 +203,7 @@ body {
 	border: none;
 }
 
-.header-link:before{
+.header-link:before {
 	background: transparent;
 }
 
@@ -229,7 +229,7 @@ body {
 	border: 1px solid transparent;
 	background-color: rgba(0, 0, 0, 0.75);
 	transition: all 285ms ease-in-out;
-	box-shadow: 0 3px 3px rgba(0,0,0.1);
+	box-shadow: 0 3px 3px rgba(0, 0, 0.1);
 }
 
 .header-btn:hover {
@@ -238,40 +238,39 @@ body {
 	color: white;
 }
 
-.header-btn:before{
+.header-btn:before {
 	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 50%;
 	height: 100%;
-	background: rgba(255,255,255,.1);
+	background: rgba(255, 255, 255, .1);
 }
 
-.header-btn:after{
+.header-btn:after {
 	content: '';
 	position: absolute;
 	top: 0;
 	left: -100%;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);
+	background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
 	transition: 0.5s;
 	transition-delay: 0.5s;
 }
 
-.header-btn:hover:after{
+.header-btn:hover:after {
 	left: 100%;
 }
 
-.header-btn span{
+.header-btn span {
 	position: absolute;
 	display: block;
 	transition: 0.5s ease;
 }
 
-.header-btn span:nth-child(1)
-{
+.header-btn span:nth-child(1) {
 	top: 0;
 	left: 0;
 	width: 0;
@@ -279,14 +278,12 @@ body {
 	background: #fff;
 }
 
-.header-btn:hover span:nth-child(1)
-{
+.header-btn:hover span:nth-child(1) {
 	width: 100%;
 	transform: translateX(100%);
 }
 
-.header-btn span:nth-child(3)
-{
+.header-btn span:nth-child(3) {
 	bottom: 0;
 	right: 0;
 	width: 0;
@@ -294,14 +291,12 @@ body {
 	background: #fff;
 }
 
-.header-btn:hover span:nth-child(3)
-{
+.header-btn:hover span:nth-child(3) {
 	width: 100%;
 	transform: translateX(-100%);
 }
 
-.header-btn span:nth-child(2)
-{
+.header-btn span:nth-child(2) {
 	top: 0;
 	left: 0;
 	width: 1px;
@@ -309,14 +304,12 @@ body {
 	background: #fff;
 }
 
-.header-btn:hover span:nth-child(2)
-{
+.header-btn:hover span:nth-child(2) {
 	height: 100%;
 	transform: translateY(100%);
 }
 
-.header-btn span:nth-child(4)
-{
+.header-btn span:nth-child(4) {
 	bottom: 0;
 	right: 0;
 	width: 1px;
@@ -324,8 +317,7 @@ body {
 	background: #fff;
 }
 
-.header-btn:hover span:nth-child(4)
-{
+.header-btn:hover span:nth-child(4) {
 	height: 100%;
 	transform: translateY(-100%);
 }
@@ -383,11 +375,51 @@ body {
 	}
 }
 
+@media only screen and (max-width: 800px) {
+	.header-menu-container {
+		height: 100px;
+	}
+
+	.triangle-top-left {
+		border-width: 0 0 100px 80px;
+	}
+
+	.triangle-top-right {
+		border-width: 0 80px 100px 0;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.header-menu-container {
+		width: 100vw;
+		justify-content: space-evenly;
+	}
+
+	.header-btn {
+		margin: 0;
+	}
+
+	.triangle-top-left {
+		display: none;
+	}
+
+	.triangle-top-right {
+		display: none;
+	}
+}
 
 @media only screen and (max-width: 1024px) {}
 
 @media only screen and (max-width: 768px) {}
 
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 440px) {
+	.header-btn {
+		font-size: 15px;
+		padding: 2px 6px;
+		letter-spacing: 0;
+	}
+}
 
 @media only screen and (max-width: 360px) {}
+
+
