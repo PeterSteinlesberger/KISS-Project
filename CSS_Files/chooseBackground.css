@@ -29,14 +29,14 @@
     overflow-y: auto;
 }
 
- /* change scrollbar attributes  */
- .container-buttons::-webkit-scrollbar {
+/* change scrollbar attributes  */
+.container-buttons::-webkit-scrollbar {
     width: 8px;
-	background-color: white;
+    background-color: white;
 }
 
 .container-buttons::-webkit-scrollbar-thumb {
-	background-color: rgb(0, 110, 255);
+    background-color: rgb(0, 110, 255);
 }
 
 /* ---------- */
@@ -132,15 +132,15 @@ h1 {
     .close-btn {
         top: 8px;
         right: 8px;
-    
+
     }
 }
 
 @media only screen and (max-width: 520px) {
     h1 {
         margin-top: 16px;
-      font-size: 24px;
-    } 
+        font-size: 24px;
+    }
 }
 
 @media only screen and (max-width: 460px) {
@@ -150,4 +150,5 @@ h1 {
 
     h1 {
         font-size: 20px;
-      } 
+    }
+}
