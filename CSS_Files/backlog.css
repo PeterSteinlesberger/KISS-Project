@@ -199,9 +199,13 @@
     .backlogfile-cont {
         max-height: 460px;
     }
+
+    .backlog-cont {
+        padding: 0 80px;
+    }
 }
 
-@media only screen and (max-width: 1140px) {
+@media only screen and (max-width: 980px) {
     .backlog-cont {
         padding: 0 80px;
     }

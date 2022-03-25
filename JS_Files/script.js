@@ -1,7 +1,7 @@
 setURL('http://peter-steinlesberger.developerakademie.com/KISS-Project/smallest_backend_ever');
 
 let allTasks = [];
-
+let btnActive = false;
 
 async function init() {
   await includeHTML();
@@ -88,6 +88,19 @@ function googleTranslateElementInit() {
   }, 'google_translate_element');
 }
 
+function menuBtn() {
+  let menuContainer = document.getElementById('menuContainer');
+  if (!btnActive) {
+    menuContainer.style.display = "flex";
+    btnActive = true;
+  }
+  else {
+    if (window.innerWidth > 1100 && btnActive) {
+  
+    }
+  }
+
+}
 
 init();
 
