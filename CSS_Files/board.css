@@ -36,7 +36,8 @@
 	padding-bottom: 12px;
 	background-color: rgba(0, 0, 0, 0.35);
 	border: solid 1px rgba(0, 0, 0, 0.15);
-}
+	min-height: 180px;
+	}
 
 .category-container {
 	max-height: 540px;
@@ -195,6 +196,18 @@
 		}
 }
 
+@media only screen and (max-width: 800px) {
+	.category-cont {
+		margin: 0px 8px 0 8px;
+		margin-bottom: 32px;
+	}
+
+    .main-div {
+		margin-top: 24px;
+        max-height: 520px;
+    }
+}
+
 @media only screen and (max-width: 430px) {
 	.main-div::-webkit-scrollbar {
 		width: 0;
@@ -203,12 +216,11 @@
 		.category-container {
 		max-height: unset;
 		width: unset;
+		min-width: 320px;
+		margin-bottom: 32px;
 		}
 
-		.category-cont {
-			margin: 32px 0;
-			padding: 12px 4px;
-		}
+		
 
 		.todo {
 			margin: 4px 0;

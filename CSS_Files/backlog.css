@@ -32,6 +32,7 @@
 .backlogfile-cont::-webkit-scrollbar-thumb {
     background-color: rgb(0, 110, 255);
 }
+
 /* ---------- */
 
 .backlog-file-container {
@@ -163,13 +164,12 @@
 .info-box {
     position: absolute;
     display: none;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     width: calc(100% - 8px);
     height: 100%;
     top: 0px;
-   left: 8px;
+    left: 8px;
     background-color: rgba(0, 0, 0, 0.60);
     color: rgb(0, 114, 255);
     font-size: 19px;
@@ -303,15 +303,20 @@
     }
 }
 
-@media only screen and (max-width: 580px) {
-    .backlog-cont {
-        padding: 0 40px;
+@media only screen and (max-width: 800px) {
+    .info-cont {
+        max-height: 520px;
+        margin-top: 24px;
     }
 }
 
 @media only screen and (max-width: 580px) {
     .info-cont::-webkit-scrollbar {
         width: 0;
+    }  
+    
+    .backlog-cont {
+        padding: 0 40px;
     }
 }
 

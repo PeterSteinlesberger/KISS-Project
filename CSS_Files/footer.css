@@ -7,8 +7,7 @@
     width: 100vw;
     height: 76px;
     color: white;
-    padding-left: 180px;
-    padding-right: 180px;
+    padding: 0 180px;
     background-color: rgba(0, 0, 0, 0.35);
     box-sizing: border-box;
 }
@@ -34,7 +33,6 @@ p {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 400px;
 }
 
 .footer-links a {
@@ -68,7 +66,6 @@ p {
     align-items: center;
 }
 
-
 /*
 *Meaning of the "only" and "and" keywords:
 *only: The only keyword prevents older browsers that do not support media queries with 
@@ -77,12 +74,17 @@ p {
 *    They are all optional. However, if you use not or only, you must also specify a media type.
 */
 
-@media only screen and (max-width: 1600px) {}
+@media only screen and (max-width: 1024px) {
+    .footer-cont {
+        padding: 0 80px;
+    }
+}
 
-@media only screen and (max-width: 1024px) {}
-
-@media only screen and (max-width: 768px) {}
-
-@media only screen and (max-width: 480px) {}
-
-@media only screen and (max-width: 360px) {}
+@media only screen and (max-width: 800px) {
+    .footer-cont {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        height: 140px;
+        padding: 18px;
+    }
+}
