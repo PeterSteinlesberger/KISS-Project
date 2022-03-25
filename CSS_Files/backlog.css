@@ -140,7 +140,9 @@
     width: 100%;
 }
 
-
+.Choose {
+    background-color: white;
+}
 
 .Low {
     background-color: rgb(0, 114, 255);
@@ -166,9 +168,8 @@
     align-items: center;
     width: calc(100% - 8px);
     height: 100%;
-    width: 100%;
     top: 0px;
-    right: 8px;
+   left: 8px;
     background-color: rgba(0, 0, 0, 0.60);
     color: rgb(0, 114, 255);
     font-size: 19px;

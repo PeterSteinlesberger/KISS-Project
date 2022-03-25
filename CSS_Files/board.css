@@ -135,6 +135,11 @@
 	cursor: pointer;
 }
 
+.Choose {
+	border: solid 1px rgb(255, 255, 255);
+	box-sizing: border-box;
+}
+
 .Low {
 	border: solid 1px rgb(0, 114, 255);
 	box-sizing: border-box;
