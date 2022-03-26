@@ -193,7 +193,7 @@
 
 @media only screen and (max-width: 1240px) {
     .info-cont {
-        max-height: 540px;
+        max-height: 592px;
     }
 
     .backlogfile-cont {
@@ -203,6 +203,11 @@
     .backlog-cont {
         padding: 0 80px;
     }
+
+    .backlogfile-cont {
+        max-height: 512px;
+    }
+
 }
 
 @media only screen and (max-width: 980px) {
@@ -211,7 +216,7 @@
     }
 
     .backlogfile-cont {
-        max-height: 490px;
+        max-height: 540px;
     }
 
     .backlog-file-container {
@@ -289,36 +294,31 @@
     .info-cont {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: unset;
         height: unset;
         width: unset;
-        min-height: 268px;
+        min-height: 250px;
         min-width: 400px;
+        max-height: 586px;
     }
 
     .backlog-file {
         height: 180px;
     }
-
-    .info-cont {
-        min-height: 250px;
-        max-height: 560px;
-        align-items: unset;
-    }
 }
 
 @media only screen and (max-width: 800px) {
     .info-cont {
-        max-height: 520px;
-        margin-top: 24px;
+        max-height: 550px;
+        margin-top: 32px;
     }
 }
 
 @media only screen and (max-width: 580px) {
     .info-cont::-webkit-scrollbar {
         width: 0;
-    }  
-    
+    }
+
     .backlog-cont {
         padding: 0 40px;
     }
