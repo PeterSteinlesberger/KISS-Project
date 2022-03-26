@@ -94,7 +94,10 @@ function menuBtn() {
     menuContainer.style.display = "flex";
     btnActive = true;
   }
-  else {
+  else { if (btnActive) {
+    menuContainer.style.display = "none";
+    btnActive = false;
+  }
     if (window.innerWidth > 1100 && btnActive) {
   
     }
