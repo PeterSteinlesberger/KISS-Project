@@ -35,14 +35,14 @@ async function createTask() {
 function chooseCreatorImg() {
  let creatorName = document.getElementById('creator').value;
  let creatorImg = document.getElementById('creatorImg');
-if(creatorName == 'peter') {
-    creatorImg.src = './img/creators/Peter.jpg';
+if(creatorName == 'Peter') {
+    creatorImg.src = '../img/creators/Peter.jpg';
 } else 
-if (creatorName == 'anja') {
-        creatorImg.src = './img/creators/Anja.png';
+if (creatorName == 'Anja') {
+        creatorImg.src = '../img/creators/Anja.png';
 } else 
-if (creatorName == 'markus') {
-        creatorImg.src = './img/creators/Markus.PNG';
+if (creatorName == 'Markus') {
+        creatorImg.src = '../img/creators/Markus.PNG';
 }
 }
 

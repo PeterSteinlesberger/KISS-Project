@@ -21,6 +21,7 @@
 .backlogfile-cont {
     max-height: 550px;
     overflow-y: auto;
+   overflow-x: hidden;
 }
 
 /* change scrollbar attributes  */
@@ -322,16 +323,16 @@
     .backlog-cont {
         padding: 0 40px;
     }
+
+    .info-cont {
+        width: 100%;
+        min-height: 250px;
+    }
 }
 
 @media only screen and (max-width: 460px) {
     .backlog-cont {
         padding: 0;
-    }
-
-    .info-cont {
-        width: 100%;
-        min-height: 250px;
     }
 
     .backlogfile-cont::-webkit-scrollbar {

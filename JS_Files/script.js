@@ -54,17 +54,34 @@ async function deleteTask(position) {
   await backend.setItem('allTasks', allTasksAsString);
 }
 
-// function highlightActiveBtn() {
-//   setTimeout(() => { 
-//     let windowLocation = window.location.pathname.split('/')[window.location.pathname.split('/').length - 1];
-//     console.log('windowLocation:', windowLocation);
-//   }, 1000);
-// }
 
-// async function highlightActiveBtn() {
-//   await let windowLocation = window.location.pathname.split('/')[window.location.pathname.split('/').length - 1];
-//     console.log('windowLocation:', windowLocation);
-// }
+
+function highlightActiveBtn() {
+  let windowLocation = window.location.pathname.split('/')[window.location.pathname.split('/').length - 1];
+  console.log('windowLocation:', windowLocation);
+  if (windowLocation == 'addTask.html') {
+    document.getElementById('addTaskBtn').classList.add("active-btn");
+    document.getElementById('boardBtn').classList.remove("active-btn");
+    document.getElementById('backlogBtn').classList.remove("active-btn");
+  }
+  else {
+    if (windowLocation == 'board.html') {
+      document.getElementById('boardBtn').classList.add("active-btn");
+      document.getElementById('addTaskBtn').classList.remove("active-btn");
+      document.getElementById('backlogBtn').classList.remove("active-btn");
+    } else {
+      if (windowLocation == 'backlog.html') {
+        document.getElementById('backlogBtn').classList.add("active-btn");
+        document.getElementById('boardBtn').classList.remove("active-btn");
+        document.getElementById('addTaskBtn').classList.remove("active-btn");
+
+      }
+    }
+  }
+
+}
+
+
 
 // ---------------------- google translate functions ----------------------//
 function bindGoogleTranslator() {
@@ -88,21 +105,37 @@ function googleTranslateElementInit() {
   }, 'google_translate_element');
 }
 
+// ------------------------------------------------------------------
+
+
 function menuBtn() {
   let menuContainer = document.getElementById('menuContainer');
   if (!btnActive) {
     menuContainer.style.display = "flex";
     btnActive = true;
   }
-  else { if (btnActive) {
-    menuContainer.style.display = "none";
-    btnActive = false;
-  }
-    if (window.innerWidth > 1100 && btnActive) {
-  
+  else {
+    if (btnActive) {
+      menuContainer.style.display = "none";
+      btnActive = false;
     }
   }
 
+}
+
+function showMenu() {
+  if (window.innerWidth > 1100) {
+    let menuContainer = document.getElementById('menuContainer');
+    menuContainer.style.display = "flex";
+    btnActive = false;
+  } else {
+    btnActive = true;
+  }
+}
+
+window.onload = function () {
+  highlightActiveBtn();
+  showMenu();
 }
 
 init();

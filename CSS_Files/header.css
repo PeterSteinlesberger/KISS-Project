@@ -365,6 +365,12 @@ body {
 	margin-right: 0;
 }
 
+.active-btn {
+	border: 1px solid white;
+	color: white;
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
 /*
 *Meaning of the "only" and "and" keywords:
 *only: The only keyword prevents older browsers that do not support media queries with 
@@ -372,8 +378,6 @@ body {
 *and: The and keyword combines a media feature with a media type or other media features.
 *    They are all optional. However, if you use not or only, you must also specify a media type.
 */
-
-@media only screen and (max-width: 1600px) {}
 
 @media only screen and (max-width: 1240px) {
 	.header {
@@ -391,6 +395,18 @@ body {
 	.header-btn {
 		margin: 12px;
 	}
+}
+
+@media only screen and (min-width: 1101px) { 
+	.right-cont {
+		position: relative;
+		z-index: 200;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 360px;
+	}
+
 }
 
 @media only screen and (max-width: 1100px) {
