@@ -6,6 +6,7 @@ let btnActive = false;
 async function init() {
   await includeHTML();
   bindGoogleTranslator();
+  highlightActiveBtn();
 }
 
 
@@ -63,24 +64,39 @@ function highlightActiveBtn() {
     document.getElementById('addTaskBtn').classList.add("active-btn");
     document.getElementById('boardBtn').classList.remove("active-btn");
     document.getElementById('backlogBtn').classList.remove("active-btn");
+    document.getElementById('designBtn').classList.remove("active-btn");
+    document.getElementById('helpBtn').classList.remove("active-btn");
   }
-  else {
-    if (windowLocation == 'board.html') {
-      document.getElementById('boardBtn').classList.add("active-btn");
-      document.getElementById('addTaskBtn').classList.remove("active-btn");
-      document.getElementById('backlogBtn').classList.remove("active-btn");
-    } else {
-      if (windowLocation == 'backlog.html') {
-        document.getElementById('backlogBtn').classList.add("active-btn");
-        document.getElementById('boardBtn').classList.remove("active-btn");
-        document.getElementById('addTaskBtn').classList.remove("active-btn");
-
-      }
-    }
+  if (windowLocation == 'board.html') {
+    document.getElementById('boardBtn').classList.add("active-btn");
+    document.getElementById('addTaskBtn').classList.remove("active-btn");
+    document.getElementById('backlogBtn').classList.remove("active-btn");
+    document.getElementById('designBtn').classList.remove("active-btn");
+    document.getElementById('helpBtn').classList.remove("active-btn");
+  }
+  if (windowLocation == 'backlog.html') {
+    document.getElementById('backlogBtn').classList.add("active-btn");
+    document.getElementById('boardBtn').classList.remove("active-btn");
+    document.getElementById('addTaskBtn').classList.remove("active-btn");
+    document.getElementById('designBtn').classList.remove("active-btn");
+    document.getElementById('helpBtn').classList.remove("active-btn");
   }
 
+  if (windowLocation == 'chooseBackground.html') {
+    document.getElementById('designBtn').classList.add("active-btn");
+    document.getElementById('boardBtn').classList.remove("active-btn");
+    document.getElementById('addTaskBtn').classList.remove("active-btn");
+    document.getElementById('backlogBtn').classList.remove("active-btn");
+    document.getElementById('helpBtn').classList.remove("active-btn");
+  }
+  if (windowLocation == 'help.html') {
+    document.getElementById('helpBtn').classList.add("active-btn");
+    document.getElementById('boardBtn').classList.remove("active-btn");
+    document.getElementById('backlogBtn').classList.remove("active-btn");
+    document.getElementById('designBtn').classList.remove("active-btn");
+    document.getElementById('addTaskBtn').classList.remove("active-btn");
+  }
 }
-
 
 
 // ---------------------- google translate functions ----------------------//
@@ -133,8 +149,7 @@ function showMenu() {
   }
 }
 
-window.onload = function () {
-  highlightActiveBtn();
+window.onresize = function () {
   showMenu();
 }
 
