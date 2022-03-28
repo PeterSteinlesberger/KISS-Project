@@ -3,7 +3,7 @@
 	justify-content: center;
 	margin-top: 16px;
 	padding: 0 180px;
-	max-height: 570px;
+	max-height: 670px;
 	overflow-y: auto;
 	overflow-x: hidden;
 }
@@ -40,7 +40,7 @@
 }
 
 .category-container {
-	max-height: 540px;
+	height: 440px;
 	width: 350px;
 	display: flex;
 	align-items: center;
@@ -214,7 +214,6 @@
 	}
 
 	.category-container {
-		max-height: unset;
 		width: unset;
 		min-width: 320px;
 		margin-bottom: 32px;
