@@ -397,7 +397,7 @@ body {
 	}
 }
 
-@media only screen and (min-width: 1101px) { 
+@media only screen and (min-width: 1101px) {
 	.right-cont {
 		position: relative;
 		z-index: 200;
@@ -430,6 +430,10 @@ body {
 	.btn-style {
 		margin: 0 12px;
 		font-size: 20px;
+	}
+
+	.design-btn {
+		margin: 0 12px 0 -12px;
 	}
 
 	#google_translate_element select {
@@ -467,10 +471,12 @@ body {
 	}
 
 	.left-cont {
+		position: relative;
 		flex-direction: column;
 		justify-content: space-between;
 		width: 288px;
 		margin-top: 42px;
+		z-index: 10;
 	}
 
 	.hamburger-icon {
@@ -493,18 +499,12 @@ body {
 		margin-bottom: 8px;
 	}
 
-	.header-menu-container {
-		position: relative;
-		z-index: -1;
-	}
-
 	.right-cont {
 		top: 118px;
 		height: 58px;
 	}
 
 	.btn-style {
-		margin: 0;
 		font-size: 16px;
 	}
 
@@ -538,14 +538,21 @@ body {
 	}
 }
 
-@media only screen and (max-width: 1024px) {}
-
-@media only screen and (max-width: 768px) {}
-
 @media only screen and (max-width: 440px) {
 	.header-btn {
 		font-size: 15px;
 		padding: 2px 6px;
 		letter-spacing: 0;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.btn-style {
+		margin: 0 6px;
+		font-size: 15px;
+	}
+
+	.design-btn {
+		margin: 0 6px 0 -6px;
 	}
 }
