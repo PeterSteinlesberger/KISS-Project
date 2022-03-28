@@ -59,74 +59,77 @@ async function deleteTask(position) {
 
 function highlightActiveBtn() {
   let windowLocation = window.location.pathname.split('/')[window.location.pathname.split('/').length - 1];
-  console.log('windowLocation:', windowLocation);
   if (windowLocation == 'dataProtection.html' || windowLocation == 'impressum.html') {
-    document.getElementById('addTaskBtn').classList.remove("active-btn");
-    document.getElementById('boardBtn').classList.remove("active-btn");
-    document.getElementById('backlogBtn').classList.remove("active-btn");
-    document.getElementById('designBtn').classList.remove("active-btn");
-    document.getElementById('helpBtn').classList.remove("active-btn");
+    hideActiveBtn();
   } else {
-    if (windowLocation == 'addTask.html') {
-      activeBtnAddTask();
-    }
-    if (windowLocation == 'board.html') {
-      activeBtnBoard();
-    }
-    if (windowLocation == 'backlog.html') {
-      activeBtnBacklog();
-    }
-    if (windowLocation == 'chooseBackground.html') {
-      activeBtnDesign();
-    }
-    if (windowLocation == 'help.html') {
-      activeBtnHelp();
+      activeBtnAddTask(windowLocation);
+      activeBtnBoard(windowLocation);
+      activeBtnBacklog(windowLocation);
+      activeBtnDesign(windowLocation);
+      activeBtnHelp(windowLocation);
     }
   }
-}
 
 
-function activeBtnAddTask() {
+function activeBtnAddTask(windowLocation) {
+  if (windowLocation == 'addTask.html') {
   document.getElementById('addTaskBtn').classList.add("active-btn");
   document.getElementById('boardBtn').classList.remove("active-btn");
   document.getElementById('backlogBtn').classList.remove("active-btn");
   document.getElementById('designBtn').classList.remove("active-btn");
   document.getElementById('helpBtn').classList.remove("active-btn");
+  }
 }
 
 
-function activeBtnBoard() {
+function activeBtnBoard(windowLocation) {
+  if (windowLocation == 'board.html') {
   document.getElementById('boardBtn').classList.add("active-btn");
   document.getElementById('addTaskBtn').classList.remove("active-btn");
   document.getElementById('backlogBtn').classList.remove("active-btn");
   document.getElementById('designBtn').classList.remove("active-btn");
   document.getElementById('helpBtn').classList.remove("active-btn");
+  }
 }
 
 
-function activeBtnBacklog() {
+function activeBtnBacklog(windowLocation) {
+  if (windowLocation == 'backlog.html') {
   document.getElementById('backlogBtn').classList.add("active-btn");
   document.getElementById('boardBtn').classList.remove("active-btn");
   document.getElementById('addTaskBtn').classList.remove("active-btn");
   document.getElementById('designBtn').classList.remove("active-btn");
   document.getElementById('helpBtn').classList.remove("active-btn");
+  }
 }
 
 
-function activeBtnDesign() {
+function activeBtnDesign(windowLocation) {
+  if (windowLocation == 'chooseBackground.html') {
   document.getElementById('designBtn').classList.add("active-btn");
   document.getElementById('boardBtn').classList.remove("active-btn");
   document.getElementById('addTaskBtn').classList.remove("active-btn");
   document.getElementById('backlogBtn').classList.remove("active-btn");
   document.getElementById('helpBtn').classList.remove("active-btn");
+  }
 }
 
-function activeBtnHelp() {
+function activeBtnHelp(windowLocation) {
+  if (windowLocation == 'help.html') {
   document.getElementById('helpBtn').classList.add("active-btn");
   document.getElementById('boardBtn').classList.remove("active-btn");
   document.getElementById('backlogBtn').classList.remove("active-btn");
   document.getElementById('designBtn').classList.remove("active-btn");
   document.getElementById('addTaskBtn').classList.remove("active-btn");
+  }
+}
+
+function hideActiveBtn() {
+  document.getElementById('addTaskBtn').classList.remove("active-btn");
+  document.getElementById('boardBtn').classList.remove("active-btn");
+  document.getElementById('backlogBtn').classList.remove("active-btn");
+  document.getElementById('designBtn').classList.remove("active-btn");
+  document.getElementById('helpBtn').classList.remove("active-btn");
 }
 
 
@@ -162,14 +165,12 @@ function menuBtn() {
   if (!btnActive) {
     menuContainer.style.display = "flex";
     btnActive = true;
-  }
-  else {
+  } else {
     if (btnActive) {
       menuContainer.style.display = "none";
       btnActive = false;
     }
   }
-
 }
 
 function showMenu() {
@@ -182,6 +183,7 @@ function showMenu() {
     btnActive = true;
   }
 }
+
 
 window.onresize = function () {
   showMenu();
