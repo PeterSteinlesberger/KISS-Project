@@ -30,7 +30,7 @@ body span {
 /* change scrollbar attributes  */
 .form-cont::-webkit-scrollbar {
     width: 8px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.45);
 }
 
 .form-cont::-webkit-scrollbar-thumb {
@@ -98,7 +98,7 @@ body span {
 /* change scrollbar attributes  */
 .description-field::-webkit-scrollbar {
     width: 8px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.45);
 }
 
 .description-field::-webkit-scrollbar-thumb {

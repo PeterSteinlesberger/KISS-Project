@@ -58,7 +58,7 @@ a {
 
 .datasection-main {
 	margin-top: 42px;
-	height: 560px;
+	height: 640px;
 	padding: 0 164px;
 
 }
@@ -69,8 +69,31 @@ a {
 	padding: 32px;
 	overflow-y: scroll;
 	height: 576px;
-
 }
+
+.datasection-container p {
+	font-size: 20px;
+}
+
+.datasection-container h3 {
+	font-size: 22px;
+}
+
+.datasection-container h1,h2,h3,h4 {
+	letter-spacing: 2px;
+}
+
+/*--------- change scrollbar attributes in dataprotection-section ---------*/
+.datasection-container::-webkit-scrollbar {
+	width: 8px;
+	background-color: rgba(255, 255, 255, 0.45);
+}
+
+.datasection-container::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 110, 255, 1);
+}
+
+/* ---------- */
 
 
 

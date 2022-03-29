@@ -27,7 +27,7 @@
 /* change scrollbar attributes  */
 .backlogfile-cont::-webkit-scrollbar {
     width: 8px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.45);
 }
 
 .backlogfile-cont::-webkit-scrollbar-thumb {

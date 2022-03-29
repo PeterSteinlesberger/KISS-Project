@@ -32,11 +32,11 @@
 /* change scrollbar attributes  */
 .container-buttons::-webkit-scrollbar {
     width: 8px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.45);
 }
 
 .container-buttons::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 110, 255);
+    background-color: rgba(0, 110, 255, 1);
 }
 
 /* ---------- */

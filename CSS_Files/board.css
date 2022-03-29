@@ -10,16 +10,14 @@
 
 /* change scrollbar attributes  */
 .main-div::-webkit-scrollbar {
-	width: 16px;
-	background-color: white;
+	width: 8px;
+	background-color: rgba(255, 255, 255, 0.45);
 }
 
 .main-div::-webkit-scrollbar-thumb {
 	background-color: rgb(0, 110, 255);
 }
-
 /* ---------- */
-
 
 .category-header {
 	color: white;
@@ -110,7 +108,7 @@
 /* change scrollbar attributes  */
 .descritpion-cont::-webkit-scrollbar {
 	width: 8px;
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.45);
 }
 
 .descritpion-cont::-webkit-scrollbar-thumb {
