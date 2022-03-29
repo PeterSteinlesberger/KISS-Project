@@ -23,11 +23,19 @@ margin: 6px;
 
 /*dataProtection and impressum section*/
 
-.data-cont-style {
-    margin-top: 65px;
-    margin-left: 35px;
-    margin-right: 35px;
-    min-width: 1100px;
+.main-container {
+	width: 100%;
+	margin-top: 48px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.data-container {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 42px;
+    width: 332px;
 }
 
 /*btn-design*/

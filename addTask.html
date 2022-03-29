@@ -18,38 +18,40 @@
     <link rel="stylesheet" href="CSS_Files/header.css">
     <link rel="stylesheet" href="CSS_Files/footer.css">
     <link rel="stylesheet" href="CSS_Files/addTask.css">
-    <script src="JS_Files/mini_backend.js"></script>
+    <script src="JS_Files/mini_backend.js"></script> 
     <script src="JS_Files/addTask.js"></script>
     <script src="JS_Files/chooseBackground.js"></script>
     <script defer src="JS_Files/script.js"></script>
+
+
 </head>
 
 <body onload="initAddTask()">
     <div data-template="templates/header.html"></div>
     <div class="add-task-main">
-      
+
         <form class="form-cont" onsubmit="createTask();  ">
-              <!-- Task created info-container -->
-        <div id="confirmationContainer" class="confirmation-cont D-none">
-            <div class="confirmation-inner-cont" onclick="visibleInfoContainer()">
-                <h3 class="info-headline">TASK CREATED</h3>
-                <div class="info-container">
-                    <span class="m4">ADD</span>
-                    <a class="btn-style info-button" href="addTask.html">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>NEW TASK</a>
-                    <span class="m4">OR</span>
-                    <a class="btn-style info-button" href="backlog.html">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>MANAGE TASKS</a>
-                    <span class="m4">?</span>
+            <!-- Task created info-container -->
+            <div id="confirmationContainer" class="confirmation-cont D-none">
+                <div class="confirmation-inner-cont" onclick="visibleInfoContainer()">
+                    <h3 class="info-headline">TASK CREATED</h3>
+                    <div class="info-container">
+                        <span class="m4">ADD</span>
+                        <a class="btn-style info-button" href="addTask.html">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>NEW TASK</a>
+                        <span class="m4">OR</span>
+                        <a class="btn-style info-button" href="backlog.html">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>MANAGE TASKS</a>
+                        <span class="m4">?</span>
+                    </div>
                 </div>
             </div>
-        </div>
             <div class="left-container">
                 <span>TITEL</span>
                 <input id="inputTitle" class="input-field" type="text" maxlength="22" placeholder="Titel eingeben...">

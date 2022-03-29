@@ -1,5 +1,5 @@
 let backgrounds = [
-    './img/backgrounds/background.jpg', './img/backgrounds/abstract.jpg', './img/backgrounds/bryce-canyon.jpg', './img/backgrounds/cloud.jpg',
+    './img/backgrounds/cubes-g81e7c6c17_1920.jpg','./img/backgrounds/ice-g8787b359f_1920.jpg','./img/backgrounds/background.jpg', './img/backgrounds/abstract.jpg', './img/backgrounds/bryce-canyon.jpg', './img/backgrounds/cloud.jpg',
     './img/backgrounds/flowers.png', './img/backgrounds/green_leaves.png', './img/backgrounds/earth.jpg','./img/backgrounds/forest-gdff8551a2_1920.jpg',
     './img/backgrounds/glacier.jpg', './img/backgrounds/hands_on.jpg', './img/backgrounds/team-spirit.jpg', './img/backgrounds/tropic_leaves.png',
     './img/backgrounds/mountains.jpg','./img/backgrounds/futuristic.jpg', './img/backgrounds/budapest.jpg','./img/backgrounds/hills.jpg',
