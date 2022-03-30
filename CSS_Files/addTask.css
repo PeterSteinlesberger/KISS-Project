@@ -22,15 +22,15 @@ body span {
     position: relative;
     display: flex;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.35);
-    border: solid 1px rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.25);
+    border: solid 1px rgba(0, 0, 0, 0.10);
     overflow-y: auto;
 }
 
 /* change scrollbar attributes  */
 .form-cont::-webkit-scrollbar {
     width: 8px;
-    background-color: rgba(255, 255, 255, 0.45);
+    background-color: rgba(255, 255, 255, 0.35);
 }
 
 .form-cont::-webkit-scrollbar-thumb {
@@ -59,7 +59,7 @@ body span {
 .input-field {
     width: 400px;
     height: 38px;
-    background-color: rgba(0, 0, 0, 0.80);
+    background-color: rgba(0, 0, 0, 0.75);
     color: white;
     padding-left: 17px;
     font-size: 17px;
@@ -81,7 +81,7 @@ body span {
     height: 85px;
     font-family: 'Roboto', sans-serif;
     flex-wrap: wrap;
-    background-color: rgba(0, 0, 0, 0.80);
+    background-color: rgba(0, 0, 0, 0.75);
     color: white;
     padding-left: 17px;
     padding-top: 5px;
@@ -98,7 +98,7 @@ body span {
 /* change scrollbar attributes  */
 .description-field::-webkit-scrollbar {
     width: 8px;
-    background-color: rgba(255, 255, 255, 0.45);
+    background-color: rgba(255, 255, 255, 0.35);
 }
 
 .description-field::-webkit-scrollbar-thumb {
@@ -109,7 +109,7 @@ body span {
 .selector {
     width: 400px;
     height: 38px;
-    background-color: rgba(0, 0, 0, 0.80);
+    background-color: rgba(0, 0, 0, 0.75);
     color: white;
     padding-left: 17px;
     font-size: 16px;
@@ -231,7 +231,7 @@ option {
     height: 38px;
     margin: 58px 0;
     color: rgb(0, 114, 255);
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.65);
 }
 
 .info-button {
@@ -241,7 +241,7 @@ option {
     height: 18px;
     font-size: 18px;
     color: rgb(0, 114, 255);
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.65);
 }
 
 /*------- Responsive -----*/
