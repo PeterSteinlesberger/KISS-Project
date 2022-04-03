@@ -66,7 +66,7 @@ function showTodoList() {
       <div id="${task.taskId}" class="todo ${urgencyColor}" draggable="true" ondragstart="drag(${task.taskId})">
     <div>
         <div class="todo-headline">
-            <h3 class="todo-title">${task['title']}</h3>
+            <p class="todo-title">${task['title']}</p>
             <span class="final-day">${task['expirationDate']}</span>
         </div>
         <div class="todo-cont">

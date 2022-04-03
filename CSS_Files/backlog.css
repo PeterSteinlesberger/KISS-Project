@@ -47,7 +47,7 @@
     align-items: center;
     height: 68px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     border: solid 1px rgb(0, 114, 255);
     border-right: none;
     box-sizing: border-box;
@@ -127,7 +127,7 @@
     align-items: center;
     width: 60px;
     height: 68px;
-    background-color: rgba(0, 0, 0, 0.60);
+    background-color: rgba(0, 0, 0, 0.80);
     border: solid 1px rgb(0, 114, 255);
     border-left: none;
     box-sizing: border-box;
@@ -171,7 +171,7 @@
     height: 100%;
     top: 0px;
     left: 8px;
-    background-color: rgba(0, 0, 0, 0.60);
+    background-color: rgba(0, 0, 0, 0.85);
     color: rgb(0, 114, 255);
     font-size: 19px;
     letter-spacing: 8px;

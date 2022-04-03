@@ -184,6 +184,7 @@ select option[value="High"] {
     justify-content: center;
     align-items: center;
     visibility: hidden;
+
 }
 
 .confirmation-inner-cont {
@@ -231,7 +232,7 @@ option {
     height: 38px;
     margin: 64px 0;
     color: rgb(0, 114, 255);
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.70);
     box-sizing: border-box;
 }
 
