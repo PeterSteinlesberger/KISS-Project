@@ -9,7 +9,7 @@ let backgrounds = [
     // './img/backgrounds/pexels-visit-greenland-360912.jpg','./img/backgrounds/raisting-satellite-gd13375a08_1920.jpg','./img/backgrounds/sea-ge7ea75908_1920.jpg',
     // './img/backgrounds/dial-g165225af7_1920.jpg'
 ];
-let currentBg = '0';
+let currentBg= '0';
 
 
 async function initDesign() {

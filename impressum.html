@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS_Files/style.css">
+    <link rel="stylesheet" href="CSS_Files/backlog.css">
     <link rel="stylesheet" href="CSS_Files/header.css">
-    <link rel="stylesheet" href="CSS_Files/footer.css"> 
+    <link rel="stylesheet" href="CSS_Files/footer.css">
+    <script src="JS_Files/mini_backend.js"></script>
+    <script src="JS_Files/chooseBackground.js"></script>
     <script defer src="JS_Files/script.js"></script>
-    <script src="JS_Files/chooseBackground.js"></script> 
-   
-    
+
+
     <title>Document</title>
 </head>
-<body onload="init()">
+<script>
+    async function initImpressum() {
+        includeHTML();
+        bindGoogleTranslator();
+        highlightActiveBtn();
+        await downloadData();
+    }
+</script>
+
+<body>
     <div data-template="templates/header.html"></div>
     <div class="main-container">
         <div class="data-container">
@@ -21,18 +33,19 @@
 
             <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
             <p>Peter Steinlesberger<br />
-            Zum Heidenkapf 3<br />
-            88316 Isny</p>
-            
+                Zum Heidenkapf 3<br />
+                88316 Isny</p>
+
             <h2>Kontakt</h2>
             <p>Telefon: +49 123456789<br />
-            E-Mail: handeln@ok.de</p>
-            
+                E-Mail: handeln@ok.de</p>
+
             <p>Quelle: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a></p>
- <div>Icons erstellt von <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
-            href="https://www.flaticon.com/de/" title="Flaticon">www.flaticon.com</a></div>
+            <div>Icons erstellt von <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                    href="https://www.flaticon.com/de/" title="Flaticon">www.flaticon.com</a></div>
         </div>
     </div>
     <div data-template="templates/footer.html"></div>
 </body>
+
 </html>

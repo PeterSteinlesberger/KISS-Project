@@ -2,8 +2,6 @@ let inactiveTasks = [];
 
 
 async function initBacklog() {
-    includeHTML();
-    await downloadData();
     showBacklog();
 }
 

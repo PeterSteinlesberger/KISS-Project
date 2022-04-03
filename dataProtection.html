@@ -16,7 +16,15 @@
     
     <title>Document</title>
 </head>
-<body onload="init()">
+<script>
+    async function initDataProtection() {
+  includeHTML();
+  bindGoogleTranslator();
+  highlightActiveBtn();
+  await downloadData();
+}
+</script>
+<body>
     <div data-template="templates/header.html"></div>
     <div class="datasection-main">
         <div class="datasection-container">

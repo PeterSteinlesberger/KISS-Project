@@ -9,10 +9,11 @@ let btnActive = false;
  * 
  */
 async function init() {
-  await includeHTML();
+  includeHTML(); 
+  await downloadData();
   bindGoogleTranslator();
   highlightActiveBtn();
-  downloadData();
+ 
 }
 
 /**

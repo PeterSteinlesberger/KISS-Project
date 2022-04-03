@@ -22,11 +22,9 @@
     <script src="JS_Files/addTask.js"></script>
     <script src="JS_Files/chooseBackground.js"></script>
     <script defer src="JS_Files/script.js"></script>
-
-
 </head>
 
-<body onload="initAddTask()">
+<body>
     <div data-template="templates/header.html"></div>
     <div class="add-task-main">
 
@@ -36,7 +34,7 @@
                 <div class="confirmation-inner-cont" onclick="visibleInfoContainer()">
                     <h3 class="info-headline">TASK CREATED</h3>
                     <div class="info-container">
-                        <span class="m4">ADD</span>
+                    
                         <a class="btn-style info-button" href="addTask.html">
                             <span></span>
                             <span></span>
@@ -79,11 +77,11 @@
                         <option translate="no" value="Markus">Markus</option>
                     </select>
                 </div>
-                <button class="btn-style task-button" onclick="showInfoContainer()">
+                <a class="btn-style task-button" onclick="showInfoContainer(), createTask()">
                     <span></span>
                     <span></span>
                     <span></span>
-                    <span></span>AUFGABE SPEICHERN</button>
+                    <span></span>AUFGABE SPEICHERN</a>
             </div>
         </form>
     </div>

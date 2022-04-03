@@ -229,9 +229,10 @@ option {
     align-items: center;
     width: 400px;
     height: 38px;
-    margin: 58px 0;
+    margin: 64px 0;
     color: rgb(0, 114, 255);
     background-color: rgba(0, 0, 0, 0.65);
+    box-sizing: border-box;
 }
 
 .info-button {
@@ -366,6 +367,14 @@ option {
     .form-cont {
         max-height: 520px;
     }
+
+    
+.info-headline {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
 }
 
 
