@@ -2,6 +2,7 @@ let inactiveTasks = [];
 
 
 async function initBacklog() {
+    await downloadData();
     showBacklog();
 }
 

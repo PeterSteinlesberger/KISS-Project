@@ -160,17 +160,17 @@ select option[value="High"] {
     margin-left: 35px;
 }
 
-.creator-select option[value="peter"] {
+.creator-select option[value="Peter"] {
    background: rgba(70,70,  70, 0.7);
     color: white;
 }
 
-.creator-select option[value="anja"] {
+.creator-select option[value="Anja"] {
     background: rgba(50, 50, 50, 0.7);
      color: white;
  }
 
- .creator-select option[value="markus"] {
+ .creator-select option[value="Markus"] {
     background: rgba(30, 30, 30, 0.7);
      color: white;
  }
@@ -233,6 +233,10 @@ option {
     color: rgb(0, 114, 255);
     background-color: rgba(0, 0, 0, 0.65);
     box-sizing: border-box;
+}
+
+.task-button:hover {
+   cursor: pointer;
 }
 
 .info-button {

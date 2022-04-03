@@ -1,12 +1,5 @@
-//  async function initAddTask() {
-//   includeHTML();  
-//  await downloadData();
-
-// }
-
 
 async function createTask() {
-  console.log('funktzioniert das speichern?');
   let title = document.getElementById('inputTitle').value;
   let description = document.getElementById('description').value;
   let priortity = document.getElementById('priortity').value;
@@ -31,7 +24,6 @@ async function createTask() {
   allTasks.push(task);
   let allTasksAsString = JSON.stringify(allTasks);
   await backend.setItem('allTasks', allTasksAsString);
-
 }
 
 
