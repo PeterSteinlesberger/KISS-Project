@@ -9,11 +9,11 @@ let btnActive = false;
  * 
  */
 async function init() {
-  includeHTML(); 
+  includeHTML();
   await downloadData();
   bindGoogleTranslator();
   highlightActiveBtn();
- 
+
 }
 
 /**
@@ -84,13 +84,13 @@ function highlightActiveBtn() {
   if (windowLocation == 'dataProtection.html' || windowLocation == 'impressum.html') {
     hideActiveBtn();
   } else {
-      activeBtnAddTask(windowLocation);
-      activeBtnBoard(windowLocation);
-      activeBtnBacklog(windowLocation);
-      activeBtnDesign(windowLocation);
-      activeBtnHelp(windowLocation);
-    }
+    activeBtnAddTask(windowLocation);
+    activeBtnBoard(windowLocation);
+    activeBtnBacklog(windowLocation);
+    activeBtnDesign(windowLocation);
+    activeBtnHelp(windowLocation);
   }
+}
 
 
 /**
@@ -99,11 +99,11 @@ function highlightActiveBtn() {
  */
 function activeBtnAddTask(windowLocation) {
   if (windowLocation == 'addTask.html') {
-  document.getElementById('addTaskBtn').classList.add("active-btn");
-  document.getElementById('boardBtn').classList.remove("active-btn");
-  document.getElementById('backlogBtn').classList.remove("active-btn");
-  document.getElementById('designBtn').classList.remove("active-btn");
-  document.getElementById('helpBtn').classList.remove("active-btn");
+    document.getElementById('addTaskBtn').classList.add("active-btn");
+    document.getElementById('boardBtn').classList.remove("active-btn");
+    document.getElementById('backlogBtn').classList.remove("active-btn");
+    document.getElementById('designBtn').classList.remove("active-btn");
+    document.getElementById('helpBtn').classList.remove("active-btn");
   }
 }
 
@@ -114,11 +114,11 @@ function activeBtnAddTask(windowLocation) {
  */
 function activeBtnBoard(windowLocation) {
   if (windowLocation == 'board.html') {
-  document.getElementById('boardBtn').classList.add("active-btn");
-  document.getElementById('addTaskBtn').classList.remove("active-btn");
-  document.getElementById('backlogBtn').classList.remove("active-btn");
-  document.getElementById('designBtn').classList.remove("active-btn");
-  document.getElementById('helpBtn').classList.remove("active-btn");
+    document.getElementById('boardBtn').classList.add("active-btn");
+    document.getElementById('addTaskBtn').classList.remove("active-btn");
+    document.getElementById('backlogBtn').classList.remove("active-btn");
+    document.getElementById('designBtn').classList.remove("active-btn");
+    document.getElementById('helpBtn').classList.remove("active-btn");
   }
 }
 
@@ -129,11 +129,11 @@ function activeBtnBoard(windowLocation) {
  */
 function activeBtnBacklog(windowLocation) {
   if (windowLocation == 'backlog.html') {
-  document.getElementById('backlogBtn').classList.add("active-btn");
-  document.getElementById('boardBtn').classList.remove("active-btn");
-  document.getElementById('addTaskBtn').classList.remove("active-btn");
-  document.getElementById('designBtn').classList.remove("active-btn");
-  document.getElementById('helpBtn').classList.remove("active-btn");
+    document.getElementById('backlogBtn').classList.add("active-btn");
+    document.getElementById('boardBtn').classList.remove("active-btn");
+    document.getElementById('addTaskBtn').classList.remove("active-btn");
+    document.getElementById('designBtn').classList.remove("active-btn");
+    document.getElementById('helpBtn').classList.remove("active-btn");
   }
 }
 
@@ -144,11 +144,11 @@ function activeBtnBacklog(windowLocation) {
  */
 function activeBtnDesign(windowLocation) {
   if (windowLocation == 'chooseBackground.html') {
-  document.getElementById('designBtn').classList.add("active-btn");
-  document.getElementById('boardBtn').classList.remove("active-btn");
-  document.getElementById('addTaskBtn').classList.remove("active-btn");
-  document.getElementById('backlogBtn').classList.remove("active-btn");
-  document.getElementById('helpBtn').classList.remove("active-btn");
+    document.getElementById('designBtn').classList.add("active-btn");
+    document.getElementById('boardBtn').classList.remove("active-btn");
+    document.getElementById('addTaskBtn').classList.remove("active-btn");
+    document.getElementById('backlogBtn').classList.remove("active-btn");
+    document.getElementById('helpBtn').classList.remove("active-btn");
   }
 }
 
@@ -159,11 +159,11 @@ function activeBtnDesign(windowLocation) {
  */
 function activeBtnHelp(windowLocation) {
   if (windowLocation == 'help.html') {
-  document.getElementById('helpBtn').classList.add("active-btn");
-  document.getElementById('boardBtn').classList.remove("active-btn");
-  document.getElementById('backlogBtn').classList.remove("active-btn");
-  document.getElementById('designBtn').classList.remove("active-btn");
-  document.getElementById('addTaskBtn').classList.remove("active-btn");
+    document.getElementById('helpBtn').classList.add("active-btn");
+    document.getElementById('boardBtn').classList.remove("active-btn");
+    document.getElementById('backlogBtn').classList.remove("active-btn");
+    document.getElementById('designBtn').classList.remove("active-btn");
+    document.getElementById('addTaskBtn').classList.remove("active-btn");
   }
 }
 

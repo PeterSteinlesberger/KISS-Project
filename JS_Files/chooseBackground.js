@@ -1,15 +1,14 @@
 let backgrounds = [
-    './img/backgrounds/cubes-g81e7c6c17_1920.jpg','./img/backgrounds/ice-g8787b359f_1920.jpg','./img/backgrounds/background.jpg', './img/backgrounds/abstract.jpg', './img/backgrounds/bryce-canyon.jpg', './img/backgrounds/cloud.jpg',
-    './img/backgrounds/flowers.png', './img/backgrounds/green_leaves.png', './img/backgrounds/earth.jpg','./img/backgrounds/forest-gdff8551a2_1920.jpg',
-    './img/backgrounds/glacier.jpg', './img/backgrounds/hands_on.jpg', './img/backgrounds/team-spirit.jpg', './img/backgrounds/tropic_leaves.png',
-    './img/backgrounds/mountains.jpg','./img/backgrounds/futuristic.jpg', './img/backgrounds/budapest.jpg','./img/backgrounds/hills.jpg',
-    './img/backgrounds/mountains1.jpg','./img/backgrounds/sunset.jpg','./img/backgrounds/trees.jpg','./img/backgrounds/buildings-gb999c4003_1920.jpg',
-    // './img/backgrounds/fantasy-g8189c655f_1920.jpg','./img/backgrounds/pexels-artem-beliaikin-853199.jpg','./img/backgrounds/pexels-martin-damboldt-814499.jpg',
-    // './img/backgrounds/pexels-pixabay-221433.jpg','./img/backgrounds/pexels-pixabay-414110.jpg','./img/backgrounds/pexels-thanhhoa-tran-1447092.jpg',
-    // './img/backgrounds/pexels-visit-greenland-360912.jpg','./img/backgrounds/raisting-satellite-gd13375a08_1920.jpg','./img/backgrounds/sea-ge7ea75908_1920.jpg',
-    // './img/backgrounds/dial-g165225af7_1920.jpg'
+    './img/backgrounds/cubes-g81e7c6c17_1920.jpg','./img/backgrounds/ice-g8787b359f_1920.jpg','./img/backgrounds/background.jpg', './img/backgrounds/abstract.jpg', 
+    './img/backgrounds/bryce-canyon.jpg', './img/backgrounds/cloud.jpg','./img/backgrounds/flowers.png', './img/backgrounds/green_leaves.png', 
+    './img/backgrounds/earth.jpg','./img/backgrounds/forest-gdff8551a2_1920.jpg','./img/backgrounds/glacier.jpg', './img/backgrounds/hands_on.jpg', 
+    './img/backgrounds/team-spirit.jpg', './img/backgrounds/tropic_leaves.png','./img/backgrounds/mountains.jpg','./img/backgrounds/futuristic.jpg', 
+    './img/backgrounds/budapest.jpg','./img/backgrounds/hills.jpg','./img/backgrounds/mountains1.jpg','./img/backgrounds/sunset.jpg',
+    './img/backgrounds/abstract-ge0f68a749_1920.jpg','./img/backgrounds/buildings-gb999c4003_1920.jpg','./img/backgrounds/fantasy-g8189c655f_1920.jpg',
+    './img/backgrounds/pexels-pixabay-221433.jpg', './img/backgrounds/pexels-thanhhoa-tran-1447092.jpg','./img/backgrounds/pexels-visit-greenland-360912.jpg',
+    './img/backgrounds/raisting-satellite-gd13375a08_1920.jpg','./img/backgrounds/dial-g165225af7_1920.jpg'
 ];
-let currentBg= '0';
+let currentBg= '';
 
 
 async function initDesign() {

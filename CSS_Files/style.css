@@ -38,6 +38,13 @@ a {
 	width: 332px;
 }
 
+.margin-container {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.25);
+	border: 1px solid rgba(0, 0, 0, 0.10);
+	padding: 32px;
+}
+
 @media only screen and (max-width: 620px) {
 	.main-container {
 
@@ -65,7 +72,7 @@ a {
 
 .datasection-container {
 	color: white;
-	background-color: rgba(0, 0, 0, 0.65);
+	background-color: rgba(0, 0, 0, 0.8);
 	padding: 32px;
 	overflow-y: scroll;
 	height: 576px;
